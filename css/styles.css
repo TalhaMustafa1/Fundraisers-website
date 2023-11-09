@@ -4,13 +4,81 @@
     box-sizing:border-box;
 }
 .navbar{
-    background-color: red;
+    background-color: #dc4c64 !important;
 }
-.nav-link{
+.nav-item .nav-link{
     color: white !important;
     font-weight:normal;
     font-size: 18px;
 }
 .section-1{
     margin-top: 40px;
+}
+.nav-pills a{
+    background-color: white !important;
+    font-size: 18px;
+    padding: 0 !important;
+    margin: 12px !important;
+    gap: 20px !important;
+
+}
+/* tabs and pills */
+.col-md-3 .nav-link{
+    background-color: none !important;
+}
+.first-tab-about h1{
+     font-size: 18px;
+     color: black;
+     padding: 0;
+     margin: 0;
+}
+.first-tab-about h2{
+    font-size: 22px;
+    color:#2e595a;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.first-tab-about  p{
+    font-size: 14px;
+}
+.first-tab-about  p img{
+ float: left;
+}
+.section-1 .container .row .col-md-3 .img-p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section-1 .container .row .col-md-3 h2{
+    margin: 0;
+    padding: 0;
+}
+.section-1 .container .row .col-md-3 h2 a{
+    font-size: 22px;
+    color:#2e595a !important;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.section-1 .container .row .col-md-3 p{
+    font-size:14px;
+    padding: 0;
+    margin: 0;
+}
+footer {
+    background-color: #dc4c64;
+    padding-block: 30px;
+}
+footer p{
+    padding: 0;
+    margin: 0;
+    color: #f3e2f9;
+    font-weight:normal;
+    font-size: 16px;
+}
+footer h3{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #f3e2f9;
 }

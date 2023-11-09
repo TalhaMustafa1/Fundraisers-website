@@ -60,31 +60,55 @@
         </div>
     </nav>
     <!-- Navbar ends -->
-    <main>
-        <section class="section-1">
+    <main style="margin-bottom: 0px;"> 
+        <section class="section-1" style="min-height: 70vh;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="images/featuredaboutus.gif" alt="">
+                        <div style="display: flex; justify-content: center; "><img src="images/featuredaboutus.gif"
+                                alt="" class="text-center"></div>
+
                         <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
-                            <a class="nav-link active" id="v-pills-link1-tab" data-mdb-toggle="pill"
-                                href="#v-pills-link1" role="tab" aria-controls="v-pills-link1" aria-selected="true">Link
-                                1</a>
+                            <a class="nav-link " id="v-pills-link1-tab" data-mdb-toggle="pill"
+                                href="#v-pills-link1" role="tab" aria-controls="v-pills-link1"
+                                aria-selected="true">Overview</a>
                             <a class="nav-link" id="v-pills-link2-tab" data-mdb-toggle="pill" href="#v-pills-link2"
-                                role="tab" aria-controls="v-pills-link2" aria-selected="false">Link 2</a>
+                                role="tab" aria-controls="v-pills-link2" aria-selected="false" style="background-color: none !important;">The person behind
+                                Fundraiser.com</a>
                             <a class="nav-link" id="v-pills-link3-tab" data-mdb-toggle="pill" href="#v-pills-link3"
-                                role="tab" aria-controls="v-pills-link3" aria-selected="false">Link 3</a>
+                                role="tab" aria-controls="v-pills-link3" aria-selected="false">Contact us</a>
                             <a class="nav-link" id="v-pills-link4-tab" data-mdb-toggle="pill" href="#v-pills-link4"
-                                role="tab" aria-controls="v-pills-link4" aria-selected="false">Link 4</a>
+                                role="tab" aria-controls="v-pills-link4" aria-selected="false">Legal Notices</a>
                         </div>
                     </div>
                     <div class="col-md-6"> <!-- Tab content -->
                         <div class="tab-content" id="v-pills-tabContent">
-                            <div class="tab-pane fade show active" id="v-pills-link1" role="tabpanel"
+                            <div class="tab-pane fade show active first-tab-about" id="v-pills-link1" role="tabpanel"
                                 aria-labelledby="v-pills-link1-tab">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                Corporis molestias porro, eius magnam provident eos!
+                                <h1>Overview:</h1>
+                                <h2>FundRaisers.com</h2>
+                                <p>
+                                    <img src="images/about-us-img.gif" alt="">
+                                    Fundraisers.com unites people working for the greater good, regardless of the size
+                                    of their organization, by sharing resources to create a nationwide and worldwide
+                                    community at the grassroots level.
+
+                                    We recognize the value of information being shared, and the Internet is the perfect
+                                    vehicle for community interaction. Our online magazine GIVING and marketplace is
+                                    designed to provide both volunteers and professional fundraisers with fresh ideas,
+                                    heartwarming success stories, resources for products and services, and strategies
+                                    for achieving organizational goals. Prominent philanthropists and volunteers will be
+                                    profiled, along with those corporations that are giving back to their local
+                                    communities.
+
+                                    Fundraisers.com is first and foremost a community. Best of all, by aiding and
+                                    advising the people who work so hard to make the world a better place, the
+                                    Fundraisers Community of Giving will further our common goal of raising awareness of
+                                    worthwhile causes on the local, national and worldwide level. By pooling resources
+                                    and creating alliances, we can share in the pride of accomplishment felt by scores
+                                    of unsung heroes who make good things happen in the lives of others.
+                                </p>
                             </div>
                             <div class="tab-pane fade" id="v-pills-link2" role="tabpanel"
                                 aria-labelledby="v-pills-link2-tab">
@@ -105,11 +129,49 @@
                         </div>
                         <!-- Tab content -->
                     </div>
-                    <div class="col-md-3">g</div>
+                    <div class="col-md-3">
+                        <div class="img-p">
+                            <img src="images/aout-us-col-3-img.gif" alt="">
+                            <p>Catch the spirit of giving at.....</p>
+                        </div> 
+                        <h2><a href="https://www.fundraisers.com/">Fundraisers.com</a></h2>
+                        <p>Your Guide To The World Of Fundraising</p>
+                    </div>
 
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="images/mastheadlogo_01.gif" alt="" width="200px" height="60px" >
+                    </div>
+                    <div class="col-md-3">
+                        <p><a href=""></a>Home</p>
+                        <p><a href=""></a>About us</p>
+                        <p><a href=""></a> Cause Awarness Calendar</p>
+
+                    </div>
+                    <div class="col-md-3">
+                        <p><a href=""></a>Cause Celebrites</p>
+                        <p><a href=""></a>Giving People</p>
+                        <p><a href=""></a> Products</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p><a href=""></a>Services</p>
+                        <p><a href=""></a>Resources</p>
+                        <p><a href=""></a>Contact</p>
+                    </div>
+                </div>
+                <h3 class="text-center">This website contains features about fundraising ideas, products, causes, people, services, resources and news.
+                    <br>
+                    This page and its contents are ©Digital Maven LLC
+                    <br>
+                    All rights reserved.
+                </h3>
+            </div>
+        </footer>
     </main>
     <!-- enable jquery -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
