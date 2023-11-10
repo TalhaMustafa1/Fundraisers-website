@@ -15,24 +15,51 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
     <title>Fundraisers</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var aboutUsFirstCol = document.querySelectorAll(".about-us-advertise-content");
+    
+            aboutUsFirstCol.forEach(function (element) {
+                element.style.display = "none";
+            });
+    
+            var vPillsLink5Tab = document.getElementById("v-pills-link5-tab");
+            vPillsLink5Tab.addEventListener("click", function () {
+                aboutUsFirstCol.forEach(function (element) {
+                    element.style.display = "block";
+                });
+            });
+    
+            // Assuming you have other tabs, update the following code accordingly
+            var otherTabs = document.querySelectorAll(".other-tab-class");
+            otherTabs.forEach(function (tab) {
+                tab.addEventListener("click", function () {
+                    aboutUsFirstCol.forEach(function (element) {
+                        element.style.display = "none";
+                    });
+                });
+            });
+        });
+    </script>
+    
 
 </head>
 
 <body>
     <!-- Navbar starts -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/mastheadlogo_01.gif" alt="" width="200px" height="60px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="color:white;"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav" style="margin-left: auto; gap: 20px;">
                     <li class="nav-item">
-                        <a class="nav-link " href="index.html">About us</a>
+                        <a class="nav-link " href="aboutus.html">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Awareness Calendar</a>
@@ -60,27 +87,48 @@
         </div>
     </nav>
     <!-- Navbar ends -->
-    <main style="margin-bottom: 0px;"> 
-        <section class="section-1" style="min-height: 70vh;">
+    <main style="margin-bottom: 0px;">
+        <section class="section-1" style="min-height: 60vh;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 order-md-2 order-lg-1 order-sm-2 order-2">
                         <div style="display: flex; justify-content: center; "><img src="images/featuredaboutus.gif"
                                 alt="" class="text-center"></div>
 
-                                <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist"
-                                aria-orientation="vertical">
-                                <a class="nav-link active" id="v-pills-link1-tab" data-mdb-toggle="pill"
-                                    href="#v-pills-link1" role="tab" aria-controls="v-pills-link1"
-                                    aria-selected="true">Overview</a>
-                                <a class="nav-link" id="v-pills-link2-tab" data-mdb-toggle="pill" href="#v-pills-link2"
-                                    role="tab" aria-controls="v-pills-link2" aria-selected="false" style="background-color: none !important;">The person behind
-                                    Fundraiser.com</a>
-                                <a class="nav-link" id="v-pills-link3-tab" data-mdb-toggle="pill" href="#v-pills-link3"
-                                    role="tab" aria-controls="v-pills-link3" aria-selected="false">Contact us</a>
-                                <a class="nav-link" id="v-pills-link4-tab" data-mdb-toggle="pill" href="#v-pills-link4"
-                                    role="tab" aria-controls="v-pills-link4" aria-selected="false">Legal Notices</a>
-                            </div>
+                        <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist"
+                            style="gap:0px;" aria-orientation="vertical">
+                            <a class="nav-link active other-tab-class" id="v-pills-link1-tab" data-mdb-toggle="pill"
+                                href="#v-pills-link1" role="tab" aria-controls="v-pills-link1"
+                                aria-selected="true">Overview</a>
+                            <a class="nav-link other-tab-class" id="v-pills-link2-tab" data-mdb-toggle="pill"
+                                href="#v-pills-link2" role="tab" aria-controls="v-pills-link2" aria-selected="false"
+                                style="background-color: none !important;">The person behind
+                                <br> Fundraiser.com</a>
+                            <a class="nav-link other-tab-class" id="v-pills-link3-tab" data-mdb-toggle="pill"
+                                href="#v-pills-link3" role="tab" aria-controls="v-pills-link3"
+                                aria-selected="false">Contact us</a>
+                            <a class="nav-link " id="v-pills-link5-tab" data-mdb-toggle="pill" href="#v-pills-link5"
+                                role="tab" aria-controls="v-pills-link5" aria-selected="false">Advertising
+                                Opportunities</a>
+                            <a class="nav-link other-tab-class" id="v-pills-link4-tab" data-mdb-toggle="pill"
+                                href="#v-pills-link4" role="tab" aria-controls="v-pills-link4"
+                                aria-selected="false">Legal Notices</a>
+                        </div>
+                        <div id="about-us-first-col" class=" about-us-first-col-p about-us-advertise-content">
+                            <div class="text-center"><img src="images/about-us-first2-col1.gif" alt=""></div>
+                            <br>
+                            <p style="line-height: 18px;">There are 110 million volunteers nationwide
+                                <br><br>
+                                Product fundraising generates over $4 billion in annual retail sales
+                                <br><br>
+                                School groups represent 80% of fundraising sales
+                                <br><br>
+                                The average product fundraiser generates nearly $6,000
+                                <br><br>There are more than one million nonprofit organizations currently registered
+                                with the IRS, representing roughly 12 percent of the US gross national product.
+                            </p>
+
+                        </div>
                     </div>
                     <div class="col-lg-6 order-md-1 order-lg-2 order-sm-1 order-1"> <!-- Tab content -->
                         <div class="tab-content" id="v-pills-tabContent">
@@ -110,19 +158,250 @@
                                     of unsung heroes who make good things happen in the lives of others.
                                 </p>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-link2" role="tabpanel"
+                            <div class="tab-pane fade second-tab-about" id="v-pills-link2" role="tabpanel"
                                 aria-labelledby="v-pills-link2-tab">
-                     helllo
+                                <h1>Annie Van Bebber</h1>
+                                <h2>Founder Editor inchief</h2>
+                                <p><img src="images/about-us-thePersonBehind.jpg" alt=""><strong>Annie Van
+                                        Bebber</strong> is a
+                                    recognized entrepreneur and authority on New Media and the Internet. Annie has the
+                                    intuitive gift of truly knowing the consumer and has been at the forefront of media
+                                    trends that have become a part of our culture.
+                                    <br>
+
+                                    <strong>Fundraisers.com</strong> is the result of Van Bebber's dedication to a
+                                    variety of social
+                                    causes for more than 41 years, over the course of which she has literally raised
+                                    millions of dollars for charity. A former member of the PTA, PTO and the Education
+                                    Technology Planning Team, she continues to be devoted to a number of causes and
+                                    charities including the T. J. Martell Foundation, the Neil Bogart Memorial Fund and
+                                    KidsCharities.org. She has also supported the National Childhood Cancer Foundation,
+                                    RADD (Recording Artist Against Drunk Driving), AMFAR, March of Dimes, and Leukemia
+                                    Society of America.
+                                    Van Bebber is well-known for creating revenue generating and brand building
+                                    strategies as well as for masterminding award-winning websites and properties. As a
+                                    founding partner of Attitude Network, she led its HappyPuppy.com games site to
+                                    highly-acclaimed, record-Internet-success status and was a partner in the
+                                    award-winning StarChefs.com, the premier culinary forum featuring celebrity chefs
+                                    and recipes from around the world. She is an active member in the Association of
+                                    Internet Professionals, Southern California Software Council and Woman in Technology
+                                    International. Van Bebber currently serves on the Advisory Board of internetwire.com
+                                    and is a former Chairman of the Board of the Computer Game Developers Association.
+                                </p>
+
+                                <h3>Charity Affiliations</h3>
+                                <strong style="color: black;">National Leukemia Broadcast Council</strong>
+                                <br>
+                                <p><a href="http://www.leukemia.org/" target="_clear"><strong>Leukemia and Lymphoma
+                                            Society</strong></a></p>
+                                <p><a href="http://www.curesearch.org/" target="_clear"><strong>CURESEARCH for
+                                            Chrildrens Cancer</strong></a></p>
+                                <p><strong>The Bogart Pediatric Cancer Research Proram Childrens Hospital of Los
+                                        Angeles</strong><br>Founding Board Member</p>
+                                <p><a href="http://www.tjmartell.org/" target="_clear"><strong>T. J. Martell
+                                            Foundation</strong></a></p>
+
+                                <p><a href="http://www.amfar.org/" target="_clear"><strong>AMFAR</strong></a></p>
+                                <h3>Techology Affiliations</h3>
+                                <p><a href="http://www.igda.org/" target="_clear"><strong>IGDA</strong> (International
+                                        Game Developers Association)</a><br>Past Chairman of the Board</p>
+                                <p><a href="http://www.nten.org/" target="_clear"><strong>NTEN</strong> (Non Profit
+                                        Technology Network)</a></p>
+                                <p><strong>WITI</strong> (Woman in Technology International)</p>
+                                <p><a href="https://www.socialenterprise.us/" target="_clear"><strong>SEA</strong>
+                                        (Social Enterprise Alliance)</a></p>
+                                <p><a href="http://www.siia.net" target="_clear"><strong>SIIA</strong> (Software &amp;
+                                        Information Industry Association)</a></p>
+                                <p><a href="https://www.interactive.org/" target="_clear"><strong>AIAS</strong> (Academy
+                                        of Interactive Arts and Sciences)</a></p>
+                                <p><strong>WINT</strong> (Women In New Technology)</p>
+                                <p><strong>AIP</strong> (Association of Internet Professionals)</p>
+                                <p><strong>IICS</strong> (International Interactive Communications Society)</p>
+                                <h3>Business Affiliations</h3>
+                                <p><a href="https://www.pta.org/" target="_clear"><strong>PTA</strong> (Parent Teacher
+                                        Association)</a><br>Past President</p>
+                                <p><a href="https://www.pto.org/" target="_clear"><strong>PTO</strong> (Parent Teacher
+                                        Organization)</a><br>Past President </p>
+                                <p><a href="https://www.glendalechamber.com/" target="_clear"><strong>Glendale Chamber
+                                            of Commerce</strong></a></p>
+                                <p><a href="https://www.deltanualpha.org/" target="_clear"><strong>DNA</strong> (Delta
+                                        Nu Alpha)</a> (Transportation Association)<br>Past Board of Director</p>
+                                <p><strong>WPA</strong>(World Poker Association)<br>Founding Board of Director </p>
+
                             </div>
-                            <div class="tab-pane fade" id="v-pills-link3" role="tabpanel"
+                            <div class="tab-pane fade fifth-tab-about" id="v-pills-link5" role="tabpanel"
+                                aria-labelledby="v-pills-link5-tab">
+                                <h1>Reach Active Buyers</h1>
+                                <h3>The Fundraisers.com audience is made up of your prospective customers!</h3>
+                                <h4>We're a growing online community, with:</h4>
+                                <ul>
+                                    <li>An extremely targeted audience</li>
+                                    <li>Pre-qualified sales prospects</li>
+                                    <li>High-quality content that helps your buyers to sell more successfully</li>
+                                    <li>A community that supports and encourages fundraising</li>
+                                    <li>A fun and informative environment for the sale of your product</li>
+                                    <li>Success Stories - Testimonials for products and services</li>
+                                </ul>
+                                <h3>We're always listening to and learning from those who are out selling your products
+                                    and services!</h3>
+                                <h1>Advertising Opportunities</h1>
+
+                                <p>Fundraisers.com offers a wide variety of advertising opportunities to providers of
+                                    products and services within the fundraising industry.</p>
+                                <div>
+                                    <h4>Directory Listing</h4>
+                                    <p> Feature your Product or Service
+                                        in any of our categories listed on the product or services page. All
+                                        categories link directly to our custom directory listings. If you don't see your
+                                        Product or Service listed as a catagory in our Directories, please send email
+                                        and let us know. We are always looking for new opportunties to present to our
+                                        buyers. For more information about these
+                                        and other advertising opportunities, email <a
+                                            href="mailto:annie@fundraisers.com?subject=Advertise_On_Your_Website">ads@fundraisers.com</a>.<br>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>Main Page Feature</h4>
+                                    <p>Prominently feature your
+                                        fundraising product or service on our main Product or Services page
+                                        - center column - for maximum visibility! This premium space is available
+                                        to a limited number of businesses. For more information about these
+                                        and other advertising opportunities, email <a
+                                            href="mailto:annie@fundraisers.com?subject=Advertise_On_Your_Website">ads@fundraisers.com</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade third-tab-about" id="v-pills-link3" role="tabpanel"
                                 aria-labelledby="v-pills-link3-tab">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Aspernatur, illum.
+                                <h1>Contact us</h1>
+                                <h2>FundRaisers.com</h2>
+                                <h3>The Community of Giving</h3>
+
+                                <h4>General Information</h4>
+                                <a href="mailto:info@fundraisers.com"><strong>annie@fundraisers.com</strong></a>
                             </div>
-                            <div class="tab-pane fade" id="v-pills-link4" role="tabpanel"
+                            <div class="tab-pane fade fourth-tab-about" id="v-pills-link4" role="tabpanel"
                                 aria-labelledby="v-pills-link4-tab">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Sequi quasi dicta qui porro eligendi nam doloribus vel minus ullam quam!
+                                <h1>
+
+                                    Legal Notices</h1>
+                                <h2>User Agreement and Privacy Policy</h2>
+                                <p>FundRaisers.com has created this privacy statement in order to demonstrate our firm
+                                    commitment to privacy. The following discloses our usage conditions and privacy
+                                    policies for the Web site: FundRaisers.com.</p>
+                                <div>
+                                    <h3>Terms of Use</h3>
+                                    <p>FundRaisers.com is accessible worldwide to anyone with Internet access. Use of
+                                        FundRaisers.com is subject to the terms and conditions of this statement and all
+                                        applicable laws and regulations, including laws and regulations governing
+                                        copyright and trademark. By visiting the site, you accept, without limitation or
+                                        qualification, all of the terms and conditions as stated in this agreement.
+                                        FundRaisers.com reserves the right to change these terms and conditions at any
+                                        time. The changes will appear on this screen. By visiting the site, you agree in
+                                        advance to accept any changes.
+                                        <br>
+                                        <br>
+                                        Your use of FundRaisers.com is at your own risk. Neither FundRaisers.com nor any
+                                        of its subsidiaries, divisions, affiliates, agents, representatives or licensors
+                                        shall be liable to you or anyone else for any loss or injury or any direct,
+                                        indirect, incidental, consequential, special, punitive or similar damages
+                                        arising out of your access or use of, or your inability to access or use, the
+                                        site and the information available on the site or arising out of any action
+                                        taken in response to or as a result of any information available on the site.
+                                        You hereby waive any and all claims against FundRaisers.com and its
+                                        subsidiaries, divisions, affiliates, agents, representatives and licensors
+                                        arising out of your use of the site and the information available thereon.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>Terms of Copyright</h3>
+                                    <p>The materials used and displayed on FundRaisers.com, including but not limited to
+                                        text, software, photographs, graphics, illustrations, artwork, video, music,
+                                        sound, names, logos, trademarks and service marks, are the property of
+                                        FundRaisers.com or its affiliates or licensors and are protected by copyright,
+                                        trademark and other laws. Any such content may be displayed solely for your
+                                        personal, non-commercial use and you agree not to modify, reproduce, retransmit,
+                                        distribute, disseminate, sell, publish, broadcast or circulate any such material
+                                        without the expressed written permission of FundRaisers.com or its affiliates
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>Community Participation</h3>
+                                    <p>FundRaisers.com provides community features for the participation of its users.
+                                        Please remember that any information that is disclosed by you to FundRaisers.com
+                                        becomes public information and you should exercise caution when disclosing
+                                        personal information. Any information you choose to submit to FundRaisers.com
+                                        becomes the sole possession of FundRaisers.com and may be considered for
+                                        publication in our magazine or our syndicated properties. Such information may
+                                        be edited for length and clarity.</p>
+                                </div>
+                                <div>
+                                    <h3>Information and Privacy Statement</h3>
+                                    <p>As with most servers on the Internet, our servers automatically log visitor
+                                        Internet Protocol (IP) addresses, which are used to help diagnose problems with
+                                        servers and administer Web sites. These addresses are also used to gather broad
+                                        demographic information, such as geographic regions and popular Internet Service
+                                        Providers (ISPs) for the purpose of creating content and information that appeal
+                                        to our customers
+                                        <br> <br>Our site's optional registration form requests users to give us contact
+                                        information (like their name and email address). We use customer contact
+                                        information from the registration form to send the user information about our
+                                        company and promotional material from some of our partners. The customer's
+                                        contact information is also used to contact the visitor when necessary and
+                                        shared with other companies who may want to contact our visitors. Users may
+                                        opt-out of receiving future mailings; see the choice/opt-out section below. All
+                                        email submissions to FundRaisers.com become the property of FundRaisers.com and
+                                        may be considered for publication and may be edited for length and clarity.
+                                        <br> <br>This site contains links to other sites. FundRaisers.com is not
+                                        responsible for the privacy practices or the content of such Web sites.
+                                        <br><br>All email requests for more information regarding products and services
+                                        will be shared with our partner organizations and product and service providers.
+                                        Users may opt-out of receiving future mailings; see the choice/opt-out section
+                                        below.
+                                        <br> <br>Our online surveys ask visitors for contact information (like their
+                                        email address). We use contact data from our surveys to send the user
+                                        information about our company and promotional material from some of our
+                                        partners. The customer's contact information is also used to contact the visitor
+                                        when necessary and shared with other companies who may want to contact our
+                                        visitors. Users may opt-out of receiving future mailings; see the choice/opt-out
+                                        section below.
+                                        <br> <br>We use an outside ad company to display ads on our site. Ads may
+                                        contain cookies, and appear to be coming from our site, but in reality they are
+                                        coming from our partners who are serving ads on our site. Our site does not use
+                                        cookies. We do not have access to any information about you from cookies you
+                                        might receive while visiting our site. Some customer data is shared with the
+                                        advertising companies.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>Security</h3>
+                                    <p>This site has security measures in place to protect the loss, misuse and
+                                        alteration of the information under our control. Please keep in mind that
+                                        whenever you give out personal information online, that information can be
+                                        collected and used by people you don't know. While FundRaisers.com makes every
+                                        effort to protect its users' personal information and privacy, we cannot
+                                        guarantee the security of any information you disclose online and you do so at
+                                        your own risk.</p>
+                                </div>
+                                <div>
+                                    <h3>Choice/Opt-Out</h3>
+                                    <p>Our site provides users the opportunity to opt-out of receiving communications
+                                        from us. This site gives users the following options for removing their
+                                        information from our database to not receive future communications or to no
+                                        longer receive our service. You can send email to remove@fundraisers.com.</p>
+                                </div>
+                                <div>
+                                    <h3>Correct/Update</h3>
+                                    <p>This site gives users the following options for changing and modifying
+                                        information previously provided email changes@fundraisers.com.</p>
+                                </div>
+                                <div>
+                                    <h3>Contacting the Web Site</h3>
+                                    <p>f you have any questions about this privacy statement, the practices of this
+                                        site, or your dealings with this Web site, you can contact
+                                        webmaster@fundraisers.com.</p>
+                                </div>
                             </div>
                         </div>
                         <!-- Tab content -->
@@ -131,10 +410,44 @@
                         <div class="img-p">
                             <img src="images/aout-us-col-3-img.gif" alt="">
                             <p>Catch the spirit of giving at.....</p>
-                        </div> 
+                        </div>
                         <h2><a href="https://www.fundraisers.com/">Fundraisers.com</a></h2>
                         <p>Your Guide To The World Of Fundraising</p>
+                        <br>
+                        <div class="about-us-advertise-content">
+                        <img src="images/about-us-third-col-1.gif" alt="" style="margin-bottom:4px;">
+                        <br>
+                        
+                        <p style="line-height: 18px;" >
+                            Gain access to pre-qualified sales leads. Our visitors are ready to buy!
+                            <br>
+                            <br>
+                            Position your products in a content-rich environment featuring fundraising ideas
+                            <br>
+                            <br>
+                            Low customer acquisition costs allow you to enjoy a higher return on investment
+                            <br>
+                            <br>
+                            Approximately 150 million customers would prefer to buy from a company involved in social
+                            causes
+                            <br>
+                            <br>
+                            If you're serious about selling to fundraisers, you should be advertising with us!
+                            <br>
+                            <br>
+                            <a href="mailto:annie@fundraisers.com?subject=Advertise_On_Your_Website"><b>Contact
+                                    us now</b></a> and let's develop a relationship that grows along with your revenue
+                            <br>
+
+                        </p>
+                        <img src="images/about-third-col-img2.gif" alt="" style="margin-bottom:7px; margin-top: 10px;">
+                        <p style="line-height: 18px;"> 
+                            If your company has a special advertising campaign or brand that you think would appeal to
+                            fundraisers, we would love to hear from you. Just drop us a line at... <br> 
+                            <a href="mailto:annie@fundraisers.com?subject=Advertise_On_Your_Website">ads@fundraisers.com</a>
+                        </p>
                     </div>
+                </div>
 
                 </div>
             </div>
@@ -143,7 +456,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
-                        <img src="images/mastheadlogo_01.gif" alt="" width="200px" height="60px" >
+                        <img src="images/mastheadlogo_01.gif" alt="" width="200px" height="60px">
                     </div>
                     <div class="col-lg-3">
                         <p><a href=""></a>Home</p>
@@ -162,7 +475,8 @@
                         <p><a href=""></a>Contact</p>
                     </div>
                 </div>
-                <h3 class="text-center">This website contains features about fundraising ideas, products, causes, people, services, resources and news.
+                <h3 class="text-center">This website contains features about fundraising ideas, products, causes,
+                    people, services, resources and news.
                     <br>
                     This page and its contents are ©Digital Maven LLC
                     <br>
