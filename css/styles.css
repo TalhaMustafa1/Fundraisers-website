@@ -221,8 +221,26 @@ footer h3{
 }
 .section-2 .col-lg-3 p{
     font-size: 14px;
+    padding: 0;
+    margin: 0;
 }
 .section-2 .col-lg-3 h3{
     margin-top: 12px;
     font-size: 16px;
+}
+.section-2 img{
+    margin-bottom:4px;
+    margin-top: 7px;
+}
+.section-2 .col-lg-3 a{
+    font-size: 14px; 
+    margin: 0px;
+    padding: 0px;
+}
+.section-2 .col-lg-6 p{
+    font-size: 14px;
+}
+.section-2 .col-lg-6{
+    border-left: 2px solid #d5d5d5;
+    border-right: 2px solid #d5d5d5;
 }
