@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+nav{
+    background-color: #cc0000!important;
+}
+.nav-item .nav-link{
+    color: white !important;
+    font-weight: normal;
+    font-size: 17px;
+}
+@media screen and (max-width: 992px) {
+    .sidebar{
+          background-color: #cc0000!important;
+    }
+    .navbar-nav{
+        gap:10px !important;
+    }
+    .navbar-toggler-icon-white {
+        color: white !important; /* Change to the color you desire */
+    }
+  .btn-close{
+    width: 80px !important; 
+    background-color: white;
+  }
+}
