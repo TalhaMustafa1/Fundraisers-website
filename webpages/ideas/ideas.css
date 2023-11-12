@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.navbar{
+    background-color: #cc0000 !important;
+}
+.nav-item .nav-link{
+    color: white !important;
+    font-weight:normal;
+    font-size: 17px;
+}
+section{
+    margin-top: 40px;
+}
+.col-lg-3 a{
+    font-size: 14px;
+    color: black;
+}
+.col-lg-3 img{
+    margin-bottom: 8px;
+}
+.tony-poker-img{
+    margin-top: 8px;
+}
+@media screen and (max-width: 768px) {
+    .navbar-collapse  .navbar-nav{
+         gap: 0px !important;
+         margin-inline: auto !important;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    ul{
+        gap: 2px !important;
+    }
+  }
