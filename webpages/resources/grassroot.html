@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="resources.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- mdb -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <title>Fundraisers</title>
+
+</head>
+<style>
+  .navbar-toggler-icon {
+    color: white;
+  }
+</style>
+
+<body>
+  <!-- navbar starts -->
+  <nav class="navbar  navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html"><img src="../../images/mastheadlogo_01.gif" alt="" width="200px"
+          height="60px"></a>
+      <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color: #fff; font-size: 28px;"></i>
+        </span>
+      </button>
+      <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title " id="offcanvasNavbarLabel"></h5>
+          <button type="button"
+            style="font-weight: bold; color: #fff; font-size: 27px; border: none;  border: none; background: none; padding: 0; margin: 0;outline: none; box-shadow: none; "
+            class="btn " data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fas fa-times" style="color: white;"></i> <!-- Font Awesome close icon -->
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 py-2" style="gap:20px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/awarnessCalendar/awarness.html">Awarness Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/ideas/index.html">Ideas </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cause Celebrites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giving People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends -->
+  <div class="container container-1">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="text-center">
+          <img src="../../images/featuredauctionsol.gif" alt="">
+        </div>
+        <div class="text-center">
+          <a href="https://www.ebay.com/">
+            <img src="../../images/ebaygivingworks.gif" alt="">
+          </a> 
+        </div>
+        <div class="text-center">
+          <a href="mission-fish.html">
+            <img src="../../images/MF-color-logo_sm.gif" alt="">
+          </a>
+        </div>
+        <p>Read about how registering with <a
+             href="mission-fish.html">MissionFish</a> can help you fundraise for
+          your favorite causes through charity auctions on eBay, The World's Online Marketplace®.<br></p>
+        <div>
+          <div class="text-center">
+            <img src="../../images/saveimg.gif" alt="">
+          </div>
+
+          <p>
+            <a href="http://www.877isoldit.com/index.asp" target="clear">ISoldIt</a> offers a turn key solution to sell
+            items for fundraisers on eBay through its network of retail locations. <a
+              href="http://www.877isoldit.com/index.asp" target="clear">Read About</a> how they can make your auction
+            fundraising a breeze.<br>
+          </p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/findvolutere.gif" alt="">
+            <br>
+            <a href="volunteermatch.html">
+              <img src="../../images/volunteer_logo_sm (1).gif" alt="">
+            </a>
+            
+          </div>
+          <p>
+            <a href="volunteermatch.html">VolunteerMatch</a> connects people with
+            causes that need their help. <a href="volunteermatch.html">Read This
+              Story</a> about how you can use their service to find a volunteer or volunteer opportunity.<br>
+            <img src="https://www.fundraisers.com/resources/picsresources/pixelclear.gif" height="10" width="10" alt="">
+            <a href="http://www.volunteermatch.org/post">Post An Opportunity</a>, or search for a volunteer opportunity
+            in your area by entering your zip code below.<br>
+          </p>
+        </div>
+        <div class="text-center">
+          <form action="http://www.volunteermatch.org/results/" method="GET">
+            <input type="hidden" name="radius" value="20">
+            <input type="hidden" name="category" value="Everything">
+            <input type="hidden" name="sortby" value="newness">
+            <input type="HIDDEN" name="submit" value="y">
+            ZIP
+            <input style="font: 8pt, Verdana; background: white; border: 1px solid black;" type="text" name="zip"
+              size="8" fdprocessedid="mxlz04"><input
+              style="font: 9pt, Verdana; font-weight: bold; background: white; border: 1px solid black;" name="Search"
+              type="submit" value="Go" fdprocessedid="2bhf4t">
+          </form>
+        </div>
+        <br>
+        <div>
+          <div class="text-center">
+            <img src="../../images/legalresources.gif" alt="">
+            <br>
+            <img src="../../images/grassroots.gif" alt="">
+          </div>
+          <a href="https://www.fundraisers.com/resources/grassroots.html">Grassroots.org</a> is a source of valuable
+          information and free services for non-profit organizations. <a
+            href="https://www.fundraisers.com/resources/grassroots.html">Read Alon Nager's Article</a> on how to form a
+          non-profit corporation.<br>
+        </div>
+        <br>
+        <div class="text-center">
+          <img src="../../images/netlingo.gif" alt="">
+        </div>
+        <form action="http://www.netlingo.com/searchaction.cfm" method="post" target="_blank">
+          <table class="main-table">
+            <tr>
+              <td bgcolor="#FFFFFF" class="text-center" id="logo">
+                <a href="http://www.netlingo.com/pocket.cfm" target="_blank">
+                  <img src="https://www.fundraisers.com/resources/picsresources/pocketportal.jpg" alt="">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#F0F8FF" class="text-center" id="search-message">
+                <strong>Browse a list of Internet terms by clicking on the Pocket Dictionary, or Search for a specific
+                  term.</strong>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#000033" class="text-center" id="search-input">
+                <br>
+                <div align="center">
+                  <input type="text" name="wordsearch" size="19" fdprocessedid="i0voph" style="margin-bottom: 10px;">
+                </div>
+              </td>
+            </tr>
+            <tr>
+
+              <td bgcolor="#000033" class="text-center" id="search-button">
+                <div align="center">
+
+                  <input name="netlingosearch" type="submit" value="GO :-)" fdprocessedid="ltfqns"
+                    style="margin-bottom: 10px;">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#FFFFFF" class="text-center" id="info-table">
+                <table width="100%" cellspacing="0" cellpadding="5">
+                  <tr>
+                    <td class="text-center" id="info-text">
+                      <p align="center">
+                        <strong>Be a better online fundraiser!<br>NetLingo</strong>
+                        <span>
+                          is an award-winning dictionary of Internet terms. It contains thousands of words and
+                          definitions that describe the online world of business, technology, and communication. It will
+                          help to educate and entertain you about the lingo used in the online world :^)
+                        </span>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </form>
+
+      </div>
+      <div class="col-lg-6">
+              <div class="text-center" style="margin-bottom: 10px;">
+                <img src="../../images/grassrootsbanner.jpg" alt="">
+              </div>
+              <h2><strong>Forming A Tax-Exempt Nonprofit Corporation</strong></h2>
+              <h4><strong>Guest Article By Alon Nager, Legal Counsel for Grassroots.org<br></strong></h4>
+              <h6><strong>Introduction</strong></h6>
+              
+              <p>
+              
+                Starting a nonprofit corporation is not as difficult as you may think.  With the right tools, ideas, structure and support, forming a nonprofit should be a piece of cake.  That is not to say that the process isn't time consuming.  Many hours must be devoted to the process of making your organization official and tax-exempt.  Before deciding whether to proceed with the process, you may first want to consider the advantages and disadvantages.<br>
+                <br>
+                <img src="../../images/legal.jpg" style="float: right;">
+                There are important advantages to forming a nonprofit corporation.  First, you are eligible to apply for and receive federal and state tax exemption.  These exemptions can save your organization hundreds or thousands of dollars every year.  Second, you may apply for and receive many public and private donations which are not available to other types of organizations or individuals.  Third, corporate status will protect you and others against personal liability should a lawsuit ensue.  Fourth, your organization will possess a separate and perpetual legal existence with formality and structure.<br>
+                <br>
+                Forming a nonprofit corporation also has its disadvantages.  First, there is a lot of paperwork involved in forming the corporation, filing for tax-exemption and keeping in line with annual reporting requirements.  Second, the government charges various costs and fees to incorporate and file for tax-exempt status.  Third, much time and energy is required to run the business.  Fourth, there are various restrictions imposed upon dissolution, namely, you cannot distribute any profit to board members.  Fifth, there are restrictions placed on your organization's activities.  For example, you can only focus a small amount of your efforts on political activities.  Finally, you are always subject to oversight by the Attorney General of state.<br>
+                <br>
+                When forming a non-profit corporation, there are some extra steps involved.  In addition to preparing and filing incorporation documents, paying filing fees and electing board members, you must apply for tax-exempt status with the IRS and your state's taxing body.  This issue is discussed in more detail later in the article.  For now we should consider the purposes for which you may form a nonprofit.<br>
+            </p>
+            <h4><strong>Nonprofit vs For-Profit</strong></h4>
+            <p>
+                <img src="../../images/grassrootslogo.jpg" style="float:left;" alt="">
+                    Nonprofit corporations differ significantly from for-profit corporations in several ways.  Nonprofit corporations are formed pursuant to different state law than for-profit corporations.  Due to this fact, the requirements for incorporation, day-to-day operations, reporting requirements and handling of finances will all differ.  The two types of organization also differ in what they are allowed to try and accomplish.<br>
+                    <br>
+                    Unlike for-profit corporations, which are generally formed for "any lawful purpose", nonprofit corporations must be formed to accomplish one or more specific purposes. These purposes typically benefit either the general public, part of the community, or a particular group of members.  Typically, a tax-exempt nonprofit group must be formed to pursue educational, charitable, scientific, religious, literary, or cultural goals.   Only these groups will gain exemption under section 501(c)(3) of the IRS code.<br>
+                    <br>
+                    In other exceptional cases a group can be formed for other purposes yet still be eligible for tax-exempt status.  Public schools, libraries, and other government organizations also qualify as public charities, although they usually have not applied for 501(c)(3) status.  There are other sections of the code which provide for different exemptions for organizations with different structures and purposes.<br>
+            </p>
+            <h4><strong>Starting Your Nonprofit</strong> </h4>
+            <p>
+                <img src="../../images/legalgavel.jpg" style="float: right;">
+                Incorporating your nonprofit will be a time consuming and sometimes tedious process, but will be rewarding if you do it right. Use the following information to guide you through the process, making sure that you complete all the steps:
+            </p>
+            <h6><strong>1) Visit your Secretary of State's website to receive valuable information and materials</strong></h6>
+            <p>
+                First, decide which state you want to incorporate in.  Most nonprofits incorporate in the state where their principal place of business is located.  Next, contact the secretary of state from the state you choose.  (To see a list of Secretary of State web sites go to this site.)   Some states provide an "Articles of Incorporation" form and pertinent state statutes that will help you create your bylaws and other important corporate documents.</p>
+                <h6><strong>2) Choose and protect your corporate name</strong></h6>
+                <p>
+                    This step is critical because your name will be used in your stationery, business cards, contracts, etc. You also want to make sure that you pick a name that conveys to others what you hope to achieve through your nonprofit.  Remember that your name is the first thing that the community, business partners and grant agencies will see.
+                <br><br>
+                
+This step is critical because your name will be used in your stationery, business cards, contracts, etc. You also want to make sure that you pick a name that conveys to others what you hope to achieve through your nonprofit.  Remember that your name is the first thing that the community, business partners and grant agencies will see.
+<br><br>
+
+There are a couple of other legal requirements to watch out for in choosing your corporate name.  First, many states require you to use a corporate designator such as Incorporated, Company, Corporation, etc.  Second, some states prohibit the use of certain words in a nonprofit's corporate name.  Contact your secretary of state, research state statutes, or simply contact Grassroots.org  for help with creating your corporate name.
+</p>
+
+<h4><strong>3) Draft and file the articles of incorporation</strong></h4>
+            <p><img src="../../images/legalbooks.jpg" alt="" style="float:left; margin-right: 10px;">
+                The "Articles of Incorporation" document is your primary incorporation document and must be carefully drafted and reviewed. The filing of this paperwork with the Secretary of State, which generally costs between $100 and $200, triggers the beginning of your organization's existence. For guidance on how to draft and file the Articles of Incorporation please review the materials provided to you from your Secretary of State as well as the relevant state statutes. If you use another corporation's articles as your model, please be sure to follow state law and tailor the articles to your organizational needs. Simply copying the articles from another source can have harmful consequences.
+                <br>
+            <br>Once you have completed the articles, it is a good idea to have it reviewed by a legal professional. For qualifying Grassroots.org members, we will review your legal incorporation documents at no charge. For more information please contact Grassroots.org.</p> 
+        <h6>4) Prepare bylaws for your nonprofit</h6>
+        <p>
+            
+The bylaws are central to the way your corporation will be organized and operate.   The bylaws set forth the procedures for holding meetings and elections, resolving disputes, managing corporate operations, insuring corporate heads, etc.  The bylaws also contain blanket tax provisions applicable to tax-exempt nonprofit corporations.
+<br><br>
+
+It is imperative as with the articles that the bylaws are not treated as a meaningless, tedious legal requirement.   The bylaws will dictate how your organization functions and in turn what it becomes in the future.  For this reason alone, you should make sure that you understand what each provision means and what its effect is on the corporation.  You must also be careful to follow state law.
+<br>
+
+For some examples of nonprofit bylaws, please visit the following links:
+<br>
+<A HREF="http://www.tnwoodturners.org/bylaws.htm" TARGET="clear">http://www.tnwoodturners.org/bylaws.htm</A><BR>
+    <A HREF="http://www.littlerocklake.org/501c3.htm" TARGET="clear">http://www.littlerocklake.org/501c3.htm</A><BR>
+    <A HREF="http://www.mncn.org/bylaws.htm" TARGET="clear">http://www.mncn.org/bylaws.htm</A><BR>
+    <A HREF="http://www.veteransparty.us/By-Laws.htm" TARGET="clear">http://www.veteransparty.us/By-Laws.htm</A><BR>
+        </p>  
+        <h6><strong>5) Apply for federal tax exemption</strong></h6>
+        <p>
+            The final step in the incorporation process will be filing for tax-exempt status with the IRS.   This is a very important step in that a favorable decision may exempt your organization from paying corporate income tax, may give donors tax incentives and may also provide you with other tax relief.  Tax-exempt status will also allow your organization to apply for grant money.  
+Please note that you should be timely in your filing. You should file within 27 months after you file your articles of incorporation.  Do not procrastinate! There are many pitfalls if you file late.<BR>
+
+Before you begin your application, be aware that the entire process will take an average of 12 hours to complete.   The IRS estimates that it takes about 4 hours just to familiarize yourself with the complicated forms.<BR>
+
+When you are ready to begin:<BR>
+
+
+a) Go to the IRS exemption organization information page.<BR>
+
+b) Search for the applicable form (all forms require Adobe Acrobat reader on your machine):
+Form 1023 for 501c3 charitable, scientific, religious, educational, or literary purposes
+Form 1024 for most other purposes<BR>
+
+c) Open the appropriate form on your computer and complete the forms.
+If you are having trouble filling out the forms, determining which form to use, or wish to have your forms reviewed by our team, please apply for our free legal consulting program.<BR>
+
+6)  Appoint the initial directors and hold the first meeting of the board<BR>
+
+7)  Obtain any licenses and permits that are required<BR>
+
+        </p>
+        <h4><strong>Conclusion</strong>
+        </h4>
+        <p>
+<img src="../../images/legalscale.jpg" style="float: left; margin-right: 10px;">
+            Once you have completed the steps listed above you have successfully incorporated your nonprofit and applied for 501c3 status.   In most cases your 501c3 status will be granted so long as you completed the forms correctly and your organization's purpose is indeed a "charitable" one.  The process of incorporating can seem tedious, time-consuming and difficult at times, but it is definitely worthwhile in the long run for a successful organization.<br>
+            <br>
+            Following incorporation there are still many tasks that one must become familiar with, such as filing tax returns, employment taxes, preparing minutes of corporate meetings, handling charitable donations, etc.  If you wish to speak with a professional about issues pertaining to the operation of a nonprofit, please apply for our free legal consulting program.<br>
+               <br>
+            <strong>Links to Other Information</strong><br>
+            
+            <a href="http://www.philanthropy.org/" target="clear">Center of Philanthropy and Civil Society</a><br>
+            <a href="http://www.charitychannel.org/" target="clear">Charity Channel</a><br>
+            <a href="http://www.nonprofits.org/" target="clear">Internet Non-profit Center</a><br>
+            <a href="http://www.tgci.com/magazine/96summer/tobe1.asp" target="clear">The Grantsmanship Center</a><br>
+            <a href="http://www.why-war.com/guides/2003/10/nonprofit.html" target="clear">Why War?</a><br>
+            </p>
+            <h4>About Grassroots.org</h4>
+            <p>
+                <strong>Grassroots.org</strong> is a 501(c)(3) nonprofit organization that provides free services to other nonprofit organizations in the US and Canada, including free web hosting, free web design and free legal consulting.  Grassroots.org also provides information on various issues to the general public through the use of its 40+ topical sites, directories  (see <a href="http://www.shelters.org" target="clear">http://www.shelters.org</a>), its blog (<a href="http://www.grassroots.org/blog" target="clear">http://www.grassroots.org/blog</a>) and its discussion forums (<a href="http://www.grassroots.org/forums" target="clear">http://www.grassroots.org/forums</a>).<br></p>
+                <br>
+                <div class="text-center">
+                    <img src="../../images/grassrootsbanner.jpg" alt="">
+                </div>
+                
+        </div>
+      <div class="col-lg-3">
+        <div>
+          <div class="text-center">
+            <img src="../../images/featuredpokerevents.gif" alt="">
+          </div>
+          <div class="text-center">
+            <img src="../../images/pokercareslogoside.jpg" alt="">
+          </div>
+          <p>
+            
+              <strong>Poker Cares</strong> is a network of poker and fundraising experts who care to make a difference in the community. Find out how you can organize a charity poker tournament event for your next fundraiser. See the FundRaisers.com... <a href="https://www.fundraisers.com/resources/charitypoker.html">Poker Resources Page</a>.<br>
+          </p>
+          <h4><strong>Poker Fundraiser For Diabetes</strong></h4>
+          <p>  Read about how <a href="https://www.fundraisers.com/ideas/charitypoker.html">Pulver Enterprises</a> hosted a successful Texas Hold'em Tournament to benefit Diabetes causes.<br></p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/charitypoker.gif" alt="">
+          </div>
+          <p>
+            Want to find out about Charity Poker Tournaments or let us know about yours? We want to hear from you. Experts wanted! See the Fundraisers.com...<br>
+            <a href="http://www.myspace.com/charitypoker" target="clear">CHARITY POKER BLOG</a></p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/causetechnology.gif" alt="">
+          </div>
+          <div class="text-center">
+            <img src="../../images/youtubenonprofitlogo.jpg" alt="">
+          </div>
+          <p>
+            Get your nonprofit's message out to the world via the world's largest online video community. Sign up today for a dedicated <a href="http://www.youtube.com/nonprofits">YouTube Nonprofit Channel</a>.<br>
+            </p>
+            <div class="text-center">
+              <img src="../../images/TS-horiz-logo_sm.gif" alt="">
+            </div>
+            
+            <p>
+              Read about all the valuable technology articles that <a href="https://www.fundraisers.com/resources/techsoup.html">TechSoup</a> offers to help your organization effectively plan and use technology.<br>
+             </p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/tellafriend.gif" alt="">
+            <br>
+            <img src="../../images/hugging.jpg" alt="">
+          </div>
+
+          <p>
+            Thanks for visiting FundRaisers.com! Share it with other people for their fundraising campaigns.<br></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Script -->
+
+</body>
+
+</html>

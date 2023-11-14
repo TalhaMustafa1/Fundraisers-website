@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="resources.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- mdb -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <title>Fundraisers</title>
+
+</head>
+<style>
+  .navbar-toggler-icon {
+    color: white;
+  }
+</style>
+
+<body>
+  <!-- navbar starts -->
+  <nav class="navbar  navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html"><img src="../../images/mastheadlogo_01.gif" alt="" width="200px"
+          height="60px"></a>
+      <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color: #fff; font-size: 28px;"></i>
+        </span>
+      </button>
+      <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title " id="offcanvasNavbarLabel"></h5>
+          <button type="button"
+            style="font-weight: bold; color: #fff; font-size: 27px; border: none;  border: none; background: none; padding: 0; margin: 0;outline: none; box-shadow: none; "
+            class="btn " data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fas fa-times" style="color: white;"></i> <!-- Font Awesome close icon -->
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 py-2" style="gap:20px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/awarnessCalendar/awarness.html">Awarness Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/ideas/index.html">Ideas </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cause Celebrites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giving People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends -->
+  <div class="container container-1">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="text-center">
+          <img src="../../images/featuredauctionsol.gif" alt="">
+        </div>
+        <div class="text-center">
+          <a href="https://www.ebay.com/">
+            <img src="../../images/ebaygivingworks.gif" alt="">
+          </a> 
+        </div>
+        <div class="text-center">
+          <a href="mission-fish.html">
+            <img src="../../images/MF-color-logo_sm.gif" alt="">
+          </a>
+        </div>
+        <p>Read about how registering with <a
+             href="mission-fish.html">MissionFish</a> can help you fundraise for
+          your favorite causes through charity auctions on eBay, The World's Online Marketplace®.<br></p>
+        <div>
+          <div class="text-center">
+            <img src="../../images/saveimg.gif" alt="">
+          </div>
+
+          <p>
+            <a href="http://www.877isoldit.com/index.asp" target="clear">ISoldIt</a> offers a turn key solution to sell
+            items for fundraisers on eBay through its network of retail locations. <a
+              href="http://www.877isoldit.com/index.asp" target="clear">Read About</a> how they can make your auction
+            fundraising a breeze.<br>
+          </p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/findvolutere.gif" alt="">
+            <br>
+            <a href="volunteermatch.html">
+                <img src="../../images/volunteer_logo_sm (1).gif" alt="">
+            </a>
+            
+          </div>
+          <p>
+            <a href="volunteermatch.html">VolunteerMatch</a> connects people with
+            causes that need their help. <a href="https://www.fundraisers.com/resources/volunteermatch.html">Read This
+              Story</a> about how you can use their service to find a volunteer or volunteer opportunity.<br>
+            <img src="https://www.fundraisers.com/resources/picsresources/pixelclear.gif" height="10" width="10" alt="">
+            <a href="http://www.volunteermatch.org/post">Post An Opportunity</a>, or search for a volunteer opportunity
+            in your area by entering your zip code below.<br>
+          </p>
+        </div>
+        <div class="text-center">
+          <form action="http://www.volunteermatch.org/results/" method="GET">
+            <input type="hidden" name="radius" value="20">
+            <input type="hidden" name="category" value="Everything">
+            <input type="hidden" name="sortby" value="newness">
+            <input type="HIDDEN" name="submit" value="y">
+            ZIP
+            <input style="font: 8pt, Verdana; background: white; border: 1px solid black;" type="text" name="zip"
+              size="8" fdprocessedid="mxlz04"><input
+              style="font: 9pt, Verdana; font-weight: bold; background: white; border: 1px solid black;" name="Search"
+              type="submit" value="Go" fdprocessedid="2bhf4t">
+          </form>
+        </div>
+        <br>
+        <div>
+          <div class="text-center">
+            <img src="../../images/legalresources.gif" alt="">
+            <br>
+            <img src="../../images/grassroots.gif" alt="">
+          </div>
+          <a href="https://www.fundraisers.com/resources/grassroots.html">Grassroots.org</a> is a source of valuable
+          information and free services for non-profit organizations. <a
+            href="https://www.fundraisers.com/resources/grassroots.html">Read Alon Nager's Article</a> on how to form a
+          non-profit corporation.<br>
+        </div>
+        <br>
+        <div class="text-center">
+          <img src="../../images/netlingo.gif" alt="">
+        </div>
+        <form action="http://www.netlingo.com/searchaction.cfm" method="post" target="_blank">
+          <table class="main-table">
+            <tr>
+              <td bgcolor="#FFFFFF" class="text-center" id="logo">
+                <a href="http://www.netlingo.com/pocket.cfm" target="_blank">
+                  <img src="https://www.fundraisers.com/resources/picsresources/pocketportal.jpg" alt="">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#F0F8FF" class="text-center" id="search-message">
+                <strong>Browse a list of Internet terms by clicking on the Pocket Dictionary, or Search for a specific
+                  term.</strong>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#000033" class="text-center" id="search-input">
+                <br>
+                <div align="center">
+                  <input type="text" name="wordsearch" size="19" fdprocessedid="i0voph" style="margin-bottom: 10px;">
+                </div>
+              </td>
+            </tr>
+            <tr>
+
+              <td bgcolor="#000033" class="text-center" id="search-button">
+                <div align="center">
+
+                  <input name="netlingosearch" type="submit" value="GO :-)" fdprocessedid="ltfqns"
+                    style="margin-bottom: 10px;">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#FFFFFF" class="text-center" id="info-table">
+                <table width="100%" cellspacing="0" cellpadding="5">
+                  <tr>
+                    <td class="text-center" id="info-text">
+                      <p align="center">
+                        <strong>Be a better online fundraiser!<br>NetLingo</strong>
+                        <span>
+                          is an award-winning dictionary of Internet terms. It contains thousands of words and
+                          definitions that describe the online world of business, technology, and communication. It will
+                          help to educate and entertain you about the lingo used in the online world :^)
+                        </span>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </form>
+
+      </div>
+      <div class="col-lg-6">
+          <h4>Featured Resource:</h4>
+          <h2>VolunteerMatch: Igniting Fires & Fanning Flames of Volunteerism</h2>
+          <p><img src="../../images/volunteer_match.gif" style="float: right;" alt="">
+            VolunteerMatch: Igniting Fires & Fanning Flames of Volunteerism <br>
+            Their 
+            formal Mission Statement sums it up: VolunteerMatch is dedicated to 
+            helping everyone find a great place to volunteer. Their official slogan 
+            puts it even more succinctly: Get Out. Do Good. Need we, or they, say 
+            more? Probably not, but brevity is not our strongest suit. Allow us 
+            to sing the praises of VolunteerMatch.
+        <br>
+        <br>
+        A familiar 
+          tune from the roots of Americana repeats the refrain: It only takes 
+          a spark to get a fire going, and soon all those around will warm up 
+          to its glowing. VolunteerMatch provides the spark. Willing volunteers, 
+          worthy nonprofit organizations, and corporate partners pour on the fuel 
+          for a bonfire of satisfying opportunities; their cooperative efforts 
+          result in a warm altruistic and philanthropic glow spreading through 
+          communities across America.
+    </p>
+    <p>The successful 
+        approach by VolunteerMatch is threefold. They provide Community Service 
+        <img src="../../images/girl.gif"  vspace="5" align="l" style="float: left; margin-right: 7px;">Organizations 
+        with a highly effective volunteer recruitment tool. Many small to medium 
+        nonprofit groups benefit from VolunteerMatch's powerful presence within 
+        the online community of giving. Individual volunteers receive instant 
+        access to a wealth of opportunities linked to their geographic location, 
+        age range, passion for particular causes, and hours of availability 
+        for service. VolunteerMatch 's corporate services provides over 20 companies 
+        with a far more efficient method of maximizing corporate volunteering 
+        efforts.</p>
+        <p>“VolunteerMatch 
+            is designed to make it easier than ever for anyone to find a rewarding 
+            way to volunteer,” said Jason Willett, director of communications 
+            for VolunteerMatch. “We succeed because our community is made 
+            up of a network of nonprofit, volunteer and business leaders committed 
+            to civic engagement.”
+        </p>
+            <p>This triple 
+                threat to apathy encourages participation by all sectors of the philanthropic 
+                community: Volunteers, Community Service Groups, Corporate Partnerships. 
+                The simplicity of the idea and the development of powerful software 
+                have been the keys to VolunteerMatch's success. Their website is amazingly 
+                easy to navigate. It includes an evolving list of elements used to narrow 
+                a potential volunteers search for opportunities to work <img src="../../images/search.gif" style="float: right;">with 
+                organizations. This criteria leads to potentially satisfying volunteer 
+                experiences and promotes ongoing and growing levels of volunteer participation. 
+                The result: individuals and organizations blazing with passion for service 
+                to others. <br><br>
+                Community 
+                Service Organizations are encouraged to register with VolunteerMatch. 
+                They are rewarded for registration with services to assist with the 
+                recruitment and management of volunteers. All tax-exempt organizations 
+                are eligible to register including: social, civic, charitable, educational, 
+                governmental, and political groups. This growing community is composed 
+                of over 25,000 organizations representing more than 30,000 volunteer 
+                opportunities.
+            </p>
+
+                    <h4><strong>What 
+                        nonprofit organizations are saying about VolunteerMatch:</strong></h4>
+                        <p>"Thanks 
+                            again for making your site available to volunteers. Our little Village 
+                            Temple Soup Kitchen in New York City, which feeds 150 needy people each 
+                            week, has had over 1000 page views in the last 9 months and over 100 
+                            new volunteers since I listed our opportunity on the VolunteerMatch 
+                            site. It has really made a difference."<br>
+                            <em>J. Dean Chavooshian, Chairman, Village Temple Soup Kitchen</em></p>
+                            <p>"Thanks 
+                                to VolunteerMatch, we have had an overwhelming response to our volunteer 
+                                opportunities. In fact, we have had so many volunteers that we have 
+                                been able to create extra volunteer opportunities! Thanks to VolunteerMatch, 
+                                our program is expanding. And best of all, the service is so useful 
+                                that I can keep up!"<br>
+                                <em>Bev Kay, Board Member, The Holiday Project</em></p>
+                                <p>Many individuals 
+                                    feel a burning desire to serve others and discover difficulties finding 
+                                    a fulfilling opportunity. VolunteerMatch makes is as <!--- <a href="http://www.volunteermatch.org/about/keyinfo/flashgame.jsp" target="_blank"><img src="picsresources/volunteer_game.gif" width="200" height="234" hspace="8" vspace="5" border="0" align="left"></a> ---> easy 
+                                    as the click of a computer mouse. After logging onto their website, 
+                                    visitors are prompted to enter their ZIP code. Further information results 
+                                    in a wide range of volunteer opportunities located within most communities.</p>
+                                    <p>The criteria 
+                                        used to assist with matching volunteers to opportunities and organizations 
+                                        includes: personal causes of interest, professional and technical skills, 
+                                        scheduling and availability, and geographic location. Frustrations involved 
+                                        with securing meaningful volunteer appointments melt away as a wealth 
+                                        of options blaze to life through clicking cursors. To date, VolunteerMatch, 
+                                        has provided more than one and a half million volunteer referrals.</p>
+                                        <h4><strong>What 
+                                            volunteers say about VolunteerMatch:</strong></h4>
+                                            <p>"I 
+                                                just want to thank you for your wonderful service. I found the perfect 
+                                                opportunity 2 blocks from home! I will be a general office aid for the 
+                                                Bronx YMCA for 2 days a week. I would never have found it without your 
+                                                service. Again, thank you very, very much."<br>
+                                                <em>Emma Padilla, Volunteer, The Bronx YMCA of Greater New York</em></p>
+                                                <p>"I 
+                                                    found VolunteerMatch and thought it was very helpful. It's a much easier 
+                                                    way to find a place to volunteer."<br>
+                                                    <em>Sophia Wu, 8th Grade Volunteer, Canyon Hills Jr. High,<br>
+                                                    Chino Hills, California</em></p>
+                                                    <p>"I 
+                                                        visited your site earlier in the year, and contacted our Zoo to become 
+                                                        a volunteer. I just completed Docent training there and am having the 
+                                                        best time. At the Zoo, I feel as if I'm making a difference. I'm helping 
+                                                        animals and teaching others to respect all living creatures, even those 
+                                                        normally unloved like reptiles and amphibians."<br>
+                                                        <em>Barbara Mathieson, Volunteer, Nashville Zoo</em></p>
+                                                        <p>A customized, 
+                                                            co-branded version of VolunteerMatch , "VolunteerMatch Corporate," 
+                                                            is licensed to corporations, making it easier for employees to volunteer. 
+                                                            Corporate partners and participating companies read like a who's who 
+                                                            list of Fortune 500 and/or Blue Chip corporations. They include: Nike, 
+                                                            Dell, Microsoft, AT &amp; T Wireless, Verizon, Target, Coca-Cola, Charles 
+                                                            Schwab, Lexmark, Merrill Lynch, Lucent Technologies, and Gap, Inc., 
+                                                            among others.</p>
+                                                            <p>Numerous 
+                                                                studies have demonstrated an increase in job satisfaction and employee 
+                                                                loyalty when opportunities to give to others are made available. Such 
+                                                                volunteer opportunities include assistance with special events, ongoing 
+                                                                volunteer positions, and technical/professional <img src="../../images/old-one.gif" style="float: right;">services 
+                                                                offered on a pro-bono basis. Participating companies are well aware 
+                                                                of the benefits derived from a partnership with VolunteerMatch Corporate. 
+                                                                They're staunch supporters and consistent benefactors of this valuable 
+                                                                service; lighting fires under uninitiated companies is a pressing goal. 
+                                                                VolunteerMatch strives to help companies realize the potential benefits 
+                                                                of a work environment that promotes giving to others.</p>
+                                                               <h4><strong>What 
+                                                                VolunteerMatch Corporate Clients have to say:</strong></h4> 
+                                                                <p>"VolunteerMatch 
+                                                                    Corporate is an efficient and fun way that enables our employees to 
+                                                                    'expand their playing field' and get involved in the community. Compared 
+                                                                    to traditional methods of gathering and communicating volunteer information, 
+                                                                    VolunteerMatch Corporate has made opportunities for community service 
+                                                                    more accessible to employees. It also provides us with a convenient 
+                                                                    way to track and recognize employees for their efforts."<br>
+                                                                    <em>Gina A. Warren, Director of Global Community Affairs, Nike</em></p>
+                                                                    <p>"The 
+                                                                        Coca-Cola Company and its employees are committed to bringing value 
+                                                                        to communities nationwide through volunteerism and community service 
+                                                                        activities. By providing our employees access to VolunteerMatch, we 
+                                                                        give them direct, fast and easy connections to organizations throughout 
+                                                                        the country that need volunteer support. At The Coca-Cola Company, VolunteerMatch 
+                                                                        has proven a valuable resource for our employees and a great tool for 
+                                                                        Reaching Out, our Company's employee volunteer program."<br>
+                                                                        <em>Dominique V. Love, Manager, Corporate Contributions, The Coca-Cola 
+                                                                        Company</em></p>
+                                                                        <p>Fundraisers.Com 
+                                                                            is not alone in singing around VolunteerMatch's community campfire. 
+                                                                            Their user-friendly website has won Webby Awards and honors have been 
+                                                                            received from the Smithsonian Institution and MIT. The Wall Street Journal, 
+                                                                            The New York Times, The Washington Post, USA Today, Forbes, ABC News, 
+                                                                            CBS, MSNBC and the Oprah Winfrey Show have melted proverbial s'mores 
+                                                                            around the flames ignited by VolunteerMatch's exemplary services. This 
+                                                                            choir of admirers spreads the warmth and encourages everyone to "pass 
+                                                                            it on."</p>
+                                                                            <p><i>-- DeWayne Lumpkin</i></p>
+                                                                            <p><strong>Read 
+                                                                                More About:</strong>
+                                                                                <br>
+                                                                                <a href="http://www.volunteermatch.com" target="_blank">www.volunteermatch.com</a> 
+                                                                              </p>
+                                                                
+
+      </div>
+      <div class="col-lg-3">
+        <div>
+          <div class="text-center">
+            <img src="../../images/featuredpokerevents.gif" alt="">
+          </div>
+          <div class="text-center">
+            <img src="../../images/pokercareslogoside.jpg" alt="">
+          </div>
+          <p>
+            
+              <strong>Poker Cares</strong> is a network of poker and fundraising experts who care to make a difference in the community. Find out how you can organize a charity poker tournament event for your next fundraiser. See the FundRaisers.com... <a href="https://www.fundraisers.com/resources/charitypoker.html">Poker Resources Page</a>.<br>
+          </p>
+          <h4><strong>Poker Fundraiser For Diabetes</strong></h4>
+          <p>  Read about how <a href="https://www.fundraisers.com/ideas/charitypoker.html">Pulver Enterprises</a> hosted a successful Texas Hold'em Tournament to benefit Diabetes causes.<br></p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/charitypoker.gif" alt="">
+          </div>
+          <p>
+            Want to find out about Charity Poker Tournaments or let us know about yours? We want to hear from you. Experts wanted! See the Fundraisers.com...<br>
+            <a href="http://www.myspace.com/charitypoker" target="clear">CHARITY POKER BLOG</a></p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/causetechnology.gif" alt="">
+          </div>
+          <div class="text-center">
+            <img src="../../images/youtubenonprofitlogo.jpg" alt="">
+          </div>
+          <p>
+            Get your nonprofit's message out to the world via the world's largest online video community. Sign up today for a dedicated <a href="http://www.youtube.com/nonprofits">YouTube Nonprofit Channel</a>.<br>
+            </p>
+            <div class="text-center">
+              <img src="../../images/TS-horiz-logo_sm.gif" alt="">
+            </div>
+            
+            <p>
+              Read about all the valuable technology articles that <a href="https://www.fundraisers.com/resources/techsoup.html">TechSoup</a> offers to help your organization effectively plan and use technology.<br>
+             </p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/tellafriend.gif" alt="">
+            <br>
+            <img src="../../images/hugging.jpg" alt="">
+          </div>
+
+          <p>
+            Thanks for visiting FundRaisers.com! Share it with other people for their fundraising campaigns.<br></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Script -->
+
+</body>
+
+</html>
