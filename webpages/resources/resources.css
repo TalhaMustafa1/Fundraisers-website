@@ -80,6 +80,7 @@ nav{
     font-size: 15px; 
     color: black;
 }
+
 @media screen and (max-width: 992px) {
     .sidebar{
           background-color: #cc0000!important;
@@ -94,4 +95,11 @@ nav{
     width: 80px !important; 
     background-color: white;
   }
+  .charitypoker{
+    flex-direction: column !important;
+}
+.photoflop-img{
+    width: 80px;
+    height: 140px;
+}
 }
