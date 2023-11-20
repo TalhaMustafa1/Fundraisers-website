@@ -2,143 +2,1077 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="ideas.css">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- mdb -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
-    <title>Fundraisers</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="ideas.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- mdb -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <title>Fundraisers</title>
+
 </head>
+<style>
+  .navbar-toggler-icon {
+    color: white;
+  }
+</style>
+
 <body>
-        <!-- Navbar starts -->
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="../../images/mastheadlogo_01.gif" alt="" width="200px" height="60px">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="color:white;"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav" style="margin-left: auto; gap: 20px;">
-                        <li class="nav-item">
-                            <a class="nav-link " href="aboutus.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Awareness Calendar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ideas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cause Celebrities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Giving People</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Resources</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+  <!-- navbar starts -->
+  <nav class="navbar  navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html"><img src="../../images/mastheadlogo_01.gif" alt="" width="200px"
+          height="60px"></a>
+      <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color: #fff; font-size: 28px;"></i>
+        </span>
+      </button>
+      <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title " id="offcanvasNavbarLabel"></h5>
+          <button type="button"
+            style="font-weight: bold; color: #fff; font-size: 27px; border: none;  border: none; background: none; padding: 0; margin: 0;outline: none; box-shadow: none; "
+            class="btn " data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fas fa-times" style="color: white;"></i> <!-- Font Awesome close icon -->
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 py-2" style="gap:20px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../webpages/aboutus/index.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/awarnessCalendar/awarness.html">Awarness Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/ideas/index.html">Ideas </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cause Celebrites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giving People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/resources/resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends -->
+  <div class="container container-1">
+    <div class="row">
+       <div class="col-lg-3 ">
+        <div class="text-center">
+          <img src="../../images/featuredfundraisingtips.gif" alt="">
+        </div>
+       
+        <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist"
+        style="" aria-orientation="vertical">
+        <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link1-tab" data-mdb-toggle="pill"
+            href="#v-pills-link1" role="tab" aria-controls="v-pills-link1"
+            aria-selected="true" >First Time Fund Raising Tips</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link2-tab" data-mdb-toggle="pill"
+            href="#v-pills-link2" role="tab" aria-controls="v-pills-link2"
+            aria-selected="true" >How To Find The Right Fundraising Product</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link3-tab" data-mdb-toggle="pill"
+            href="#v-pills-link3" role="tab" aria-controls="v-pills-link3"
+            aria-selected="true" >Event Fundraising Ideas</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link4-tab" data-mdb-toggle="pill"
+            href="#v-pills-link4" role="tab" aria-controls="v-pills-link4"
+            aria-selected="true" >Getting Your Fundraiser Noticed</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link5-tab" data-mdb-toggle="pill"
+            href="#v-pills-link5" role="tab" aria-controls="v-pills-link5"
+            aria-selected="true" >Ways To Motivate Your Group</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link6-tab" data-mdb-toggle="pill"
+            href="#v-pills-link6" role="tab" aria-controls="v-pills-link6"
+            aria-selected="true" >How To Reach Your Finicial Goals</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link7-tab" data-mdb-toggle="pill"
+            href="#v-pills-link7" role="tab" aria-controls="v-pills-link7"
+            aria-selected="true" >Direct Sale Products vs Order Taker Fundraiser</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link8-tab" data-mdb-toggle="pill"
+            href="#v-pills-link8" role="tab" aria-controls="v-pills-link8"
+            aria-selected="true" >How To Choose A Fundraising Company</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link9-tab" data-mdb-toggle="pill"
+            href="#v-pills-link9" role="tab" aria-controls="v-pills-link9"
+            aria-selected="true" >Top Ten Tips For Fundraising Success</a>
+            <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link10-tab" data-mdb-toggle="pill"
+            href="#v-pills-link10" role="tab" aria-controls="v-pills-link10"
+            aria-selected="true" >The Scoop On Cookie Dough Fundraisers</a>
+
         
-        <!-- Navbar ends -->
-    <main>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="text-center">
-                            <img src="../../images/featuredfundraisingtips.gif" alt="">
-                        </div>
-                        <div>
-                            <a href="firsttime.html">First Time Fundraising Tips</a><br>
-                            
-                            <a href="howtopick.html">How To Pick The Right Fundraising Product</a><br>
-                            
-                            <a href="eventfundraising.html">Event Fundraising Ideas</a><br>
-                            
-                            <a href="gettingnoticed.html">Getting Your Fundraiser Noticed</a><br>
-                            
-                            <a href="waystomotivate.html">Ways To Motivate Your Group</a><br>
-                            
-                            <a href="reachgoals.html">How To Reach Your Financial Goals</a><br>
-                            
-                            <a href="directvsorder.html">Direct Sale Products vs. Order Taker Fundraisers</a><br>
-                            
-                            <a href="pickcompany.html">How To Choose A Fundraising Company</a><br>
-                            
-                            <a href="topten.html">Top Ten Tips For Fundraising Success</a><br>
-                        </div>
-                        <div>
-                        <div class="text-center tony-poker-img">
-                            <img src="../../images/tonypoderissmall.gif" alt="">
-                        </div>
-                        <div>
-                            <p><strong>Starting A Fundraising Campaign</strong> <br>
-                                <strong>Funding Sources and Prospects:</strong></p>
+    </div>
+    <br>
+<div class="text-center">
+  <img src="../../images/tonypoderissmall.gif" alt="">
+</div>
+<h5><strong>Starting A Fundraising Campaign</strong></h5>
 
-                                    
-                                    <a href="http://www.raise-funds.com/199forum.html" target="_blank">Tapping The Philanthropic Well</a><br>
-                                   
-                                    <a href="http://www.raise-funds.com/052803forum.html" target="_blank">In Search Of The Elusive Major Giver</a><br>
-                                   
-                                    <a href="http://www.raise-funds.com/498forum.html" target="_blank">Rating And Evaluating Prospects: Whom Do You Ask For How Much?</a><br>
-                                   
-                                    <a href="http://www.raise-funds.com/798forum.html" target="_blank">Annual Fund Giving &amp; 'Getting' Guidelines</a><br>
-                                     
-                                <strong>Organizing a Campaign:</strong>
-                                <br>
-                                    <a href="http://www.raise-funds.com/999forum.html" target="_blank">How To Recruit Your Volunteer Fund-Raising Team</a><br>
-                                   
-                                    <a href="http://www.raise-funds.com/998forum.html" target="_blank">12 Things You Should Know About Setting A Capital Campaign Goal</a><br>
-                                   
-                                    <a href="http://www.raise-funds.com/899forum.html" target="_blank">For Want Of A Campaign Solicitation Kit A Campaign Was Lost</a><br>
-                                    <strong>Managing a Campaign:</strong>
-                                    <br>
-                                    <a href="http://www.raise-funds.com/0401forum.html" target="_blank">Designing A Communications Plan To Enhance Your Fundraising Campaign</a><br>
-                                   
-                                    <a href="http://www.raise-funds.com/b98forum.html" target="_blank">The Name Is The Game: Memberships And Named Gifts</a><br>
-                                   
-                                    <a href="http://www.raise-funds.com/299forum.html" target="_blank">Asking for the Money: If You Don't Ask You Won't Get</a><br>
-                                    
-                                    <br>
-                                    
-                                    
-                        </div>
-                    </div>
-                    <div>
+<div class="anchor-links"><h6><strong>Funding Sources and Prospects:</strong></h6>
+  <a href="http://www.raise-funds.com/199forum.html" target="_blank">Tapping The Philanthropic Well</a><br>
+  <a href="http://www.raise-funds.com/052803forum.html" target="_blank">In Search Of The Elusive Major Giver</a><br>
+  <a href="http://www.raise-funds.com/498forum.html" target="_blank">Rating And Evaluating Prospects: Whom Do You Ask For How Much?</a><br>
+  <a href="http://www.raise-funds.com/798forum.html" target="_blank">Annual Fund Giving & 'Getting' Guidelines</a><br>
+  <br>
+  <h6><strong>Organizing a Campaign:</strong></h6>
+  <a href="http://www.raise-funds.com/999forum.html" target="_blank">How To Recruit Your Volunteer Fund-Raising Team</a><br>
+  <a href="http://www.raise-funds.com/998forum.html" target="_blank">12 Things You Should Know About Setting A Capital Campaign Goal</a><br>
+  <a href="http://www.raise-funds.com/899forum.html" target="_blank">For Want Of A Campaign Solicitation Kit A Campaign Was Lost</a><br>
+  <br>
+  <h6><strong>Managing a Campaign:</strong></h6>
+  <a href="http://www.raise-funds.com/0401forum.html" target="_blank">Designing A Communications Plan To Enhance Your Fundraising Campaign</a><br>
+  <a href="http://www.raise-funds.com/b98forum.html" target="_blank">The Name Is The Game: Memberships And Named Gifts</a><br>
+  <a href="http://www.raise-funds.com/299forum.html" target="_blank">Asking for the Money: If You Don't Ask You Won't Get</a><br></div>
+       
+       <div class="text-center">
+        <img src="../../images/tellafriend.gif" alt="">
+       </div>
+       <div class="text-center">
+        <img src="../../images/tellafriendhandhold.jpg" alt="">
+       </div>
+       <p>Thanks for visiting FundRaisers.com! Share it with other people for their fundraising campaigns.</p>
+       <div class="text-center">
+       <a href="../../webpages/awarnessCalendar/awarness.html"><img src="../../images/calendarbutton.gif" alt=""></a> 
+       </div>
+      
+    </div>
+       <div class="col-lg-6 ">
+        <div class="initial-content">
+         <div class="text-center">
+          <img src="../../images/ideas image.gif" alt="">
+         </div>
+         <h4><strong>Featured Idea:</strong></h4>
+         <h2><strong>Great American Duck Races: On Your Mark, Get Set….Float?</strong></h2>
+         <p><img src="../../images/seaimage.jpg" alt="" style="float: right;">
+          Preliminary visions of the duck races – webbed feet placed in starting blocks, feathered chests waddling towards the finish line – were           quickly dispelled as two industrial front loaders unceremoniously dumped over 13,000 rubber ducks into the mighty Rogue River. The bathtub buddies raced from the Parkway Bridge to the Caveman Bridge in approximately 45 minutes. The excitement was palpable as the duck's adoptive parents waited for the winners at Riverside Park. An estimated 500 supporters were on hand at the finish line.</p>
+        <p>The minimal cost of adopting a duck - $10.00 each – encouraged local residents to help the Rotary Clubs raise funds for a news sports facility, Morrison Centennial Park. The generous prizes were integral to the success of the events. The grand prize, $20,000 toward a car from a Grants Pass Auto Dealership went to Tina Lindall, a waitress at Galice Resort and student at Rogue Community College. She found out she was the big winner when her sister called on her cell phone. Lindall says "I was so excited, I had to pull over to the side of the road.”</p>
+        <p><img src="../../images/ducks5.jpg" alt="" style="float:left; margin-right: 10px;">An additional 14 prizes were worth an average of $1,000 each. This brought the total prize incentives for the event to more than $35,000. Gerry Watt, a Grants Pass local, bought the family package of five ducks. His purchase also came with a t-shirt, valuable coupons to local merchants and a mini version of the rubber ducky. When the voice on the other end of the phone asked for Gerald, he assumed it was a telemarketer and almost hung up. Luckily, he listened long enough to learn he'd won a home decorating package worth $1,500 at Gates Home Furnishings, a local business.</p>
+        <p>Joan Bille won a $1,000 gift basket from Gottshalks Department Store. When she found out the races were happening on her birthday, she sent her husband out to buy ducks. She says "I never win anything.” She did, however, feel lucky because of the fortuitous timing. Her husband, John, said they considered the four ducks they purchased a $40 donation to the new Sports Park. "Community support for events like the duck races is why we live here,” he said. Winning was an added bonus.</p>
+        <p> <img src="../../images/ducks2.jpg" style="float: right;" alt=""><i>The Rogue Duck Derby</i> presented by the <i>Rotary Clubs</i> of Grants Pass, Oregon capitalized on the novelty of the event. New concepts are especially important for communities inundated with requests for donations and non-stop fundraising drives. Government funds for non profits have been stretched thin and cuts to extra curricular education programs have sent parents and participating kids out to raise money for clubs and teams that were once funded by school districts.<br>
+        </p>
+        <p><i>The Great American Derby Duck Race</i> is a fund-raising concept owned by <i>Great American Merchandise &amp; Events</i>. They began staging the events in 1988 and recently added a turtle character to their lineup. The rubber racers are bar-coded for immediate identification of winners. A funnel-shaped boom is stretched across the finish line to capture the winners.<br>
+        </p>
+        <p>Both the duck and turtle characters are trademarked by their three inch size, sunglasses and an appropriate smile. <i>Tim Matykiewicz</i>, a </p>
+        <p > <img src="../../images/sea.jpg" alt="" style="float: left; margin-right: 10px;"  > <i>American Races</i> representative estimates the duck and turtle races have raised over three million dollars in the last two years with more than 200 races around the world. <i>The Great American Races</i> concept is poised for explosive growth with successful events like the recent Grants Pass race.
+        </p>
+        <p>Media sponsorship was crucial to the success of the event. The crowds gathered at the finish line at Riverside Park were treated to entertainment from local radio station sponsors, <i>KAJO</i> and <i>KLDR</i>. The Duck Races were also promoted by <i>KDRV Channel 12 News</i> and the <i>Grants Pass Daily Courier</i> newspaper.<br>
+        </p>
+        <br>
+        <p > <img src="../../images/people.jpg" style="float: right;" alt="">Local businesses provided sponsorship on three levels: Super Duck Sponsors – Gates Home Furnishings, Premier West Bank and Southern Oregon Sanitation. Rogue Duck Sponsors: Hellgate Excursions, Home Valley Bank  and <i>Bill Thorp/State Farm Insurance</i>. Quacker Sponsors included 17 local businesses, national franchises and church/civic groups.<br>
+        </p>
+        <p>The participating <i>Rotary Clubs</i> are thrilled with the results. Sponsors covered most of the $40,000 costs to stage the event and plans are already underway for next year's duck races. In an interview with the <i>Grants Pass Daily Courier</i>, race organizer <i>Bill Thorp</i> said, <i>"The community's been unbelievable, they got a chance to help kids and have some fun”!</i><br>
+        </p>
+        <p><i>-- DeWayne Lumpkin, Freelance Writer</i></p>
+        <p>To find out how you can have a Derby Duck Race in your local community send email to <a href="mailto:racewithus@game-group.com?subject=Duck%20Race&amp;bcc=derbyduckrace@fundraisers.com"><strong>racewithus@game-group.com</strong></a>.<br>
+        </p>
 
-                    </div>
-                    </div>
-                    <div class="col-lg-6">jo</div>
-                    <div class="col-lg-3">yoo</div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/ulg/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      </div>
+        <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show  first-tab-about " id="v-pills-link1" role="tabpanel"
+            aria-labelledby="v-pills-link1-tab">
+            <h4><strong>Fundraising Tips:</strong></h4>
+            <h2><strong>New To Fundraising?<br>First Time Fundraising Tips</strong></h2>
+            <p>These quick and simple tips for first time fundraisers will get you on track and on your way to the first of many successful fundraisers.</p>
+            <ol>
+              <li>
+                <h6><strong>Decide how Much Money Your Group Needs To Raise</strong></h6>
+                <p>This will help you evaluate products and programs that will be ideal for your group.</p>
+              </li>
+              <li>
+                <h6><strong>Watch For Hidden Costs</strong></h6>
+                <p>Don't let your group's profits disappear because of hidden costs (ex. shipping, prizes).</p>
+              </li>
+              <li>
+                <h6><strong>Give Yourself And Your Group Lots Of Time To Prepare</strong></h6>
+                <p>Select your fundraising program early. This will give you lots of time to plan. Include your fundraiser on the school or community calendars and newsletters.</p>
+              </li>
+              <li>
+                <h6><strong>Timing</strong></h6>
+                <p>Make sure to stagger the various fundraisers to avoid flooding your potential consumers and to avoid competing with other fundraisers.</p>
+              </li>
+              <li>
+                <h6><strong>Set Up Specific Dates And Stick To Them</strong></h6>
+                <p>If you avoid setting clear target dates the campaign tends to drag on and often without direction.</p>
+              </li>
+              <li>
+                <h6><strong>Try To Conduct Fewer And More Effective Programs</strong></h6>
+                <p>This will help maintain motivation and avoid "fundraising fatigue".</p>
+              </li>
+              <li>
+                <h6><strong>Rely On Your Fundraising Company's Expertise</strong></h6>
+                <p>Ask lots of questions and use your fundraising company's suggestions and advice.</p>
+              </li>
+              <li>
+                <h6><strong>Stay Motivated Throughout The Program</strong></h6>
+                <p>Some organizers tend to lose interest once the program is underway. Put a 10-12 day time limit on order taking. It's easier to stay motivated with clear goals and deadlines.</p>
+              </li>
+              <li>
+                <h6><strong>Communicate Clearly Before, During And After The Program Is Put In Place</strong></h6>
+                <p>Keep energy levels high by reminding parents, teachers, and other volunteers of the fundraising goals and deadlines.</p>
+              </li>
+              <li>
+                <h6><strong>Avoid Shipping And Ordering Problems</strong></h6>
+                <p>Work closely with your volunteers and assure their order forms are legible and filled out completely.</p>
+              </li>
+              <li>
+                <h6><strong>Keep Copies Of The Order Forms</strong></h6>
+                <p>Always keep copies of the order forms before you send them to your fundraising company.</p>
+              </li>
+              <li>
+                <h6><strong>Recruit Adult Volunteers Ahead Of Time</strong></h6>
+                <p>This will make the distribution of the products to the volunteers more efficient.</p>
+              </li>
+              <li>
+                <h6><strong>Double Check Products Received Against Your Order Forms</strong></h6>
+                <p>This needs to be done before the products are given to the volunteers to ensure that nothing is damaged or missing.</p>
+              </li>
+              <li>
+                <h6><strong>Keep Absent Volunteers Informed</strong></h6>
+                <p>Don't forget to communicate the program's kick-off and other important meetings to absent volunteers.</p>
+              </li>
+              <li>
+                <h6><strong>Have Fun!</strong></h6>
+                <p>A good attitude = better success.</p>
+              </li>
+            </ol>
+            
+          </div>
+        <div class="tab-pane fade show  first-tab-about " id="v-pills-link2" role="tabpanel"
+        aria-labelledby="v-pills-link2-tab">
+        <h4><strong>Fundraising Tips:</strong></h4>
+       <h2> <strong>How To Pick The Right Fundraising Product And Key Questions</strong></h2>
+       <p>
+        Usually the first question that you ask yourself when you realize your group needs to raise funds is: "What Are We Going To Sell?" Get expert  knowledge on how to make the right choice.<br>
+        <br>
+        There are thousands of products available for fundraisers that range from candy to wrapping paper, cookies to inspirational goods, and nuts to sausage and cheese. After all, almost anything can be re-sold by groups for a profit.<br>
+        <br>
+        Think about the following six questions to help you choose the right fundraising product or program for your group:<br>
+        </p>
+        <ol>
+          <li>
+            <h6><strong>How Much Money Does Our Group Need To Raise?</strong></h6>
+            <p>Come up with a goal that is based on your group's needs not just one that sounds good. If your group needs to raise a few hundred dollars, lollipops or a small order of candy bars may be appropriate. If you need to raise over $5,000, you may want to use an order taker fundraiser like a popular chocolate brochure program or a cookie dough fundraiser.</p>
+          </li>
+          <li>
+            <h6><strong>What Would We Enjoy Selling?</strong></h6>
+            <p>Your group members will determine the success of your fundraiser. Ask them what they would like to sell and what they'd absolutely not like to sell. The more they like the products, the more confident and motivated they will be to sell them.</p>
+          </li>
+          <li>
+            <h6><strong>What Has Worked For Us In The Past?</strong></h6>
+            <p>'If it ain't broke don't fix it' As the saying goes, if you've had success with a certain program year after year- stick to it. Chances are, your supporters are expecting you at that same time every year and your participants are comfortable with selling the product.</p>
+          </li>
+          <li>
+            <h6><strong>How Fast Do We Need The Money?</strong></h6>
+            <p>Pre-sale programs (order taker) do take longer than direct sale programs (candy bars, lollipops etc.). If you need to raise funds within 1.5-2 quick weeks, we suggest you fundraise using direct-sale products. If you have 4 weeks or more to wrap up your fundraiser, a pre-sale (order taker) brochure may be ideal.</p>
+          </li>
+          <li>
+            <h6><strong>Are The Products We Want To Sell Of High Quality?</strong></h6>
+            <p>A consumer will be happy to support a worthy cause, however they won't be very interested in paying for inferior or significantly overpriced products. Remember that your fundraiser may be an annual or semi-annual event, and nothing builds profits like a reputation for offering top-quality products.</p>
+          </li>
+          <li>
+            <h6><strong>Does The Price Point Match The Income Level Of The Community?</strong></h6>
+            <p>As well, make sure that the retail price of the products offered is priced fairly. Offering a fairly priced good at a price that's affordable to help a good cause will lead to quick success!</p>
+          </li>
+        </ol>
+        
+    </div>
+    <div class="tab-pane fade show  first-tab-about " id="v-pills-link3" role="tabpanel"
+    aria-labelledby="v-pills-link3-tab">
+    <h4><strong>Fundraising Tips:</strong></h4>
+    <h2><strong>Event Fundraising Ideas</strong></h2>
+    <p>Tired of the same old fundraiser event, here are some ideas for special events to raise the money you need!</p>
+    <ol>
+      <li>
+        <h6><strong>How Much Money Does Our Group Need To Raise?</strong></h6>
+        <p>Come up with a goal that is based on your group's needs not just one that sounds good. If your group needs to raise a few hundred dollars, lollipops or a small order of candy bars may be appropriate. If you need to raise over $5,000, you may want to use an order taker fundraiser like a popular chocolate brochure program or a cookie dough fundraiser.</p>
+      </li>
+      <li>
+        <h6><strong>What Would We Enjoy Selling?</strong></h6>
+        <p>Your group members will determine the success of your fundraiser. Ask them what they would like to sell and what they'd absolutely not like to sell. The more they like the products, the more confident and motivated they will be to sell them.</p>
+      </li>
+      <li>
+        <h6><strong>What Has Worked For Us In The Past?</strong></h6>
+        <p>'If it ain't broke don't fix it' As the saying goes, if you've had success with a certain program year after year- stick to it. Chances are, your supporters are expecting you at that same time every year and your participants are comfortable with selling the product.</p>
+      </li>
+      <li>
+        <h6><strong>How Fast Do We Need The Money?</strong></h6>
+        <p>Pre-sale programs (order taker) do take longer than direct sale programs (candy bars, lollipops, etc.). If you need to raise funds within 1.5-2 quick weeks, we suggest you fundraise using direct-sale products. If you have 4 weeks or more to wrap up your fundraiser, a pre-sale (order taker) brochure may be ideal.</p>
+      </li>
+      <li>
+        <h6><strong>Are The Products We Want To Sell Of High Quality?</strong></h6>
+        <p>A consumer will be happy to support a worthy cause, however they won't be very interested in paying for inferior or significantly overpriced products. Remember that your fundraiser may be an annual or semi-annual event, and nothing builds profits like a reputation for offering top quality products.</p>
+      </li>
+      <li>
+        <h6><strong>Does The Price Point Match The Income Level Of The Community?</strong></h6>
+        <p>As well, make sure that the retail price of the products offered are priced fairly. Offering a fairly priced good at a price that's affordable to help a good cause will lead to quick success!</p>
+      </li>
+    </ol>
+    
+    <ol>
+      <li>
+        <h6><strong>Try A Breakfast, Lunch Or Dinner Fundraising Event</strong></h6>
+        <p>Food is always a good fundraiser so try a fundraising breakfast, lunch, or dinner event. Keeping it simple is best. A Hotdog event fundraiser is a great way to start. Have your local grocer donate the hotdogs, buns, condiments, chips, and pop. Set up in a busy area, even the parking lot of your grocer. You can use a propane BBQ or boiler for the cooking. Offer up a package deal like "1 Hotdog, bag of chips and can of pop for only $3!" This way you can raise more, faster. Important: Be sure to thank your grocer by giving them recognition for their food donation.</p>
+      </li>
+      <li>
+        <h6><strong>Have A Car Wash</strong></h6>
+        <p>A great service and event fundraising idea for all those car-loving people out there. Get your group volunteers together and pick a central location with high car traffic. Make sure you have room for cars to line up and have a few hoses going so you can wash more than one car at a time. As an added fundraiser, sell some snacks and beverages to car owners. Be sure to have enough chairs and shade for your car owners to sit while they wait.</p>
+      </li>
+      <li>
+        <h6><strong>Run A Recycled Bottle, Can Or Ink Cartridge Drive</strong></h6>
+        <p>An excellent fundraising idea for our times. Raise money and do good for the environment. Let your community know that they can drop off their refundable bottles, cans, or ink cartridges at a central location. Your group will handle the sorting and keep the refunds. A nickel or dime may not seem like much, but if this fundraiser is well publicized, all that plastic, glass, aluminum, and cartridges will add up quick. To raise more and as an added incentive/service to your community, you can go door to door to pick up their refundable bottles and cans or tie in with a local business to become a drop-off location for your group.</p>
+      </li>
+      <li>
+        <h6><strong>Have A Bake Sale</strong></h6>
+        <p>Always a favorite event fundraiser even though it isn't the "newest idea". Why? Well because home-baked goodies can't be beat. Also because some community members love baking and sharing with others. It's recommended to not have these too often though so try spreading them throughout the year. Here's a great tip: Bake some scrumptious cookies using the cookie dough from a popular cookie dough fundraising brochure and make sure to have your order book ready to sell from and raise extra money.</p>
+      </li>
+      <li>
+        <h6><strong>Set Up A Book Sale</strong></h6>
+        <p>Another old favorite fundraiser. People are sure to donate books they are done reading and people will be sure to buy them as a good read and a good cause. Ask people to drop off their unwanted books or better yet just go door to door. If you find your fundraiser has left over books you may even want to donate them to a hospital, shelter, or seniors home.</p>
+      </li>
+      <li>
+        <h6><strong>Have A Lawn Or Garage Sale</strong></h6>
+        <p>Most everyone thinks about clearing out "stuff" from their attic or garage, well here they can do good too. Have a Lawn sale fundraiser where your community donates items they are willing to let your group sell. Then your group picks a central location to hold your fundraising lawn sale. Once again be sure to publicize this well in advance and many times.</p>
+      </li>
+      <li>
+        <h6><strong>Organize A Rubber Duck Race</strong></h6>
+        <p>This event fundraiser is fun and can get kids involved. All you need to do is get the rubber ducks or any other fun thing that can float. Have them numbered to match tickets you sell to supporters. Make sure your event is publicized so you can have a fun turnout on the day of the race at your local stream or body of water. The first duck to cross the finish line wins a prize that was donated by a local sponsor.</p>
+      </li>
+      <li>
+        <h6><strong>Have An Auction</strong></h6>
+        <p>The most common way of doing an auction fundraiser is to have collectibles such as pro-athlete or celebrity-signed items (jersey, baseball, bat or hockey stick, movie poster, video tape or DVD) up for sale. Your local pro-sports team or celebrities are usually willing to do this for a good cause. Consider an Online Auction for some of the more lucrative items that were donated. If you don't have a group member that can post them online, check out a local eBay retailer store to sell your items. <a href="../../webpages/resources/charityPoker.html"><strong>Read about how you can sell your items online at iSOLDit.</strong></a></p>
+      </li>
+      <li>
+        <h6><strong>Organize A Night At The Races</strong></h6>
+        <p>A fun and new way to have an exciting fundraising event. Not actual gambling, "A Night At The Races" is a re-creation and meant for fun. People watch a pre-taped horse race and bet and win "funny money". Raffles are usually drawn throughout the event. What you need to get started, including the video tape, race program, and race tickets are all provided by companies like "A Night At The Races".</p>
+      </li>
+      <li>
+        <h6><strong>Have A Bingo Night</strong></h6>
+        <p>Bingo nights are always popular so try a Bingo night fundraiser. Do it all in the same way as a normal bingo does it; sell cards and call numbers in your school gym or church basement. Instead of money for prizes, give away items donated from your local businesses and be sure to give them recognition for them. As always, good publicity will make your bingo night fundraiser a success.</p>
+      </li>
+    </ol>
+    
+  </div>
+  <div class="tab-pane fade show  first-tab-about " id="v-pills-link4" role="tabpanel"
+  aria-labelledby="v-pills-link4-tab">
+  <h4><strong>Fundraising Tips:</strong></h4>
+  <h2><strong>Getting Your Fundraiser Noticed</strong></h2>
+  <p>"If you run it they will come..." Not quite. Don't assume that everyone will find out about your fundraiser. Get the word out ahead of time and make it as visible as possible.</p>
+  <ol>
+    <li>
+      <h6><strong>Get Your Fundraiser Advertised Or Publicized</strong></h6>
+      <p>MOST important is that people know about your fundraising event. Be sure to make the message clear: WHO it's for, WHAT it's for, WHEN, WHERE and HOW much you are trying to raise. Use local radio station community spots, community paper, school and church newsletters, local TV, posters, and flyers. <a href="https://www.fundraisers.com/news/index.html"><strong>Click here to see how to create a winning press release.</strong></a></p>
+    </li>
+    <li>
+      <h6><strong>Pick A Central And Well Known Location</strong></h6>
+      <p>Pick a location that everyone knows by name; just directing to an address will reduce your attendance. Also, pick a location that can handle the requirements of your fundraising event as well as crowds.</p>
+    </li>
+    <li>
+      <h6><strong>Choose The Right Day</strong></h6>
+      <p>Saturdays are usually best. Most people are not working and have fewer family or religious events to attend. Also, check your calendar so you're not competing with another big event or holiday. Better yet, try to set up your fundraising event to take advantage of the other event's people traffic.</p>
+    </li>
+    <li>
+      <h6><strong>Ask Trusted Volunteers To Help</strong></h6>
+      <p>Make sure you get the commitment of your fundraising event volunteers. Your fundraiser will fall short if you can't rely on your helpers. Have backup volunteers lined up in case of absent helpers.</p>
+    </li>
+  </ol>
+  
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link5" role="tabpanel"
+aria-labelledby="v-pills-link5-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2><strong>Six Ways To Motivate Your Fundraising Group</strong></h2>
+<p>A little motivation can go a long way. Motivate your group with prizes, prizes and more prizes without it costing a lot!</p>
+<ol>
+  <li>
+    <h6><strong>Intangible Rewards</strong></h6>
+    <p>Rewards with no cash value are proven motivators and provide great entertainment. A few examples include:</p>
+    <ul>
+      <li><strong>Pie Throwing:</strong> Allow the participants to throw cream pies at the organizers' faces if the goal is reached! (you might not like this one but it usually gets the money raised)</li>
+      <li><strong>Camp Out:</strong> Have the principal camp out on the roof of the school or the group leader(s) camp out somewhere awkward if the goal is achieved. Set an even bigger goal to extend the number of days they must camp out there.</li>
+      <li><strong>Activity of Choice:</strong> Let your group have an activity of their choice that replaces their normal schedule (for example: a free afternoon of sports activities in the school yard instead of class)</li>
+    </ul>
+  </li>
+  <li>
+    <h6><strong>Raffles And Prize Draws</strong></h6>
+    <p>For each small goal attained (ex. for every 10 units sold or $100 in sales reached), the participant gets their name put in the raffle for various merchandise. The more they sell, the more times they can have their name put in the raffle and the more chances they have to win.</p>
+  </li>
+  <li>
+    <h6><strong>Grand Prize For Your Top Seller</strong></h6>
+    <p>Reward your top seller with a Grand Prize. It may be a computer, a bike, movie tickets, cash, or anything else that inspires your group members. Don't get carried away and offer something your group can't afford.</p>
+  </li>
+  <li>
+    <h6><strong>Rewards For Top Class or Team</strong></h6>
+    <p>This is a great way to motivate teamwork in your group. If you're a small group, you can create teams by putting your members in groups of twos, threes, or fours. If you're a school, you can do it by class, and if you're a league, simply do it by team. You can offer the best-selling group a free pizza party, a field trip outing to the place of their choice... ask them what they'd like. Try an ice cream social; everybody likes ice cream! <a href="https://www.fundraisers.com/resources/dandy_don.html"><strong>Read about an ice cream social here.</strong></a></p>
+  </li>
+  <li>
+    <h6><strong>Completion Prizes For Individuals</strong></h6>
+    <p>Offering individual completion prizes is great because they motivate and reward everyone in your organization. Offer a completion gift once your member raises a certain amount. For example: Receive $10 cash for every $100 of product sold. Other completion prizes may be a gift certificate to a music, video, book, or sports store.</p>
+  </li>
+  <li>
+    <h6><strong>Reward Your Early Birds</strong></h6>
+    <p>To help move your fundraiser along, you can offer early bird prizes to the first, second, and third person who reaches a specific objective by a certain deadline. For example: if you launch the fundraiser on Monday, you can say the first three people that generate $100 in sales or more by Friday will receive a $15 gift certificate.</p>
+  </li>
+</ol>
+<h2>Also Remember:</h2>
+<ul>
+  <li>
+    <h6><strong>Ask Sponsors for Prizes:</strong></h6>
+    <p>You can get many prizes for free by simply asking your local restaurants, sports, book and music stores, as well as other local retailers. Tell them what it's for and offer to mention their name in the parent letter and at the campaign launch.</p>
+  </li>
+  <li>
+    <h6><strong>Choose the Right Rewards:</strong></h6>
+    <p>What could be worse than no incentives and rewards? Investing in rewards which simply don't motivate your members! Make sure the rewards you choose are relevant to your member's age group and interests. Ask them what they'd like to receive as incentives given a certain budget.</p>
+  </li>
+</ul>
+
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link6" role="tabpanel"
+aria-labelledby="v-pills-link6-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2>How To Reach Your Fundraising Financial Goals</h2>
+<p>There's a lot to think about when planning your fundraiser but make sure you don't miss these key factors your fundraiser's plans.</p>
+<ol>
+  <li>
+    <h6><strong>Identify Your Needs And Set Your Goals</strong></h6>
+    <p>The first essential steps to a successful fundraising campaign are to identify your group's needs and set your group's financial goals. If your group members know how the money will be spent and their personal benefits, this will motivate them, keep them focused and help with their sales pitch.</p>
+  </li>
+  <li>
+    <h6><strong>Don't Focus On Percentage (%) Profit Alone!</strong></h6>
+    <p>Although the percentage profit for the products you are selling is important, there are many other factors that need to be considered at the same time. One company may offer 50% of sales while another may offer 40%. The 40% company may be providing valuable services such as consulting, kickoffs, incentive programs, timely delivery of merchandise, and custom packing. These advantages will save your volunteers time and lead to higher profits overall. The company offering the lower % may also have a higher quality product. This product's high quality will also help to increase sales and profits for your group. If a company is offering a lower percentage profit, find out why!</p>
+  </li>
+  <li>
+    <h6><strong>Get Your Participants Motivated</strong></h6>
+    <p>In most cases, the money raised is a strong incentive, but often prize award programs can be a valuable way to build excitement and boost profits. Be sure to ask your participants what would motivate them and don't forget to be creative.</p>
+  </li>
+</ol>
+
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link7" role="tabpanel"
+aria-labelledby="v-pills-link7-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2> <strong>Direct Sale Products Vs. Order Taker Fundraisers</strong></h2>
+<p>What should your group use, direct-sale fundraising products or pre-sale brochures for your next fundraiser? Get the pros and cons on both.</p>
+<ol>
+  <li>
+    <h6><strong>Fundraising With Direct Sale Products</strong></h6>
+    <p>How Direct Sale Fundraising Typically Works:</p>
+    <ul>
+      <li> Your group orders an inventory of products; these products are distributed to your group members who sell the products directly to their supporters; funds are collected at the point of sale.</li>
+    </ul>
+    <p><strong>PROS</strong></p>
+    <ul>
+      <li>Requires only one contact with individual consumers</li>
+      <li>Direct sale takes less time than Pre-Sale because there is no product to deliver and no returned goods to deal with</li>
+      <li>Usually has a very low retail price per item which results in an easy sale</li>
+    </ul>
+    <p><strong>CONS</strong></p>
+    <ul>
+      <li>Slight risk if you over-purchase</li>
+      <li>Less variety of products to offer</li>
+    </ul>
+  </li>
+  <br>
+  <h6 class="text-center"> <strong>Vs</strong></h6>
+  <br>
+  <li>
+    <h6><strong>Fundraising With Pre-Sale Fundraisers (Order Taker Brochures)</strong></h6>
+    <p>How Pre-Sale Fundraising Typically Works:</p>
+    <ul>
+      <li>Your group requests one brochure per fundraising participant. The participants show the brochure to potential supporters. The supporter selects a product from the brochure which the participant records on the brochure order form. These order forms are then returned to your fundraising company, who fulfills the order and ships the products to your group. Your group members and volunteers deliver the products to their supporters. Funds can either be collected at the time of the selection or upon delivery.</li>
+    </ul>
+    <p><strong>PROS</strong></p>
+    <ul>
+      <li>No risk because it requires no guesswork on how much to order</li>
+      <li>Brochures offer a wide variety of products and range of prices</li>
+      <li>Easy to include parents and adults in the fundraising efforts by having them circulate the brochure at work</li>
+    </ul>
+    <p><strong>CONS</strong></p>
+    <ul>
+      <li>Can require more time to complete because products must be delivered and may require dealing with broken or missing items</li>
+    </ul>
+  </li>
+</ol>
+
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link8" role="tabpanel"
+aria-labelledby="v-pills-link8-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2> <strong>How To Choose A Fundraising Company</strong></h2>
+<p>Whether you're a first time fundraiser or a veteran fundraiser, you'll be faced with the same decisions. One of them will be how to choose a fundraising company. It's difficult enough to plan a fundraiser, so make sure the company you choose works with you and isn't just in it for a quick sale. Below are some things to think about during your search and decision process.</p>
+<h4><strong>Good Fundraising Companies Ask Questions</strong></h4>
+<p>
+  Good fundraising companies will need to know about your group to help you the best. This is what they should ask you:</p>
+  <ol>
+    <li>Your Group's Financial Goal</li>
+    <li>Your Fundraising Timeline</li>
+    <li>The Number Of Potential Participants And Their Ages</li>
+    <li>
+      Any Historical Info You Can Provide
+      <br>
+      <span style="font-size: -2; face: Verdana, Arial, Helvetica, sans-serif">
+        (e.g. past fundraisers, participation levels, successes and failures)
+      </span>
+    </li>
+  </ol>
+  <p>
+    If they don't ask these questions, then they are not interested in your needs. It's in a good company's best interest to care and help make your fundraiser a success. They are looking to build customer loyalty and they want to generate repeat business.</p>
+    <h4><strong>Important Things To Know About A Fundraising Company</strong></h4>
+    <ol>
+      <li>How long has the company been in business?</li>
+      <li>How many years of experience does the company representative have in fundraising?</li>
+      <li>Do they listen to your needs and are easy to work with? If so, then they will help you later if problems arise?</li>
+      <li>Are their products of high quality? If so, then your fundraiser will raise more with less hassle?</li>
+      <li>What is the percentage profit of sales? Although the percentage profit is important, there are many other factors that need to be considered (product quality, shipping included, time-saving help).</li>
+      <li>What services are available to save you and your volunteers time and energy? Does the company provide checklists, collection envelopes, tally sheets, and pre-sorting?</li>
+      <li>Are products paid for in advance or upon delivery? Will they work with you on a fair payment option?</li>
+      <li>Is there an incentive or prize program? If so, who pays for it?</li>
+      <li>How are products shipped and when? Who pays the freight?</li>
+      <li>What is the policy regarding damaged or unsold product? What about back orders?</li>
+      <li>Can the company provide references?</li>
+    </ol>
+    
+  
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link9" role="tabpanel"
+aria-labelledby="v-pills-link9-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2> <strong>Top Ten Tips For Fundraising Success</strong></h2>
+<p>After consulting fundraising experts, here's a top 10 list of things that all fundraisers need to know to raise more and have fun too!</p>
+<ol>
+  <li>
+    <h6>Use Basic Sales Techniques For Better Fundraising</h6>
+    <p>
+      Perfect your introduction. Never start with the question "Would you like to buy..?" because the standard answer is 'NO.' Students should introduce themselves, their group and their group goal with major emphasis on the GOAL. What's the money going to provide? Student volunteers who communicate the organization's purpose make better ambassadors. Look "professional" &amp; Say "thank you". A nice appearance and identifying apparel adds credibility and helps make the sale. If possible, wear a group uniform or a tee shirt with school logo. Remember to say "thank you for helping us meet our goal," and restate the goal.
+    </p>
+  </li>
+  <li>
+    <h6>Choose The Right Incentive Prize</h6>
+    <p>
+      What could be worse than no incentive prizes? Investing in incentive prizes which simply don't motivate your participants! Make sure the prizes you get are relevant to your participant's age group and interests. Ask them what they'd like to receive as incentives given a certain budget.
+    </p>
+  </li>
+  <li>
+    <h6>Motivate Team Work</h6>
+    <p>
+      Top Class or Team Prizes: This is a great way to motivate the kids and get them working as a team- perfect synergy! If you're a small group, you can create teams by putting your participants in groups of twos, threes or fours. If you're a school you can do it by class and if you're a league simply do it by team. You can offer the best selling group a free pizza party, a field trip outing to the place of their choice. Ask them what they'd like.
+    </p>
+  </li>
+  <li>
+    <h6>Reward The Early Bird</h6>
+    <p>
+      You can offer early bird prizes to the first, second and third person who reaches a specific objective by a certain deadline. For example: if you launch the fundraiser on Monday, you can say the first three people that generate $100 in sales or more by Friday will receive a $15 gift certificate.
+    </p>
+  </li>
+  <li>
+    <h6>Set Clear Goals And Firm Deadlines</h6>
+    <p>
+      The key to fundraising success is to establish clear fundraising goals and set firm deadlines for reaching those goals. Identify what you need, how much money is required and how long it will take to get it. Otherwise, your fundraising activity can be never-ending. So simply set beginning and ending dates for all fundraising projects. That way everybody knows that there will be closure and things won't drag on.
+    </p>
+  </li>
+  <li>
+    <h6>Best To Do Fewer Fundraisers- And Do Them Well</h6>
+    <p>
+      Most fundraising companies who work with organizations to raise money agree that, with fundraising, less can be more. Your fundraising company should be consulting its customers to do only a few fundraisers but, importantly, to do them well. Not only should schools and school groups be watchful of their own fundraising efforts, many advise that it is good practice to know what other groups in the area are doing to raise money.
+    </p>
+  </li>
+  <li>
+    <h6>Avoid Duplicating Another Group's Fundraiser</h6>
+    <p>
+      Today children and their parents are fundraising for their schools in addition to raising money for other groups. So it's important to know what, where, when and how others are doing in fundraising. The last thing you want to do is duplicate the efforts of others and over saturate the community. You are only hurting each other. Some groups plan at least one year in advance so that they can coordinate fundraising efforts with neighboring teams, schools and other groups (church, scouts, etc.) who may be selling in the community at the same time.
+    </p>
+  </li>
+  <li>
+    <h6>Product Quality Does Count</h6>
+    <p>
+      The old saying "You get what you pay for." Is true for fundraiser campaigns and they're fundraising products. The quality of the product you sell to your supporter is a direct reflection of your group. It will also have a direct effect the next time you fundraise. Higher quality fundraising products will leave people with a positive image of your cause. It will also make your current and next fundraiser easier because supporters will be eager to buy from you, resulting in higher profit.
+    </p>
+  </li>
+  <li>
+    <h6>Fundraise At Your Events And Games</h6>
+    <p>
+      Have you ever considered selling products in the stands during games, tournaments, and other events? Well you should because high people traffic equals higher sales. Plus you can raise more in less time. Some groups are so good at this, supporters look for them at each game and event.
+    </p>
+  </li>
+  <li>
+    <h6>No Money Down Fundraisers</h6>
+    <p>
+      Is your group short on funds to buy fundraising products up-front? Choose an order-taker fundraiser. Getting an order-taker fundraiser started costs you nothing. Take your orders, collect your money up-front and then place your order with your fundraising company. A simple way to raise funds without putting any money up-front.
+    </p>
+  </li>
+</ol>
+
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link10" role="tabpanel"
+aria-labelledby="v-pills-link10-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2> <strong>The Scoop On Cookie Dough Fundraisers</strong></h2>
+
+<p>Cookie dough fundraising is really hot with fundraising groups today. Find out why and if it's right for your group's next fundraiser.</p>
+<br>
+<h4> <strong>How Cookie Dough Fundraising Works</strong></h4>
+<p>Using order-taker brochures, your group members allow your supporters to choose from a selection of delicious flavors that even border on gourmet. Some cookie dough brochures offer flavors like and white chocolate macadamia, chocolate chunk and peanut butter. Some even offer your brand favorites like Hershey's Kisses, Reese's Peanut Butter Cup, M&M's and Reese's Pieces. Once all orders are taken and the money has been collected, the order forms are tallied and the cookie dough is ordered with your fundraising company. About two weeks later, your cookie dough is delivered for you to distribute to your buyers. The dough is usually packed in 3 lb tubs. Because most cookie dough comes frozen some planning with your fundraising company is needed for delivery day. However, some of the newest cookie dough requires no refrigeration and will keep for many months.</p>
+<br>
+<h4><strong>No Money Down = No Risk</strong></h4>
+<p>Since cookie dough fundraising is an order taker fundraiser, you can start fundraising without putting any money down. This is great if you are low on cash to begin with. Most tubs sell for $10 and expect to make between 35% - 55% profit depending on how many tubs your group sells. Make sure to choose a fundraising company that provides free shipping since the weight of tubs can add up fast. A group size of 20 or larger is usually recommended, but any group can raise anywhere from $1,000 - $10,000 and more if they are motivated and focused.
+  <br><br>The taste of freshly baked cookies is sure to get anyone's mouth watering, so you might want to consider cookie dough since it's likely to be as easy to sell as cookies are to eat!
+</p>
+<div style="border-bottom: 2px solid #cfcfcf;margin-bottom: 20px;";></div>
+<h2><strong>JustFundraising.com</strong></h2>
+<a href="http://www.justfundraising.com/str/prs_out2.cfm?cat_id=7&amp;name=Cookie%20Dough&amp;referalCode=FRRS" target="_blank"> <strong>Scrumptious 
+  Cookies Raise Big Dough! </strong></a><br>
+  <p>Who wouldn't want to eat the most delicious, gooey, tasty cookies, when all they have to do is scoop & bake?</p><br>
+  <h6><strong>JustFundraising's Top Picks:</strong></h6>
+  <p>Who wouldn't want to eat the most delicious, gooey, tasty cookies, when all they have to do is scoop & bake?</p>
+  <ol>
+    <li>
+      <strong>
+        <a href="http://www.justfundraising.com/str/prs_out3.cfm?brochure_id=221&amp;title=New%20%2D%20Creative%20Confections&amp;referalCode=FRRS" target="_blank">
+            NEW - Creative Confections
+        </a> </strong>: 10 gourmet flavors with ZERO TRANS FATS, including M&amp;Ms, Chocolate Chunk, White Chunk Macadamia...
+    </li>
+    <li>
+      <strong>
+        <a href="http://www.justfundraising.com/str/prs_out3.cfm?brochure_id=182&amp;title=Elite%20Retreats" target="_blank">
+            NEW - Elite Retreats
+        </a></strong>: includes 21 delicious cookie flavors, pretzels, muffins...
+    </li>
+</ol>
+
+<ul>
+    <li>Free Brochures</li>
+    <li>Free Shipping</li>
+    <li>No Money Up Front</li>
+    <li>Up-to 56% Profit</li>
+</ul>
+
+<p>
+    <b>Tip:</b> Sell even more by having baked samples on hand at your office, bake sale, or busy event.
+</p>
+<h4>You earn up to 56% PROFIT like...</h4>
+ <p> &gt; Panthers Football of Flint MI: 30 kids sold 694 tubs ($7,550 raised)<br>
+  &gt; Hancock County Cross Country: 25 kids sold 756 tubs ($8,050 raised) </p>
+  <h2><strong>Call The JustFundraising Staff For More Info<br>
+
+												
+
+    Toll-Free 1-888-440-4114</strong></h2>
+    <p><a href="http://www.justfundraising.com/mail/cookiedough_frrs_200309_fm.cfm?referalCode=FRRS" target="_blank"><b>Get 
+      Started Now</b></a> &nbsp;OR&nbsp; <a href="http://www.justfundraising.com/kit/kit_in.cfm?referalCode=FRRS" target="_blank"><b>Mail 
+      Me Information</b></a></p>
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link11" role="tabpanel"
+aria-labelledby="v-pills-link11-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2> <strong>Small Town Poker Tour</strong></h2>
+<p>
+  <img src="../../images/smalltownpoker.gif" style="float: right;" alt="">
+  <strong>The Small Town Poker Tour</strong> raised over $57,000 for the United Way, in Lafayette, LA.  This event is a great example for all charities. "If your event contains the proper elements, success will follow. We approach every event like it is the Super Bowl for the charities we work with. What you can raise in one evening with poker, could  realistically take many charities six months to raise in a year's time", stated Mark Fracalossi STPT creator.
+</p>
+<p><img src="../../images/pokerunitedway.jpg" style="float: left; margin-right: 10px;" alt="">
+  The <strong>United Way</strong> event also maximized their potential by successfully selling sponsorships and having a great selection of food and beverage which added more funds directly to the bottom line. Sponsorships can range anywhere from $5,000 to $100,000; depending upon how actively you solicit sponsors. There are many possibilities to create sponsorship packages that include all sorts of branded items from custom made table felts with the sponsors design to poker chips. The Chips and felts can then be auctioned off for the charity.  The United Way had a unique array of regional food items including jambalaya. You can take this further by having a food partner donate the food or provide staffing and items.</p>
+<div class="text-center">
+  <img src="../../images/largeNoOfPeople.jpg"  alt="">
+</div>
+<br>
+<p>The event drew over 550 players who all paid a $60 entrance fee, plus had a chance for unlimited $25 rebuys for the first two hours and a $50 add on after that. A rebuy is when a player's chip count falls below a certain level and the player is allowed to rebuy</p>
+<p>Besides the fact that Charity Poker Events are successful, the players experience is what enhances that success. "If you do your homework and concentrate on the player's experience, you will have a very successful event." Fracalossi added.</p>
+<h2><strong>Poker Fundraising Tips You Can Use</strong> </h2>
+<h4><strong>Great Ways To Incorporate Charity Poker Into Your Next Fundraising Event:</strong> </h4>
+<ul>
+  <li><h6>Pro Player and Celebrity "Meet &amp; Greets"</h6></li>
+  <li><h6>Poker Training Sessions With Professional Players</h6></li>
+  <li><h6>Hospitality Suites</h6></li>
+  <li><h6>VIP Services</h6></li>
+  <li><h6>Poker Boot Camps</h6></li>
+  <li><h6>Poker Seminars</h6></li>
+  <li><h6>Poker Entertainers</h6></li>
+</ul>
+<h4><strong>Money-making Poker Event Opportunities:</strong></h4>
+<ul>
+  <li><h6>Tournament Buy-ins</h6></li>
+  <li><h6>Tournament Re-buys and Add-ons</h6></li>
+  <li><h6>Raffle Sales</h6></li>
+  <li><h6>Silent , Live and Online Auctions</h6></li>
+  <li><h6>Event Programs</h6></li>
+  <li><h6>Sponsorships</h6></li>
+  <li><h6>Poker Satellite Tournaments</h6></li>
+  <li><h6>Photography</h6></li>
+  <li><h6>Food &amp; Beverages</h6></li>
+</ul>
+<h4><strong>Find Out More About Poker Fundraising Events</strong></h4>
+<p>
+
+
+  Fundraisers.com has a myriad of ideas and suggestions on our... <a href="../../webpages/resources/charityPoker.html">Poker Resource Page</a>
+<br>
+If you would like more info on Small Town Poker Tour email... <a href="mailto:poker@fundraisers.com?subject=" >poker@fundraisers.com</a>
+<br>
+For more information on United Way of Acadiana, see... <a href="http://www.unitedwayofacadiana.org/" target="clear">www.unitedwayofacadiana.org</a>
+</p>
+
+  
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link12" role="tabpanel"
+aria-labelledby="v-pills-link12-tab">
+<div>
+  <h4>
+    Featured Idea:
+  </h4>
+  <h2>Pulver Enterprises Gambles on a Charity Poker Tournament</h2>
+  <p><img src="../../images/happy people.jpg"   style="float: left; margin-right: 10px;" alt="">No-Limit Texas Hold’em has a vocabulary all its own. It isn’t spoken with a thick southern drawl, it sounds like something uttered in a foreign tongue. “I’ve got 73 diamonds and I’m all in. Flop: Ace - 3 – King offsuit; Turn: 7; River; 7. I double up with 7’s full. Next hand – 7-3 diamonds again. I’m all in – again. I get another caller (one with enough chips to take me out). They’ve got pocket 6’s. Flop comes: Ace of Diamonds - 4 of Diamonds – 8 of Diamonds. I hit my flush on the flop. Then: the Turn comes: 5; and a 4 at the River. The nut flush is a winner.”</p>
+  <p>In mid-October, Pulver Enterprises gambled on adding a, “Best Bet for the Cure: Charity Poker No-Limit Texas Hold'em Tournament” to their “Voice on Net” conference in Boston and won big. Not only did their event raise money for the Diabetes Research Institute Foundation and The Barton Center for Diabetes Education, they upped the ante for other nonprofit organizations interested in betting on poker’s resurgent popularity.
+
+  </p>
+  <p>The VON Conference already had a number of high-profile attendees expected, but adding John Ratzenberger and Phil Hellmuth to the list of poker tournament players was a major coup. Ratzenberger is famous for his role as “Cliff” on the long-running television series “Cheers” and he is the current host of the Travel Channel's "Made in America.” He’s also a poker aficionado. Hellmuth is a regular at the World Series of Poker and one of the all-time top money makers in professional poker.</p>
+  <p><img src="../../images/pcom_logo.gif" style="float: right;" alt="">Jeff Pulver, CEO of Pulver Enterprises, realized his company’s lead attorney, Jonathan Askin, had an inside edge on dealing a charity poker tournament into the VON Conference’s winning hand. In addition to being a member of the Bar, Askin once played on the professional poker circui</p>
+  <p><img src="../../images/baldman.jpg" alt=""  style="float: left;margin-right: 10px;">His official title at Pulver Enterprises is “Wartime Consiglieri.” That distinctive moniker hints at his propensity for attack strategies when launching a new venture. “It’s important for charities to be savvy when dealing with gambling and charity events,” Askin says. “We’re working on a template that will help other organizations hold similar events.”
+  </p>
+  <p>Askin had a stroke of genius that allowed Pulver Enterprises to stage the Boston tournament. They tipped the legal scales in their favor by financial contributions going toward raffle tickets. Winners of the tournament received the coveted Pulver Cup and bragging rights, but prizes with monetary value went to holders of raffle tickets. Remember, raffles are legal in Massachusetts (and most other states)…Poker is not!</p>
+  <p>Askin explains, “The Boston event represents an incredibly steep learning curve. Once you’ve pulled it off once, it becomes a lot easier.” Pulver recently dealt Danny Askin, Jonathan’s brother, into the game. “My brother’s come on board to explore the logistics of holding charity poker tournaments on a regular basis,” he says.</p>
+<p><img src="../../images/group of people.jpg" style="float: right;" alt=""> 
+  “I’ve never looked at poker as a vice. It’s more a game of skill than luck,” Askin says. He explains that playing poker has more in common with participating in a celebrity golf or tennis tournament than shooting craps or spinning a roulette wheel. “It’s interesting that states allow raffles to be held - which involve no skill, only luck - but it’s really hard to pull off a charity poker tournament.”
+</p>
+<p>There’s nothing like a poker tournament to kickoff a conference, according to Askin. “The game lends itself to very dramatic events at very precise, knowable moments that you don’t see in golf or tennis tournaments. I don’t know if I can capture exactly how sociable our event was. When someone yelled ‘I’m all in,’ 100 people would surround the table to see the hand played out.”</p>
+<p>“Probably, the greatest thing about kicking off a conference with a charity poker tournament is giving the attendees a chance to get to know each other in an intimate and psychologically revealing way,” Askin says. “If a person plays in a charity golf tournament, they may get to know the other three people in their foursome. With poker, everyone’s table hopping and you end up meeting about 100 people in your industry - people you may end up dealing with professionally.</p>
+<p><img src="../../images/biding.jpg" style="float: left; margin-right: 10px;" alt="">He adds, “I particularly loved that we had Michael Gallagher, President Bush’s chief advisor on telecom policy and Stan Wise, President of the Association of State Regulators. In the real world, tension heightens the drama at the poker table which, in many ways is a microcosm of the real world. There was one great moment when Mike, the President’s telecom advisor, went ‘all-in’ against Phil Hellmuth. Mike prevailed. That was a priceless moment.”
+</p>
+<p>“You learn things about people while playing poker that you’d never find out otherwise,” Askin says. “You see how they react to pressure and whether they play it safe.” The 5,000 attendees at Pulver</p>
+<p><img src="../../images/von.gif" style="float: right;" alt="">Enterprises’ “VON” Conference were given an opportunity to pre-register for the tournament and staggered start times were designed to accommodate varying arrival times.
+</p>
+<p>The credit for being able to focus on charity poker tournaments goes to Jeff Pulver, according to Askin. “Jeff does everything he can for diabetes. He was raised with a very charitable heart.” Pulver’s generosity is a driving force behind development of a matrix for other organizations to model future charity poker events on.</p>
+<p>The complexities of holding such an event can’t be fully addressed in the space we have available, but a synopsis of the Boston VON Conference tournament highlights follow:</p>
+<p><img src="../../images/building.jpg"style="float:left; margin-right:10px;" alt="">
+  “Best Bet for the Cure: Charity Poker No-Limit Texas Hold'em Tournament,” was underwritten by Pulver.com with proceeds benefiting the Barton Center for Diabetes Education, Inc. and the Diabetes Research Institute Foundation (DRIF).The sole mission of the DRIF is to support the Diabetes Research Institute (DRI) at the University of Miami School of Medicine, a recognized world leader in cure-focused diabetes research.</p>
+  <p>The event included extensive gambling action in a professional Vegas-like environment with cocktails and appetizers throughout the tournament. Participant entry fees were largely tax deductible by benefiting diabetes charities.</p>
+  <p>Winners of the Charity Tournament advanced to the Celebrity Tournament later in the evening. The last player sitting at each event took home the coveted Pulver Cup. In addition, players and other participants purchased raffle tickets at $100 per book of five. Players received 5 free tickets.</p>
+  <p><img src="../../images/gentlemens.jpg" style="float: right;" alt="">The top prize in the raffle was a $10,000 buy-in to the World Series of Poker Main Event in Las Vegas with roundtrip airfare on JetBlue included. An astounding $5 million prize went to the 2004 WSOP winner, with second place receiving $3.5 million. Prizes at the 2005 event are expected to increase considerably. Additional prizes included technology equipment and services related to “voice on net.
+  </p>
+  <p>Ofer Gneezy, President and CEO of iBasis, won the $10,000 WSOP buy-in. Brian Leske, from the Governor of Massachusetts office, took the Charity Tournament Championship.</p>
+  <p><img src="../../images/hugs.jpg" style="float: left; margin-right: 10px;" alt="">Shannon Pendergrast was a last minute walk-in, signing up for the opportunity to play against Phil Hellmuth. Pendergrast walked away with the Celebrity Tournament Championship. The late afternoon tournament winner was Vladimir Greysukh. The players agreed that it was the best event they’d ever experienced at a conference.</p>
+  <p>Adding a regulated activity, such as poker, could present challenges that most fundraising campaign managers are unable to contend with. </p>
+  <p><img src="../../images/awardgiving.jpg" style="float: right;" alt="">Askin believes partnerships with state-sanctioned poker rooms or Native American Casinos and the charity poker matrix they’re developing may help alleviate some legal and logistical headaches. He explains, “Organizations would be able to draw from the pool of dealers at Native American casinos and legally hold poker tournaments on their premises.” Since these facilities are already designed for poker games, equipment rental expenses and staffing costs could be reduced by forming partnerships with existing casinos. “Plus, holding an event for charity would be great PR for the casino,” he adds.</p>
+  <p>Individuals and companies might consider hosting a charity poker tournament to benefit a nonprofit organization or as a novel way to kickoff their next conference or event. Because the mingling of poker and philanthropy is relatively new and legal issues are incredibly complex, learning from those who’ve played’em and laid’em is especially beneficial. Jonathan Askin encourages queries at <a href="mailto:charitypoker@fundraisers.com%20">charitypoker@fundraisers.com</a></p>
+  <h2>About the Cause</h2>
+  <p><img src="../../images/Ricordi Blue Scrubs.jpg" style="float: right;"> 
+    Pioneering new technologies in islet transplantation and other cellular therapies since the early 1970’s, the DRI has successfully reversed diabetes in patients involved in ongoing clinical trials. The most comprehensive diabetes research facility of its kind, the DRI conducts a broad range of scientific programs focused on gene therapy, pancreatic stem cell development, molecular biology and transplant immunology, among others, to speed the most promising findings from the lab to the patient.</p>
+    <p>"The DRI continues to make important strides in diabetes research and islet cell transplantation. In fact, we have made more progress in the last three years than in the last three decades, with patients living insulin free for the first time since being diagnosed with the disease," says Camillo Ricordi, M.D., Stacy Joy Goodman Professor of Surgery and Medicine, and scientific director of the Diabetes Research Institute. Through the dedication of so many generous individuals, like Jeff Pulver, who continues to go above and beyond to support our research initiatives, we will move ahead with our groundbreaking work and fulfill our mission of finding a cure for all people living with diabetes.</p>
+    <p><img src="../../images/Barton Center.jpg"style="float:left; margin-right:10px;" alt="">The Barton Center for Diabetes Education is the United State’s largest, independent camping and educational program for children who live with diabetes and their caregivers. Some 1,500 children and their families participate in Barton’s programs annually, including the Clara Barton resident camp, Adventure Programs, Family Programs, and Day Camps in New York, Connecticut and Massachusetts.</p>
+    <p><img src="../../images/fire.jpg" style="float: right;" alt="">John Maconga, President of The Barton Center says, “We depend on fundraisers like the celebrity poker tournament to support our programs so that Children can attend the camps that could not otherwise afford the expense. Jeff Pulver truly recognizes the importance of taking care of our kids today and giving them hope for their future by supporting the camps and research for Diabetes."</p>
+    <p><i> ---Dewayne Lumpkin <br>
+      ---Annie Van Bebbe </i></p>
+      <h6>To 
+        find out how you can have a Charity Poker Event in your local community send 
+        email to <a href="mailto:charitypoker@fundraisers.com?subject=Charity%20Poker">charitypoker@fundraisers.com</a></h6>
+        <h4><strong>Read more about</strong></h4>
+          <p><ul>
+            <li>Pulver.com <a href="http://www.pulver.com" target="_blank">click here</a></li>
+            <li>Promotional materials for “Best Bet for the Cure: Charity Poker No Limit Texas Hold'em Tournament,” <a href="http://www.pulver.com/poker/" target="_blank">click here</a></li>
+            <li>For Photographs from the event <a href="http://www.siteskins.net/fall04von/4.html" target="_blank">click here</a></li>
+            <li>For a tournament schedule, raffle prizes, and sponsor list, <a href="http://www.pulver.com/poker/program2AMM.doc" target="_blank">click here</a></li>
+            <li>Diabetes Research Institute Foundation <a href="http://www.drinet.org/html/about_dri_foundation.htm" target="_blank">click here</a></li>
+            <li>The Barton Center for Diabetes Education <a href="http://www.bartoncenter.org" target="_blank">click here</a></li>
+            <li>Add your charity event to the <a href="http://www.pokerplayernewspaper.com/addcharitytournaments.php" target="_blank">Poker Player charity poker database</a>.</li>
+          </ul>
+          </p>
+
+          
+ 
+        
+        
+      
+</div>
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link13" role="tabpanel"
+aria-labelledby="v-pills-link13-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2> <strong>Grants Pass: The Little Southern Oregon Town That Could…and Did</strong></h2>
+<p><img src="../../images/clearweather.jpg" style="float: right;" alt="">
+On September 27, <i>Grants Pass, Oregon</i>, population 23,003 raised <b>$300,000</b> for local charities on a single day.  Two major events were scheduled for the same Saturday and succeeded by aiming at distinctly different segments of the community.<br>
+  
+</p>
+<p><i><a href="ducks.html" target="_top"><b>The Great American Duck Race</b></a></i> was a decidedly democratic affair. It represented 13,339 mostly local residents adopting ducks, of the yellow rubber variety, for $10.00 each. The event grossed more than <b>$133,000</b> dollars with <b>$120,000</b> going directly to a new Sports Park, courtesy of three local <i>Rotary Clubs</i>.<br>
+</p>
+<p><i><a href="bears.html" target="_top"><b>The BearFest 2003</b></a></i> was a highly successful fine art auction benefiting <i>21 local charitable organizations</i>.  It depended on fewer donors, but the twenty one winning bids totaled <b>$175,500</b>. Life-size fiberglass bear statues became blank canvases for the artistic vision of local painters, sculptors and designers. Each bear was sponsored by a local business. The total proceeds from each successful bid goes directly to a local charity chosen by the sponsor. <i>Evergreen Federal Bank</i> was the major sponsor and project coordinator of <i><a href="bears.html"><b>BearFest 2003</b></a></i>.<br>
+</p>
+<p><img src="../../images/bear.jpg" style="float: right;" alt="">
+  Those involved with both fund-raising events agree, <i>"Grants Pass is a very generous community."</i>  If actions speak louder than words, the impressive <b>$309,490</b> raised is hollering at the top of its lungs for other communities to take notice.<br>
+  </p>
+  <h4><strong>Read More About:</strong></h4>
+  <p><strong><a href="ducks.html" target="_top">The Great American Duck Race</a></strong>
+  <br><strong><a href="bears.html" target="_top">BearFest 2003</a></strong></p>
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link14" role="tabpanel"
+aria-labelledby="v-pills-link14-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2> <strong>Turbo Charging Your Next Fundraiser
+  with Mini Turtles</strong></h2>
+  <p>  No, they’re 
+    not Mutant, and no, they aren’t trained as Ninja warriors, but 
+    the Mini Turbo Turtle characters trademarked by Great American Merchandise 
+    &amp; <img src="../../images/turtle_close.jpg" style="float: left; margin-right: 10px;">Events 
+    (GAME) do have a future so bright they’re sporting some pretty 
+    cool shades. GAME has morphed a fundraising product that has proven 
+    highly successful for large charitable organizations into a package 
+    designed for individual schools, church groups, PTA’s and smaller 
+    community groups.</p>
+    <p>
+      The original 
+        Great American Duck &amp; Turtle Races have managed to raise hundreds 
+        of thousands of dollars per event since their arrival on the fundraising 
+        circuit. These large scale events are closely monitored by GAME and 
+        the “adopted” rubber characters are leased for the duration 
+        of the event only. The Mini Turbo Turtle Races can now be purchased 
+        by smaller organizations and used repeatedly for seasonal or annual 
+        events or to jazz up other ongoing fundraising efforts.
+    </p>
+    <p>Mini Turbo 
+      Turtle races staged by these school, civic and community groups and 
+      others have raised tens of thousands of dollars for worthy causes. If 
+      a picture is worth a thousand words, the photos from these events provide 
+      an encyclopedic volume of satisfied supporters. Organizers and participants 
+      alike are charmed by the infectious smiles and giggling excitement awaiting 
+      the results at the finish line.</p>
+      <p>Henry 
+        Shaw from the Boys and Girls Club of Paris, Texas is thrilled with the 
+        results of their Mini Turbo Turtle Race on August 31, 2003. They purchased 
+        the Big Kahuna package and “adopted” 2,412 of the 3,000 
+        available turtles. This resulted in a net profit of <img src="../../images/greenery.jpg" style="float: right;">$27,000. 
+        Shaw says, “This is hands down the most BANG for your buck!” 
+        Marketing for the event included ads on six radio stations and the local 
+        paper. Shaw reports he has “tried several different fundraisers 
+        in the past, and this one has taken the least amount of work for the 
+        most money.” They are already planning for this year’s event.</p>
+        <p>Jay McCall of Life Donor USA in Tucson, Arizona provides a testimonial of his experience with GAME’s Mini Turbo Turtle Racers. His organization arranged charitable “adoptions” for 700 Mini Turbo Turtles from a Li’l Dipper (1k) package their first year. Minimal advertising included a website for the event; they relied on personal solicitation as the main marketing tactic. Life Donor USA raised $7,000 the first year with the smallest available package. They charged a $10 “adoption” fee for each turtle. Their next race will be Aug. 14, 2004 at the Hilton hotel using their pool and water slides. Additional turtles will be purchased closer to the event date.</p>
+        <p>The Walton County Chamber of Commerce initiated a modest event in April of 2003. Pam Tedesco indicates their first foray into fundraising with Mini Turbo Turtles was done with “no formal advertising, only word of mouth.” The race took place in a large, figure-eight shaped pool with turtles being dropped down a waterfall. The Li’l Dipper (1k) package resulted in the “adoption” of 300 turtles. Efforts are underway to increase participation for their next event and the Walton County CCOC plans to purchase additional turtles from GAME.</p>
+        <p>Other organizations staging Mini Turbo TurtleTM Races include: Park Lane Academy Band in Tyler Town, Mississippi and the 21st Century Preparatory School in Racine, Wisconsin; both groups purchased 3,000 Mini Turbo Turtles. The Jackson Hole High School Booster Club in Jackson Hole, Wyoming and the AISD Education Foundation, Inc. in Alvin, Texas each bought 2,000 of the decidedly green, aquatic reptiles. Parker Middle School PTA in Taunton, Montana and the Pi Kappa Phi in Oxford, Ohio each ordered 1,000 of the sporty, rubber characters.</p>
+        <p>According 
+          to Phil Gordon, Vice President of Events at GAME, “The Mini Turbo 
+          TurtleTM Race, unlike our signature event, the Derby Duck <img src="../../images/green pool.jpg" alt="" style="float: right;"> Race®, 
+          is a racing package in which the client owns the characters outright 
+          (they are leased for a duck race). The Mini package includes the Mini 
+          Turtles, Adoption Shells, a racing manual, a small quantity of promotional 
+          merchandise, and use of GAME logos and trademarks – all of these 
+          items can be used by the client at their discretion.”</p>
+          <p>Most planning periods for a Mini Turbo Turtle Race average about two to three months. The clients experience in planning events is crucial to time allotted for development. GAME reports the four key steps to a successful race are: capturing media for advertising; securing sponsorship for prizes and monetary contributions; sales; and logistics. All of these key steps are the responsibility of the client. GAME does not offer customer service support for any of the Mini packages. The client assumes complete responsibility for all aspects of the Mini event.</p>
+          <p>Great American Merchandise & Event’s Duck and Turtle Races provide a wonderful complement to traditional fundraising efforts like walk-a-thons, candy drives and charity auctions. The unique ability to purchase Turbo Turtles provides nonprofit groups with the ability to stage annual events, amortizing the initial cost over a period of time and multiple Turtle Races. Turbo Turtle Races are fun and exciting; perfectly geared for schools, children’s charities or any fundraising effort appealing to the child in all of us.</p>
+          <p><i>-- DeWayne Lumpkin</i></p>
+          <p>To 
+            find out how you can have a Turtle Race in your local community send 
+            email to <a href="mailto:TurtleRace@fundraisers.com?subject=Turtle%20Race">TurtleRace@fundraisers.com</a>. 
+            </p>
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link15" role="tabpanel"
+aria-labelledby="v-pills-link15-tab">
+<h4><strong>Fundraising Tips:</strong></h4>
+<h2> <strong>Bling Bling in Boston for Kids with Diabetes</strong></h2>
+<p>
+  <div style="float:right;  display: flex; flex-direction: column; width: 45%; margin-left: 10px;">
+    <img src="../../images/men with ladies.jpg" alt="" > <!-- Adjust width as needed -->
+    <p>  <i style= >A Marilyn Monroe look-alike added to the evening's magic. <br>
+    </i></p>
+ 
+  </div>
+  <p><b>Joslin Diabetes Center</b> sparkled to the tune of <b>$775,000</b> at this year's <b>High Hopes Diamond Gala</b>; exceeding expectations. This decidedly black-tie event is an annual favorite on Boston's fundraising circuit.  Dining, dancing and yes…diamonds.  A pair of diamond earrings weighing in at 2.0 carats and set in 14KT white gold, valued at $10,000, to be exact.  One lucky attendee exited the Boston Park Plaza Hotel with bling bling in both ears.</p>
+  
+</p>
+<br><br>
+<p>
+  <img src="../../images/gala2.jpg"  style="float: left; margin-right: 10px;">Charitable events   of this caliber don't happen overnight, yet successful elements can be adapted on a smaller scale while growing an annual fundraiser. Joslin Diabetes Center began raising money for the High Hopes Fund for Kids with Diabetes in 1993. Ten years of support have yielded nearly six million dollars benefiting the Elliot P. Joslin Camp for Children with Diabetes, Joslin's Young Children's and, JumpStart programs, Joslin's School Age Program and Islet Transplant Research Programs.
+</p>
+
+<p>The dazzle power of the "Diamond Tower" has been a highlight of past High Hopes Diamond Galas. In March of 2000, one unset stone was placed in each of the 500 flutes forming a stunning Crystal Champagne Tower. Four hundred and ninety nine of the champagne flutes held a cubic zirconia. One of the crystal glasses held a 2.0 carat Millennium Diamond appraised at $20,000.</p>
+<p>This year's event was centered on a pyramid of 300 jewelry boxes containing one pair of diamond solitaire studs mingling with 299 pair of quality cubic zirconia earrings. Boston's DePrisco Jewelers were diamond partners for the 2003 event. Patrons were given the opportunity to purchase a pair of earrings for $150. Even the imposters were set in 14KT white gold. At the very least, participating supporters walked away with a carat for each ear; only a certified gemologist could identify them as knock-offs. It isn't difficult to imagine the palpable excitement as attendees in formal attire waited to hear if they needed to place an after hours call to their insurance agent before leaving the ballroom.</p>
+<p>
+  <div style="float:right;  display: flex; flex-direction: column; width: 45%; margin-left: 10px;">
+    <img src="../../images/taking picture.jpg" alt="" >
+    <p>  <i>Louise Penta of Boston, Joslin Gala chairperson, is shown with her son, Paul Penta, a Joslin patient, and Paul Madden, who oversees Joslin's camping programs for youngsters with diabetes. Ms. Penta announced a significant gift from the Penta family to help rebuild the camp&amp;Mac226;s dining hall, where her son worked this summer as a culinary arts student.<br>
+    </i></p>
+  </div>
+  <p>Joslin's annual A-List extravaganza incorporates more than diamonds. It glitters with celebrity entertainment, sparkles with champagne toasts, glistens with four-star cuisine and dazzles with dancing duos. The price per seat for this year's gala was $300. Each table seated ten and sponsorships were available for various levels of support from $3,000 to $125,000. An impressive Gala Program Journal is produced each year; raising additional funds for Kids with Diabetes.</p>
+  </p>
+<p>
+  The Platters, a legendary R&amp;B group, provided a special performance at this year's affair.  Melissa Manchester and Oleta Adams have provided entertainment at past events.  Silent and live auctions generated additional excitement with offerings that included: a first-class trip to Germany, dinner for 10 in your home by Terramia Ristorante, and signed sports memorabilia provided by the Boston Red Sox, Bruins, Patriots and more.</p>
+<p> <div style="float:left;  display: flex; flex-direction: column; width: 45%; margin-right: 10px;">
+  <img src="../../images/imagefromtop.jpg" alt="" >
+  <p><i>Boston's Park Plaza Hotel ballroom sparkled the for Joslin Diabetes Center's High Hopes Diamond Gala.</i></p>
+</div>
+<p> The sophisticated promotional materials for Joslin Diabetes Center's High Hopes Diamond Gala included various press releases, impressive invitations and supportive informational packages. Many experienced, inspired, and talented individuals contribute to the overwhelming success of Joslin's annual event. Casual observers might caution smaller organizations with the cliché: "Kids, don't try this at home." We prefer Mickey Rooney and Judy Garland's time honored exclamation, "Come on kids, let's put on a show." A creative approach and solid work ethic can overcome many obstacles including lack of experience and limited funding.</p>
+ </p>
+  <p>The unique idea of surrounding an upscale "raffle" with an air of mystery could be adapted to relatively modest fundraising efforts. Consider selecting a popular local artist and producing a limited edition of signed/numbered prints of a particularly appealing image. Hundreds of charitable supporters could purchase the guarantee of an artist signed print; with an approximate value similar to the cost of participation. One lucky contributor would win the original; worth considerably more than the contribution.</p>
+  <p>Similarly, picnic baskets could contain gift certificates with lunch for two to various local restaurants. One picnic basket might contain a private party for ten at a particularly prestigious regional restaurant. Again, no one goes home empty handed and individual contributions escalate due to the potential for a relatively big pay-off. The thrill of discovering the winner can be incorporated into multiple venues and retain excitement throughout a lengthy fundraiser.</p>
+  <p><div style="float:right;  display: flex; flex-direction: column; width: 45%; ">
+    <img src="../../images/onspeakers.jpg" alt="">
+   <p> <i>Joslin President C. Ronald Kahn, M.D., right, pays tribute to Gala honoree Charles H. Hood of the New England-based Hood Company for his many years of support to Joslin Diabetes Center.</i> </p>
+  </div>
+  <p> The concept is fairly simple - as most good ideas are - and easily adapted to endless prize packages and countless charitable organizations. Joslin Diabetes Center's stellar execution of many time-honored fundraising traditions are rolled into one diamond studded event benefiting the High Hopes Fund for Kids with Diabetes. Consider this an opportunity to learn from a "master craftsman" of charitable foundations with over 100 years of experience in the fruitful field of fundraising.</p>
+   
+  <br></p>
+  <p>
+    Joslin Diabetes Center's Website is <a href="http://www.joslin.harvard.edu/main.shtml" target="_blank"><strong>http://www.joslin.harvard.edu/main.shtml</strong></a><br>
+    They can be reached by telephone at (617) 732-2400.</p>
+</div>
+<div class="tab-pane fade show  first-tab-about " id="v-pills-link16" role="tabpanel"
+aria-labelledby="v-pills-link16-tab">
+<h4><strong>Great Idea:</strong></h4>
+<h2> <strong>Let Me Entertain You!</strong></h2>
+<p><img src="../../images/debating.jpg" style="float: right;" alt="">
+  Expert fundraiser <strong>Sue Shifrin-Cassidy</strong>, founder of <b>KidsCharities.org</b>, recently produced a highly successful benefit concert at the Ridgefield Playhouse for Movies and the Performing Arts in Ridgefield CT, starring award winning entertainer and husband, <strong>David Cassidy</strong>. David and his band, in the midst of an international tour, dropped into this historic 500 seat theater for one night only and brought the house down! Adding to the excitement of the evening was an unannounced musical appearance by musician <strong>Paul Schaeffer</strong> of the Late Night Orchestra. Paul stepped in to play keyboards on David's signature song "I Think I Love You". Proceeds of $78,000 from the concert and live charity auction, which alone raised over $30,000 in less than 30 minutes, were earmarked for worthy children's charities including the <strong>Juvenile Diabetes Research Foundation</strong>.
+</p>
+<p>Great entertainment for a great cause is a winning combination that you can use for your next fundraiser. Even if you don't have access to headline performers, gifted emerging artists are everywhere! Request a donation of time and talent in return for exposure the performer will gain by appearing at your next event. Give it a try!</p>
+<h4>  <strong>Contact Information</strong></h4>
+<p><strong><a href="https://www.fundraisers.com/cgi-bin/axs/ax.pl?http://www.kidscharities.org/" target="_blank">KidsCharities.org</a></strong>
+<br>
+<strong><a href="https://www.fundraisers.com/cgi-bin/axs/ax.pl?http://www.jdf.org/" target="_blank">Juvenile Diabetes Research Foundation</a></strong>
+<br><strong><a href="https://www.fundraisers.com/cgi-bin/axs/ax.pl?http://www.elmsinn.com/attractions/theatres.php" target="_blank">The Ridgefield Playhouse for Movies and the Performing Arts</a></strong></p>
+</div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="text-center">
+      <img src="../../images/featuredgreatideas.gif" alt="">
+    </div>
+    <div class="text-center">
+    <h4>Events</h4>
+    <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist"
+    style="" aria-orientation="vertical">
+    <a class="nav-link other-tab-class " id="v-pills-link11-tab" data-mdb-toggle="pill"
+        href="#v-pills-link11" role="tab" aria-controls="v-pills-link11"
+        aria-selected="false">Small Town Poker Tour</a>
+        
+        <a class="nav-link other-tab-class " id="v-pills-link12-tab" data-mdb-toggle="pill"
+        href="#v-pills-link12" role="tab" aria-controls="v-pills-link12"
+        aria-selected="false">Pulver Enterprises Gambles on a Charity Poker Tournament</a>
+        
+        <a class="nav-link other-tab-class " id="v-pills-link13-tab" data-mdb-toggle="pill"
+        href="#v-pills-link13" role="tab" aria-controls="v-pills-link13"
+        aria-selected="false">Grants Pass' Great American Duck Race & Bearfest 2003</a>
+        
+        <a class="nav-link other-tab-class " id="v-pills-link14-tab" data-mdb-toggle="pill"
+        href="#v-pills-link14" role="tab" aria-controls="v-pills-link14"
+        aria-selected="false">Turbo Charging Your Next Fundraiser with Mini Turtles</a>
+       
+        <a class="nav-link other-tab-class " id="v-pills-link15-tab" data-mdb-toggle="pill"
+        href="#v-pills-link15" role="tab" aria-controls="v-pills-link15"
+        aria-selected="false"> Bling Bling in Boston for Kids with Diabetes</a>
+        
+        <a class="nav-link other-tab-class " id="v-pills-link16-tab" data-mdb-toggle="pill"
+        href="#v-pills-link16" role="tab" aria-controls="v-pills-link16"
+        aria-selected="false"> Ridgefield Playhouse's Benefit Auction And Concert</a>
+      </div>
+</div>
+  </div>
+    </div>
+  </div>
+  <!--Script -->
+<!-- Add jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Add Popper.js and Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-undefined"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-undefined"
         crossorigin="anonymous"></script>
+
+<!-- Your existing script -->
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      // Show initial content on page load
+      $(".initial-content").show();
+  
+      // Enable Bootstrap tabs
+      $('#v-pills-tab a').click(function (e) {
+        e.preventDefault();
+  
+        // Hide the initial content
+        $(".initial-content").hide();
+  
+        // Hide all tab contents
+        $('.tab-pane').hide();
+  
+        // Show the selected tab content
+        var targetTab = $(this).attr('href');
+        $(targetTab).show();
+  
+        // Update the active class for the tab links
+        $('#v-pills-tab a').removeClass('active');
+        $(this).addClass('active');
+      });
+  
+      // Show the initial tab (assuming there is an element with the class "initial-tab")
+      $('.initial-tab').click();
+    });
+  </script>
+  
+  <script>
+    // Wait for the document to be ready
+    $(document).ready(function() {
+      // Add click event listener to all tabs with class 'nav-link'
+      $('.nav-link').click(function() {
+        // Hide the image container when any tab is clicked
+        $('#imageContainer').hide();
+        
+        // Check if the clicked tab is the "Graphic Design" tab
+        if ($(this).is('#v-pills-link9-tab')) {
+          // Show the image container when the "Graphic Design" tab is clicked
+          $('#imageContainer').show();
+        }
+      });
+    });
+  </script>
+<script>
+  // Function to handle tab click and scroll to the element with class col-lg-6
+  function scrollToColLG6() {
+      // Get the screen width
+      var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+      // Check if the screen width is less than 992px
+      if (screenWidth < 992) {
+          // Get the position of the element with class col-lg-6
+          var colLG6Element = document.querySelector('.col-lg-6');
+          var colLG6Position = colLG6Element.offsetTop;
+
+          // Scroll to the element with class col-lg-6
+          window.scrollTo({
+              top: colLG6Position,
+              behavior: 'smooth'
+          });
+      }
+  }
+
+  // Attach click event listeners to each tab with the class custom-tab
+  var tabs = document.querySelectorAll('.other-tab-class');
+  tabs.forEach(function(tab) {
+      tab.addEventListener('click', function(event) {
+          // Prevent default link behavior
+          event.preventDefault();
+
+          // Scroll to the element with class col-lg-6 on screens less than 992px
+          scrollToColLG6();
+      });
+  });
+</script>
 </body>
 
 </html>

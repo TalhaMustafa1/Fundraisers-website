@@ -3,36 +3,84 @@
     padding: 0;
     box-sizing:border-box;
 }
-.navbar{
-    background-color: #cc0000 !important;
+nav{
+    background-color: #cc0000!important;
 }
 .nav-item .nav-link{
     color: white !important;
-    font-weight:normal;
+    font-weight: normal;
     font-size: 17px;
+    
 }
-section{
+.nav-pills a{
+    background-color: white !important;
+    font-size: 14px;
+    gap: 90px !important;
+    padding: 0 !important;
+}
+.container-1{
     margin-top: 40px;
 }
-.col-lg-3 a{
+.col-lg-3 img{
+    margin-bottom:10px;
+}
+.anchor-links{
     font-size: 14px;
+}
+.text-center {
+    text-align: center;
+}
+
+.col-lg-6 {
+    border-left: 2px solid #cfcfcf;
+    border-right: 2px solid #cfcfcf;
+}
+.col-lg-6 h2{
+    font-size:24px;
+}
+.col-lg-6 h4{
+    font-size: 15px;
+}
+.col-lg-6 p{
+    font-size: 14px;
+}
+.col-lg-3 h4{
+    font-size: 15px;
+}
+.col-lg-3 p{
+    font-size: 14px
+}
+.col-lg-6 h6{
+    font-size: 15px; 
     color: black;
 }
-.col-lg-3 img{
-    margin-bottom: 8px;
+.links{
+    margin-bottom: 12px;
 }
-.tony-poker-img{
-    margin-top: 8px;
+.service-name{
+    color: #cc0000;
+    font-size: 20px;
 }
-@media screen and (max-width: 768px) {
-    .navbar-collapse  .navbar-nav{
-         gap: 0px !important;
-         margin-inline: auto !important;
-         display: flex;
-         justify-content: center;
-         align-items: center;
+.tab-pane > div:first-child{
+    margin-bottom: 20px;
+}
+.links h4{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 992px) {
+    .sidebar{
+          background-color: #cc0000!important;
     }
-    ul{
-        gap: 2px !important;
+    .navbar-nav{
+        gap:10px !important;
     }
+    .navbar-toggler-icon-white {
+        color: white !important; /* Change to the color you desire */
+    }
+  .btn-close{
+    width: 80px !important; 
+    background-color: white;
   }
+
+}
