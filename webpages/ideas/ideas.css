@@ -30,7 +30,9 @@ nav{
 .text-center {
     text-align: center;
 }
-
+ul{
+    font-size: 14px;
+}
 .col-lg-6 {
     border-left: 2px solid #cfcfcf;
     border-right: 2px solid #cfcfcf;
