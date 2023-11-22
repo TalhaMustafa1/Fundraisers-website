@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="giving.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- mdb -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <title>Fundraisers</title>
+
+</head>
+<style>
+  .navbar-toggler-icon {
+    color: white;
+  }
+</style>
+
+<body>
+  <!-- navbar starts -->
+  <nav class="navbar  navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html"><img src="../../images/mastheadlogo_01.gif" alt="" width="200px"
+          height="60px"></a>
+      <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color: #fff; font-size: 28px;"></i>
+        </span>
+      </button>
+      <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title " id="offcanvasNavbarLabel"></h5>
+          <button type="button"
+            style="font-weight: bold; color: #fff; font-size: 27px; border: none;  border: none; background: none; padding: 0; margin: 0;outline: none; box-shadow: none; "
+            class="btn " data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fas fa-times" style="color: white;"></i> <!-- Font Awesome close icon -->
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 py-2" style="gap:20px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../../webpages/aboutus/index.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/awarnessCalendar/awarness.html">Awarness Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/ideas/index.html">Ideas </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cause Celebrites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giving People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/resources/resources.html">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends -->
+  <div class="container container-1">
+    <div class="row">
+      <div class="col-lg-3 ">
+        <div class="text-center">
+          <img src="../../images/causeCelebs.gif" alt="">
+        </div>
+<p>Find out about the charities your favorite celebrities support</p>
+        <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" style=""
+          aria-orientation="vertical">
+          <div>
+            <h4>Giving Celebs</h4>
+          </div>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link1-tab"
+            data-mdb-toggle="pill" href="#v-pills-link1" role="tab" aria-controls="v-pills-link1"
+            aria-selected="true">Giving Moms</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link2-tab"
+            data-mdb-toggle="pill" href="#v-pills-link2" role="tab" aria-controls="v-pills-link2"
+            aria-selected="true">Giving Dads</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link3-tab"
+            data-mdb-toggle="pill" href="#v-pills-link3" role="tab" aria-controls="v-pills-link3"
+            aria-selected="true">Giving Athletes</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link4-tab"
+            data-mdb-toggle="pill" href="#v-pills-link4" role="tab" aria-controls="v-pills-link4"
+            aria-selected="true">Giving Comedians</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link5-tab"
+            data-mdb-toggle="pill" href="#v-pills-link5" role="tab" aria-controls="v-pills-link5"
+            aria-selected="true">Ways To Motivate Your Group</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link6-tab"
+            data-mdb-toggle="pill" href="#v-pills-link6" role="tab" aria-controls="v-pills-link6"
+            aria-selected="true">How To Reach Your Finicial Goals</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link7-tab"
+            data-mdb-toggle="pill" href="#v-pills-link7" role="tab" aria-controls="v-pills-link7"
+            aria-selected="true">Direct Sale Products vs Order Taker Fundraiser</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link8-tab"
+            data-mdb-toggle="pill" href="#v-pills-link8" role="tab" aria-controls="v-pills-link8"
+            aria-selected="true">How To Choose A Fundraising Company</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link9-tab"
+            data-mdb-toggle="pill" href="#v-pills-link9" role="tab" aria-controls="v-pills-link9"
+            aria-selected="true">Top Ten Tips For Fundraising Success</a>
+          <a class="nav-link active other-tab-class" style="background-color:white;" id="v-pills-link10-tab"
+            data-mdb-toggle="pill" href="#v-pills-link10" role="tab" aria-controls="v-pills-link10"
+            aria-selected="true">The Scoop On Cookie Dough Fundraisers</a>
+
+
+        </div>
+      </div>
+      <div class="col-lg-6 ">
+        <div class="initial-content">
+            <div class="text-center">
+                <img src="../../images/giving-nancycartwright.jpg" alt=""> 
+            </div>
+            <br>
+            <div>
+            <h4 ><strong>A Giving Celebrity:</strong></h4>
+            <h2 style="margin: 0; padding: 0;"><strong>Nancy Cartwright</strong></h2>
+            <h5><strong>The Voice of Bart Simpson is Bringing Light
+                <br>
+                
+to the Darker Side of her City</strong>
+<br>
+            </h5>
+        </div>
+        <p>
+            At a time of rising crime rates and violence in our cities, Nancy Cartwright is sounding off in an effort to make a difference. Ironically, Nancy has voiced hundreds of animated characters over the past two decades, including that of Bart of The Simpsons phenomenon. But the Emmy winner also speaks for concerned and frustrated residents in her community. So eloquently, in fact, that Northridge, California has named her their honorary Mayor. "I think they made me honorary mayor because I have a big mouth and I'm a ten year-old boy at heart," she stated modestly.
+            </p>
+            
+            <p>
+            It's more likely that San Fernando Valley residents appreciate this Hollywood celebrity for her ability to affect change. "I essentially get paid a lot of money to just burp and fart," said Nancy referring to her role at Fox Studios voicing the Bart Simpson character. "I make enough money to where I can focus on good things, and I have the freedom to use my time anyway I want. I feel so blessed and this is the least I can do to give back."
+            </p>
+            
+            <p>
+            Two years ago, Nancy was searching for ways to volunteer her services to her community and visited, of all places, her local Chamber of Commerce. "I don't have anything to sell," she politely interjected during a meeting, "But, I'm the voice of Bart Simpson and I want to help?"
+            </p>
+            
+            <p>
+            Wayne Adelstein, CEO and President of North Valley Regional Chamber of Commerce, is also the chairman of the board for the Valley Economic Development Center. Adelstein thought that a Hollywood celebrity was just the thing that one of his pet projects needed. He assured Nancy that her heart was in the right place, but explained to her that the Chamber of Commerce might not be the higher calling she was aiming for.
+            </p>
+            
+            <p> <img src="../../images/lapdbadge.jpg" style="float: right;" alt="">
+            Adelstein introduced Nancy to Lorraine New, President of the Devonshire Police Activities League Supporters (PALS). "Loraine has such an amazing energy and she sets the tone for the whole group," exclaims Nancy. "We have a great relationship. It's like a divine intervention, with our purposes aligned."
+            </p>
+            
+            <p>
+            Nancy has served as a fundraiser for the Devonshire PALS board of directors ever since, lightening the burden of community officials campaigning for a new PALS Youth Center. So far the team of supporters has raised all but $200,000 of the $2.5 million needed to break ground on the new facility. "My celebrity status has helped," said Nancy. "We're rounding the final turn."
+            </p>
+            
+            <p>
+            Creative in her methods when it comes to fundraising, Nancy invited over 300 celebrities and VIPs to her home for Monte Carlo Night last year. The private party featured a charity poker tournament and an auction to benefit PALS. "Councilman Greig Smith and his office promoted our last event as a grassroots campaign," boasted Nancy about her city official acquaintance.
+            </p>
+            
+            <p> <img src="../../images/officersandoval.jpg" style="float: left; margin-right: 10px;" alt="">
+            The event was not only a successful fundraiser, but it also generated a lot of local and mainstream media buzz, inevitably raising awareness. The news reached Mayor Antonio Villaraigosa who was so impressed with the performance from such a small group of volunteers that he added a $1 million grant to the collection. Nancy was so inspired by the outpouring of support that she committed herself to finishing what she started. On 29 September Nancy will host the Second Annual Monte Carlo Night. <i>(Details at the end of this feature)</i>
+            </p>
+            
+            <p>
+            "I'm going to keep throwing these events until our mission to build the youth center is accomplished."
+            </p>
+            
+            <p>
+            But the clock is ticking, and the current 800-square-foot Park Parthenia Community Family Center is temporary. Thousands of youth benefit from PALS' services and dedicated volunteers every year, making it clear that a larger facility is urgently needed.
+            </p>
+            
+            <p>
+            "Officer Sandoval is there every single day," says Nancy referring to Elizabeth who runs the PALS Youth Center, "with 200 kids going through it a week." The proposed new Devonshire PALS Youth Center will allow for increased youth membership, expanding the very programs and services that will discourage, and eventually diminish, gang activity. "My employees actually tutor kids on the weekends," beams Nancy about her staff. "We even tested some of the kids for improved reading skill levels." Nancy also explains the center's strategic location. "Our neighborhood has the highest level of gang infiltration of any in Los Angeles."
+            </p>
+            
+            <p> <img src="../../images/palsyouthcenter.jpg"  style="float: right;" alt="">
+            PALS is hoping to break ground on the new 5,000 square-foot facility sometime this year, but plans have been delayed due to funding requirements. "We're only $200,000 shy of our goal," exclaimed Nancy. "Once we've raised the rest of the money we can start building." The Devonshire PALS Youth Center plans include an education room for studies and homework, a computer lab, a library, a mini-gymnasium for sports programs and activities, and outdoor sport courts. The educational programs, adventurous field trips, and wholesome recreation are not only beneficial for local at-risk youth, but could turn the tide for local residences and businesses.
+            </p>
+            
+            <p>
+            The simple theory of cause and effect applies to today's growing gang problem. Gangs break down a community's social structure and that perpetuates when at-risk youth lack alternative supervision, guidance, and recreation. Too often our youth have nowhere to go, are exposed to and learn to associate with gangs, and are susceptible to recruitment. Worse yet, they may become victims of crime and violence themselves. Nancy believes the Devonshire PALS Youth Center will provide Los Angeles with a long-term solution.
+            </p>
+            
+            <p>
+            "This community youth center is going to make a big difference in providing education and alternative recreation. I want it to serve as a model for others in the future."
+            </p>
+            
+            <h4>
+            <strong>Devonshire PALS</strong>
+            </h4>
+            
+            <p>
+            <img src="../../images/policeexplorers.jpg" style="float: right;">The Los Angeles Police Department (LAPD) Devonshire Police Activity League Supporters (PALS) has proved that it effectively deters gangs and prevents local crime. For more than 30 years PALS has provided after school and weekend enrichment programs for at-risk children and teens. Those programs help to build strong and positive relationships between youth and the LAPD.
+            PALS takes a proactive approach in promoting trust and understanding between young people and police officers by bringing youth under the supervision and constructive influence of dedicated law enforcement professionals. The program is based on the conviction, that young people—if they are reached early enough—can develop strong and positive attitudes toward police officers and the law.
+            Read more about PALS and how you can help their Cause... <a href="http://www.devonshire-pals.org/" target="clear">Devonshire PALS</a>.
+            </p>
+            
+            <h4>
+            <a href="https://www.fundraisers.com/giving/nancycartwright2.html"><strong>Click For An Exclusive Interview<br>With Nancy Cartwright</strong></a>
+            </h4>
+            
+        </div>
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show  first-tab-about " id="v-pills-link1" role="tabpanel"
+            aria-labelledby="v-pills-link1-tab">
+                    <div class="text-center">
+                        <img src="../../images/giving-seymour.jpg"  alt="">
+                        <br>
+                        <img src="../../images/causeceleb.gif" alt="">
+                    </div>
+                    <div>
+                        <h4>
+                            <img src="../../images/janeseymour.jpg" style="float: right;" alt="">
+                            <img src="../../images/redcross.jpg" style="float: right;" alt="">  <strong>Jane Seymour:
+                            American Red Cross</strong></h4>
+
+                    </div>
+                    <div>
+                        <p> <strong>Jane Seymour</strong>  is a member of the Celebrity Cabinet with the <a href="http://www.redcross.org/" target="clear">Red Cross</a>. Already active in philanthropic endeavors here and abroad, Ms. Seymour's involvement with the Red Cross will help educate those around the globe on the importance of Red Cross services. She has been encouraging children in schools across the US to donate $1 for vaccinations in lesser-developed countries around the world. $1 covers the cost of 1 child's vaccination, so each child who donates will be paying to vaccinate another child.</p>
+
+<p>Jane has also supported the following charities:</p>
+
+<a href="http://www.childhelpusa.org/" target="clear">ChildHelp USA</a>, <a href="http://www.cityhearts.org/" target="clear">City Hearts</a>, <a href="http://www.nationalcac.org/" target="clear">National Children's Advocacy Center</a>, <a href="http://www.childrenunitingnations.org/" target="clear">Children Uniting Nations</a>, <a href="http://www.christopherreeve.org/" target="clear">Christopher Reeve Foundation</a> , <a href="http://www.dressforsuccess.org/ " target="clear">Dress for Success</a>, <a href="http://www.eifoundation.org/" target="clear">Entertainment Industry Foundation</a>, <a href="http://www.heifer.org/" target="clear">Heifer International</a>, <a href="http://www.somaly.org/" target="clear">Somaly Mam Foundation</a>, <a href="http://www.starkeyhearingfoundation.org/" target="clear">Starkey Hearing Foundation</a>, <a href="http://www.whatapair.org/" target="clear">What A Pair</a>, and <a href="http://www.reeve.uci.edu/" target="clear">The Reeve Irvine Research Center</a>.
+
+<h4> <strong>  <img src="../../images/katiecouric.jpg" style="float:left; margin-right: 10px;" alt=""> Katie Couric: National Colorectal Cancer Research Alliance</strong></h4>
+    <div class="text-center">
+    <img src="../../images/eif.jpg"  alt="">
+</div>
+    <br>
+<p>  Katie Couric is working to find a cure for a silent killer... colorectal cancer, otherwise known as colon cancer. It is one of the most deadly forms of cancer in the U.S.- but it doesn't have to be. <a href="http://www.eifoundation.org/national/nccra/splash/" target="clear">The National Colorectal Cancer Research Alliance</a> (NCCRA), a program of the Entertainment Industry Foundation, is dedicated to the eradication of colorectal cancer by promoting the importance of early medical screening and funding research to develop better tests, treatments, and ultimately a cure.</p>
+
+<h4>Brooke Shields: Ronald McDonald House</h4>
+
+<p><img src="../../images/brookeshields.jpg" style="float: right;" alt=""> <img src="../../images/ronaldmcdonaldhouse.gif" style="float: right;" alt="">
+     Actress, model and mom, Brooke Shields, has teamed up with <a href="http://www.rmhc.org/rmhc/index.html" target="clear">Ronald McDonald House Charities</a> to serve as ambassador. To date, Ronald McDonald Houses have provided more than 10 million families with temporary residences near medical facilities where their children are being treated for serious illnesses such as cancer. By creating, finding and supporting programs that directly improve the health and well-being of children, Ronald McDonald House Charities (RMHC) is working to better the lives of children and their families around the world.</p>
+
+<h4><strong>Laura Dern: </strong> </h4>
+<div class="text-center">
+    <img src="../../images/lauradern.jpg" alt="">
+</div>
+<br>
+<h4><strong>Children's Health Environmental Coalition</strong></h4>
+
+<p> <strong> Laura Dern</strong> <img src="../../images/chec.gif" style="float: right;" alt=""> supports the <a href="http://www.checnet.org/index.asp" target="clear">Children's Health Environmental Coalition</a>, a national non-profit organization dedicated to educating the public, specifically parents and caregivers, about environmental toxins that affect children's health. The ultimate goal is to eliminate children's exposure to man-made toxic substances by ensuring everyone's right to know what is in their air, food, water and commercial products. CHEC is working to achieve this goal through increased scientific research, government policies which are more protective of children, and educating and mobilizing individuals- like you- around the country.</p>
+
+<p>Reba McEntire: First Book</p>
+
+<p>Reba McEntire supports  <img src="../../images/reba.jpg" style="float: left; margin-right: 10px;" alt=""> <img src="../../images/firstbook.gif" style="float: right;" alt=""> <a href="http://www.firstbook.org/" target="clear">First Book</a>, a national non-profit organization that strives to foster the joy of reading among children from low-income families. The group distributes new books and other educational materials to children enrolled in literacy programs. First Book has established a national network of local advisory boards (LAB) comprised of volunteers who work with the program at the local level. During 2000, the LAB network provided more than four million books to children across the country.</p>
+
+<p>Julianne Moore: Tuberous Sclerosis Alliance</p>
+
+<p>
+    <img src="../../images/moore.jpg" style="float: right;" alt="">
+    <img src="../../images/tsalogo.gif" style="float: right;" alt="">
+    
+    Her chance meeting on the streets of New York with a devoted father and his young son led four-time Oscar-nominated actress Julianne Moore to become an advocate in the fight to find a cure for <a href="http://tsalliance.easycgi.com/default.aspx" target="clear">Tuberous Sclerosis</a>, a largely unknown genetic disorder marked by the invasive growth of tumors in all the body's vital organs. "The sight of this young boy, Tommy Lindsey, with a stitched and bandaged head, and the simple plea for help from his father made it difficult for her to say no", Moore said in her testimony before the House Appropriations Labor-HHS-Education Subcommittee. "We must find a cure for Tuberous Sclerosis to put an end to this disease."</p>
+
+                    </div>
+          </div>
+          <div class="tab-pane fade show  first-tab-about " id="v-pills-link2" role="tabpanel"
+          aria-labelledby="v-pills-link2-tab">
+         <div class="text-center">
+            <img src="../../images/giving-emeril.jpg" alt="">
+            <br>
+            <br>
+            <img src="../../images/causeceleb.gif" alt="">
+         </div>
+         <div>
+            <h2><strong>Honoring Giving Dads!</strong></h2>
+            <h4>
+                <strong><a name="emerillagasse"> <img src="../../images/emerillagasse.jpg" style="float: right;" alt=""> Emeril Legasse:<br>The Emeril Legassi Foundation</a></strong>
+            </h4>
+            <p>
+                <img src="../../images/emerilfoundation.gif"  alt=""> 
+            </p>
+            
+
+            <p>
+                
+               
+                The Emeril Lagasse Foundation seeks to inspire, mentor, and enable all young people, especially those from disadvantaged circumstances, to realize their full potential as productive and creative individuals. The foundation supports and encourages programs creating developmental and educational opportunities for children within communities where Emeril's restaurants operate.
+            </p>
+
+            
+            <h4>
+                <strong><a name="paulnewman">Paul Newman: Newman's Own</a></strong>
+            </h4>
+            <p> <img src="../../images/paulnewman.jpg" style="float: left; margin-right: 10px;" alt="">
+                <div class="text-center">
+                <p><img src="../../images/newmansown.jpg" alt=""></p>
+            </div>
+                Paul Newman was committed to helping make the world a better place. To carry on his philanthropic legacy,
+                <a href="http://www.newmansown.com/" target="clear">Newman’s Own Foundation</a> donates all net royalties and profits after taxes it receives from the sale of Newman’s Own products to charities worldwide. Paul Newman and Newman's Own Foundation have given over $300 million to thousands of charities since 1982. One of the causes closest to his heart was Hole in the Wall Camps for children with serious illnesses and life-threatening conditions.
+            </p>
+            <br>
+            
+            <h4>
+                <strong><a name="tomhanks">Tom Hanks: ONE Campaign</a></strong>
+            </h4>
+            <br>
+            <p>  <img src="../../images/tomhanks.jpg" style="float: right;" alt="">
+                <img src="../../images/one.gif" alt="" style="float: right;">
+               
+              <a href="https://www.one.org/"> ONE </a> is a new effort by Americans to rally Americans- one by one- to fight the emergency of global AIDS and extreme poverty. ONE is students and ministers, punk rockers and NASCAR moms, Americans of all beliefs and every walk of life, united as one to help make poverty history. ONE believes that allocating an additional one percent of the U.S. budget toward providing basic needs like health, education, clean water and food would transform the futures and hopes of an entire generation in the world's poorest countries. ONE also calls for debt cancellation, trade reform and anti-corruption measures in a comprehensive package to help Africa and the poorest nations beat AIDS and extreme poverty.
+            </p>
+            <br>
+            
+            <h4>
+                <strong><a name="billclinton"><img src="../../images/billclinton.jpg" style="float: left;margin-right: 10px;" alt=""> Bill Clinton: The William J. Clinton Foundation</a></strong>
+            </h4>
+            
+            <p>
+                 <img src="../../images/clintonfoundation.gif" style="float: right;" alt="">
+                The mission of the
+                <a href="http://www.clintonfoundation.org/" target="clear">William J. Clinton Foundation</a> is to strengthen the capacity of people in the United States and throughout the world to meet the challenges of global interdependence. To advance this mission, the Clinton Foundation has developed programs and partnerships in the following areas: Health Security, Economic Empowerment, Leadership Development and Citizen Service, and Racial Ethnic and Religious Reconciliation.
+            </p>
+            
+            <p>
+                Through generous donations, the Clinton Foundation has been able to dramatically lower the cost of HIV/AIDS medication and tests, has helped countries scale up treatment, and has begun to bring quality healthcare to the world's children and those in rural areas.
+                <br>
+                <div class="text-center">
+                    <img src="../../images/tommyhilfigerfoundation.gif" alt="">
+                </div>
+            </p>
+
+            <h4><strong>Tommy Hilfiger: The Tommy Hilfiger Corporate Foundation <img src="../../images/tommyhilfiger.jpg" style="float: right;" alt=""></strong></h4>
+            <p>
+                <a href="http://companyinfo.tommy.com/#/tommy_foundation/overview" target="clear">The Tommy Hilfiger Corporate Foundation</a>, Inc. believes education is the cornerstone for today's youth. For America to remain competitive in the global marketplace, a stronger emphasis should be placed on exposing youth to experiences in education and career related opportunities. By focusing on preparing students for the demands of today's global society, the goal of the Tommy Hilfiger Corporate Foundation is to be a major force in improving education.<br>
+                </p>
+            <p>
+                <strong><a name="jerryseinfeld">Jerry Seinfeld: Autism Speaks</a></strong>
+            </p>
+            <br>
+            <p> <img src="../../images/jerryseinfeld.jpg" style="float: left; margin-right: 10px;" alt="">
+                <img src="../../images/autismspeaks.jpg" style="float: right;" alt="">
+                <strong>Jerry Seinfeld</strong> continues to support
+                <a href="http://www.autismspeaks.org/" target="clear">Autism Speaks</a>, by hosting a star-studded charity event to support Autism speaks, an organization dedicated to funding global biomedical research into the causes, prevention, treatments, and cure for autism, bringing hope to all who deal with the hardships of this disorder.
+                .
+            </p>
+            <br>
+            <p style="padding: 0; margin: 0;">
+                <strong><a name="paulsorvino">Paul Sorvino: Paul Sorvino Asthma Foundation</a></strong>
+            </p>
+            <br>
+            <p> <img src="../../images/paulsorvino.jpg" style="float: right;" alt="">
+                <img src="../../images/sorvinoasthma.gif" style="float: left; margin-right:10px;" alt="">
+                <strong>Paul Sorvino</strong>Born with severe asthma, Paul Sorvino founded the Sorvino Asthma Foundation to help make a difference. Paul Sorvino has performed in Goodfellas, That Championship Season, Law and Order, and Bulworth. At the beginning of his career, Paul was in serious trouble because of his asthma. He doubted he could continue his stage work, due to severe breathing difficulties. Fortunately, two of his fellow actors showed him a special yoga breathing technique that changed his life. He has been Asthma-free ever since.
+            </p>
+           <p style="display: flex; justify-content: space-around; flex-direction: row;">
+            
+                <!-- <A HREF="causeceleb95.html"><STRONG>Previous Celebs</STRONG></A><IMG SRC="https://www.fundraisers.com/news/picsnews/pixelclear.gif" HEIGHT="10" WIDTH="40" HSPACE="0" VSPACE="0" BORDER="0" ALT=" "> --> <a href="index.html"><strong>Giving Home</strong></a> <a href="causeceleb97.html"><strong>Click To See More Celebs</strong></a>
+               
+           </p>
+         </div>
+        </div>
+        <div class="tab-pane fade show  first-tab-about " id="v-pills-link3" role="tabpanel"
+        aria-labelledby="v-pills-link3-tab">
+        <div class="text-center">
+            <img src="../../images/athletes.jpg" alt="">
+            <br>
+            <br>
+            <img src="../../images/causeceleb.gif" alt="">
+         </div>
+         <h2><strong>Honoring Giving Athletes!</strong></h2>
+         <h4><strong>Jeff Gordon: The Jeff Gordon Foundation</strong></h4>
+         <div class="text-center">
+            <img src="../../images/juf.gif" alt="">
+         </div>
+         <br>
+         <p>
+             <img src="../../images/jeffgordon.jpg" style="float: right;" alt="">
+             
+             For four-time NASCAR Cup Series champion <strong>Jeff Gordon</strong>, victory lane is the place where hard work, determination, and experience have combined for an amazing number of wins. Off the track, Jeff seeks to help children and their families gain their own victories over chronic and often debilitating illnesses through <a href="http://www.jeffgordonfoundation.org/" target="clear">The Jeff Gordon Foundation</a>.</p>
+
+<p>Established in 1999, The Foundation primarily provides support for <a href="http://www.jeffgordonfoundation.org/charities.sps" target="clear">four designated charities</a>, also offering support on a case-by-case basis for other charitable organizations. Overcoming serious illness is the biggest victory of all, and The Jeff Gordon Foundation is grateful for the opportunity to work with courageous children and their families.</p>
+
+<h4><strong><a name="danmarino">Dan Marino: Dan Marino Foundation</a></strong></h4>
+
+<p><a href="http://www.danmarinofoundation.org/" target="clear">  <img src="../../images/danmarino.jpg" style="float: left; margin-right: 10px;" alt="">
+    <div class="text-center">
+        <img src="../../images/dmf.jpg"  alt="">
+    </div>
+    
+    <br>
+    The Dan Marino Foundation</a> was established in March 1992 by <strong>Dan and Claire Marino</strong> to raise money for various children's charities in South Florida. The mission of The Dan Marino Foundation is to support integrated treatment programs for children with chronic illnesses and developmental disabilities, so they can lead healthier and happier lives. Through the generous support of public and private donations and special events The Dan Marino Foundation has distributed over $7,000,000.</p>
+
+<p><strong><a name="lancearmstrong">Lance Armstrong: Lance Armstrong Foundation</a></strong></p>
+
+<p>
+    <img src="../../images/lancearmstrong.jpg" style="float: right;" alt="">
+    <img src="../../images/laf.gif" style="float: right;" alt="">
+    <a href="http://www.livestrong.org/" target="clear">The Lance Armstrong Foundation</a> (LAF) believes that in the battle with cancer, unity is strength, knowledge is power, and attitude is everything. Founded in 1997 by cancer survivor and champion cyclist, <strong>Lance Armstrong</strong>, the LAF provides the practical information and tools people living with cancer need to live strong. Their mission is to inspire and empower people with cancer to live strong. They serve their mission through education, advocacy, public health, and research programs.</p>
+
+<h4><strong><a name="derekjeter">
+    <img src="../../images/derekjeter.jpg" style="float: left; margin-right: 10px;" alt="">
+    Derek Jeter: Turn 2 Foundation</a></strong></h4>
+
+<p>
+    <img src="../../images/turn2.jpg" style="float: right;" alt="">
+    <a href="http://derekjeter.mlb.com/NASApp/mlb/players/jeter_derek/turn2/index.jsp" target="clear">Turn 2 Foundation</a>, designed by <strong>Derek Jeter</strong>, is aimed at creating and supporting signature programs and activities that motivate young people to turn away from drugs and alcohol and "TURN 2" healthy lifestyles. Through these ventures, the Foundation strives to create outlets that promote and reward academic excellence, leadership development, and positive behavior. Turn 2's goal is to see the children of these programs grow safely and successfully into adulthood and become the leaders of tomorrow.</p>
+
+<h4><strong><a name="magicjohnson">Magic Johnson: Magic Johnson Foundation</a></strong></h4>
+
+<p>  
+    <img src="../../images/magicjohnson.jpg" style="float: right;" alt="">
+    <img src="../../images/mjf.jpg" style="float: right;" alt="">
+    <a href="http://www.magicjohnson.org/" target="clear">The Magic Johnson Foundation</a>, founded in December 1991 by <strong>Earvin "Magic" Johnson</strong>, is recognized as a nonprofit public charity under section 501(c)(3) of the Internal Revenue Code.</p>
+
+<p>The mission of the Foundation is to identify and support community-based organizations that address the educational, health, and social needs of children, young adults, and inner-city communities throughout the nation. MJF also donates needed funds to organizations that provide HIV/AIDS prevention and health care education to the minority community.</p>
+
+<p><strong><a name="donovanmcnabb">Donovan McNabb: Donovan McNabb Foundation</a></strong></p>
+
+<p>
+    <img src="../../images/donovanmcnabb.jpg" style="float: left; margin-right:10px ;" alt="">
+    <img src="../../images/dmnf.gif" style="float: right;" alt="">
+    <a href="http://www.mcnabbfoundation.org/" target="clear">The Donovan McNabb Foundation</a> was established in June 2000 by <strong>McNabb</strong> in honor of his close family members that have been diagnosed with diabetes. Donovan started his foundation so that he could help provide awareness and improve the lives of those that suffer from diabetes, as well as the families of those who have diabetes.</p>
+
+<p>Over 15 million people in the United States alone have diabetes, but nearly 5 million people are unaware that they have contracted the disease. Preventative measures, however, can reduce the possibility of the spread of diabetes. These preventative measures include educating, regular exercise, controlled diet, and regular checkups by a doctor.</p>
+
+<h4><strong><a name="billiejeanking">Billie Jean King: Women's Sports Foundation</a></strong>
+<img src="../../images/billiejeanking.jpg" style="float: right;margin-left: 10px;" alt="">
+<img src="../../images/wsf.jpg" alt="" style="float: right; ">
+</h4>
+
+<p><a href="http://www.womenssportsfoundation.org/" target="clear">The Women's Sports Foundation</a> is an educational nonprofit (501(c)(3) charity) organization founded in 1974 by tennis legend <strong>Billie Jean King</strong> so that girls following in her footsteps would not have to face the barriers she faced playing sports. The foundation is designed to advance the lives of girls and women through sports and physical activity.</p>
+
+<p><a href="causeceleb94.html"><strong>Previous Celebs</strong></a> <a href="index.html"><strong>Giving Home</strong></a> <a href="causeceleb96.html"><strong>Click To See More Celebs</strong></a></p>
+
+
+    </div>
+    <div class="tab-pane fade show  first-tab-about " id="v-pills-link4" role="tabpanel"
+    aria-labelledby="v-pills-link4-tab">
+<div class="text-center">
+    <img src="../../images/causeceleb.gif" alt="">
+</div>
+<h4> <img src="../../images/robinwilliams.jpg" style="float: left; margin-right: 10px;" alt="">
+    <strong>Robin Williams: Windfall Foundation</strong></h4>
+
+<p>Robin and Marsha Williams founded the Windfall Foundation, a philanthropic organization to raise money for many different charities such as Medecins Sans Frontieres (Doctors Without Borders), national organizations like The Pediatric AIDS Association and Make-A-Wish Foundation, as well as the local charities Project Open Hand, University of California at San Francisco and San Francisco General Hospital Pediatrics. Williams devotes much of his energy doing work for charities, including the Comic Relief fund raising efforts.</p>
+
+<p>Robin Williams and Christopher Reeve were roommates at Juilliard where they studied drama and became lifelong friends. This led to Robin's involvement in <a href="Volumes/Lon Chaney Sr./HTML Mirrors/Dreamweaver/giving/christopherreeve.html">The Christopher Reeve Foundation</a>. Robin is also a cycling fan, known to own hundreds of bicycles and to attend the Tour de France. Through his interest in cycling, he has been a friend and supporter of <a href="https://www.fundraisers.com/giving/causeceleb95.html#lancearmstrong">Lance Armstrong</a> and his foundation, performing at events for the foundation.</p>
+
+<h4>
+    <strong>Billy Crystal &amp; Whoopi Goldberg: Comic Relief</strong>
+    </h4>
+
+<p>
+    <img src="../../images/billycrystal.jpg" style="float: left; margin-right: 10px;" alt="">
+    <img src="../../images/whoopigoldberg.jpg" style="float: right;" alt="">
+    Billy Crystal, Whoopi Goldberg, and Robin Williams will host <a href="http://www.comicrelief.org/" target="clear">Comic Relief 2006</a>, a live three-hour comedy event to help the rebirth of New Orleans. Comic Relief 2006 will be presented live from Caesars Palace in Las Vegas on HBO and TBS, Saturday, November 18, at 9 pm ET.</p>
+<br>
+<p> <img src="../../images/comicrelief2006.jpg" style="float: right;" alt=""> With Comic Relief's mission to unite the comedy community behind some of society's most relevant causes and pressing needs, the Comic Relief 2006 concert will help families affected by Hurricane Katrina in the rebirth of New Orleans, raising funds to help them rebuild their homes and tangibly address causes that kept victims from escaping. "1,836 people perished in Katrina and, a year later, more than 200,000 are still displaced because they lack the resources to rebuild their lives and homes, and the comedy community wants to help," said Bob Zmuda, the spokesperson for the charity. "Disasters like Katrina devastate the environment and cause suffering for all forms of life, both human and animal. Comic Relief is determined to address these tragedies by benefiting everyone from the elderly to children, and pets."</p>
+
+<h4><strong>Comic Relief UK Sponsors Red Nose Day </strong> </h4>
+
+<p> <img src="../../images/comicrelief.jpg" style="float: left; margin-right: 10px;" alt=""> <a href="http://www.comicrelief.com/" target="clear">Comic Relief</a> is seriously committed to helping end poverty and social injustice in the UK and poorest countries in the world by raising money from the general public by actively involving them in events and projects that are innovative and fun, informing, educating, raising awareness and promoting social change, allocating the funds raised in a responsible and effective way to a wide range of charities which are selected after careful research, ensuring that the <a href="http://www.rednoseday.com/" target="clear">Red Nose Day</a> fundraising costs are covered by sponsorship in cash or in kind so that every penny raised goes to charity.</p>
+
+<h4>
+    <img src="../../images/jerrylewis.jpg" style="float: right;" alt="">
+<strong>Jerry Lewis: Muscular Dystrophy Association</strong>
+</h4>
+
+<p> <img src="../../images/mda.gif"  alt="">
+    <br> Adults who used to watch as kids now introduce their own children to the 211/2-hour, star-studded variety show hosted by <strong>Jerry Lewis</strong> that simultaneously entertains, informs and raises funds for the service and research programs of the <a href="http://www.mdausa.org/telethon/" target="clear">Muscular Dystrophy Association</a>. In September of 2006, the Jerry Lewis Telethon for MDA Raised a record $61 Million.</p>
+
+<h4>
+    <img src="../../images/denisleary.jpg" style="float: left; margin-right: 10px;" alt="">
+    <strong>Denis Leary: Leary Firefighters Foundation</strong>
+    </h4>
+
+<p><a href="http://www.learyfirefighters.org/" target="clear">
+    <img src="../../images/learyfirefighters.gif" alt="">
+    <br>
+    The Leary Firefighters Foundation</a> was founded in 2000 by actor <strong>Denis Leary</strong> in response to a fire that broke out in an abandoned warehouse in downtown Worcester, Massachusetts, his hometown, in December of 1999. The Leary Firefighters Foundation is dedicated to providing fire departments with funding and resources for up-to-date equipment and training.</p>
+
+<h4> <img src="../../images/veryHappy.jpg" style="float: right;  margin-left: 10px;" alt=""> <strong>Cedric The Entertainer Charitable Foundation</strong>
+    </h4>
+
+<p>
+    <img src="../../images/cecf.gif" style="float: right;" alt="">
+    Founded in 1995 by actor/comedian, <strong>Cedric The Entertainer</strong> and his sister, Sharita Kyles Wilson, the <a href="http://www.ceddybear.com/cha_2.html" target="clear">Cedric The Entertainer Charitable Foundation, Inc.</a> is committed to enhancing the lives of youths and families in the state of Missouri. The Foundation's motto is to enlighten, educate, and entertain. In keeping with that, the foundation has established two primary ways in which to reach out and give back to the community: Scholarship Program and Cedrics Entourage.</p>
+    <p><a href="#"><strong>Click To See More Celebs</strong></a></p>
+
+</div>
+
+        </div>
+    </div>
+      <div class="col-lg-3">
+      mvckammvpoa
+      </div>
+    </div>
+  
+  <!--Script -->
+  <!-- Add jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Add Popper.js and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-undefined"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-undefined"
+    crossorigin="anonymous"></script>
+
+  <!-- Your existing script -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      // Show initial content on page load
+      $(".initial-content").show();
+
+      // Enable Bootstrap tabs
+      $('#v-pills-tab a').click(function (e) {
+        e.preventDefault();
+
+        // Hide the initial content
+        $(".initial-content").hide();
+
+        // Hide all tab contents
+        $('.tab-pane').hide();
+
+        // Show the selected tab content
+        var targetTab = $(this).attr('href');
+        $(targetTab).show();
+
+        // Update the active class for the tab links
+        $('#v-pills-tab a').removeClass('active');
+        $(this).addClass('active');
+      });
+
+      // Show the initial tab (assuming there is an element with the class "initial-tab")
+      $('.initial-tab').click();
+    });
+  </script>
+
+  <script>
+    // Wait for the document to be ready
+    $(document).ready(function () {
+      // Add click event listener to all tabs with class 'nav-link'
+      $('.nav-link').click(function () {
+        // Hide the image container when any tab is clicked
+        $('#imageContainer').hide();
+
+        // Check if the clicked tab is the "Graphic Design" tab
+        if ($(this).is('#v-pills-link9-tab')) {
+          // Show the image container when the "Graphic Design" tab is clicked
+          $('#imageContainer').show();
+        }
+      });
+    });
+  </script>
+  <script>
+    // Function to handle tab click and scroll to the element with class col-lg-6
+    function scrollToColLG6() {
+      // Get the screen width
+      var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+      // Check if the screen width is less than 992px
+      if (screenWidth < 992) {
+        // Get the position of the element with class col-lg-6
+        var colLG6Element = document.querySelector('.col-lg-6');
+        var colLG6Position = colLG6Element.offsetTop;
+
+        // Scroll to the element with class col-lg-6
+        window.scrollTo({
+          top: colLG6Position,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    // Attach click event listeners to each tab with the class custom-tab
+    var tabs = document.querySelectorAll('.other-tab-class');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function (event) {
+        // Prevent default link behavior
+        event.preventDefault();
+
+        // Scroll to the element with class col-lg-6 on screens less than 992px
+        scrollToColLG6();
+      });
+    });
+  </script>
+</body>
+
+</html>

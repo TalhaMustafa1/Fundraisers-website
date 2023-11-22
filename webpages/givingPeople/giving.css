@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+nav{
+    background-color: #cc0000!important;
+}
+.nav-item .nav-link{
+    color: white !important;
+    font-weight: normal;
+    font-size: 17px;
+    
+}
+.nav-pills a{
+    background-color: white !important;
+    font-size: 14px;
+    gap: 90px !important;
+    padding: 0 !important;
+}
+.container-1{
+    margin-top: 40px;
+}
+.col-lg-3 img{
+    margin-bottom:10px;
+}
+h2,h3,h5{
+    padding: 0;
+    margin: 0;
+}
+.anchor-links{
+    font-size: 14px;
+}
+.text-center {
+    text-align: center;
+}
+ul{
+    font-size: 14px;
+}
+.col-lg-6 {
+    border-left: 2px solid #cfcfcf;
+    border-right: 2px solid #cfcfcf;
+}
+.col-lg-6 h2{
+    font-size:24px;
+}
+.col-lg-6 h4{
+    font-size: 15px;
+}
+.col-lg-6 p{
+    font-size: 14px;
+}
+.col-lg-3 h4{
+    font-size: 15px;
+}
+.col-lg-3 p{
+    font-size: 14px
+}
+.col-lg-6 h6{
+    font-size: 15px; 
+    color: black;
+}
+.links{
+    margin-bottom: 12px;
+}
+.service-name{
+    color: #cc0000;
+    font-size: 20px;
+}
+.tab-pane > div:first-child{
+    margin-bottom: 20px;
+}
+.links h4{
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 992px) {
+    .sidebar{
+          background-color: #cc0000!important;
+    }
+    .navbar-nav{
+        gap:10px !important;
+    }
+    .navbar-toggler-icon-white {
+        color: white !important; /* Change to the color you desire */
+    }
+  .btn-close{
+    width: 80px !important; 
+    background-color: white;
+  }
+
+}
