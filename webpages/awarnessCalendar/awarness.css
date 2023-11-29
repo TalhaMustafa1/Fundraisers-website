@@ -33,11 +33,37 @@ section{
     font-size: 15px;
 }
 .col-lg-6 h2{
-    font-size: 20px;
+    font-size: 24px;
 }
 .col-lg-6 img{
     margin-inline: 7px;
 }
+.col-lg-6 h6{
+    font-size: 15px; 
+    color: black;
+}
+h4{
+    font-size: 15px !important;
+}
+.col-lg-6 .nav-pills a{
+    color: #4573ca;
+    font-size: 14px;
+}
+.col-lg-3 .nav-pills a{
+    color: #4573ca !important;
+    font-size: 14px !important;
+    padding: 0 !important;
+    margin-block: 5px !important;
+    font-weight: 500 !important;
+}
+.col-lg-3 a{
+    color: #4573ca;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-weight: 500 !important;
+}
+
 @media screen and (max-width: 768px) {
     .navbar-collapse  .navbar-nav{
          gap: 0px !important;

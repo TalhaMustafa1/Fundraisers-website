@@ -27,7 +27,7 @@
   <!-- navbar starts -->
   <nav class="navbar  navbar-expand-lg ">
     <div class="container">
-      <a class="navbar-brand" href="../../index.html"><img src="../../images/mastheadlogo_01.gif" alt="" width="200px"
+      <a class="navbar-brand" href="../../index.html"><img src="../../images/fundraiser-logo.webp" alt="" width="200px"
           height="60px"></a>
       <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -103,7 +103,7 @@
         <a class="nav-link other-tab-class" id="v-pills-link4-tab" data-mdb-toggle="pill"
             href="#v-pills-link4" role="tab" aria-controls="v-pills-link4"
             aria-selected="false">Events</a>
-            <a class="nav-link other-tab-class" id="v-pills-link6-tab" data-mdb-toggle="pill"
+            <a class="nav-link other-tab-class pokerexpert" id="v-pills-link6-tab" data-mdb-toggle="pill"
             href="#v-pills-link6" role="tab" aria-controls="v-pills-link6"
             aria-selected="false">Poker Experts <img src="../../images/newbullet.gif" alt=""></a>
             <a class="nav-link other-tab-class" id="v-pills-link7-tab" data-mdb-toggle="pill"
@@ -189,7 +189,7 @@
 <h4><strong>Poker Cares Has The Expertise<br>
 For Your Next Poker Event!</strong></h4>
 <p><img src="../../images/pokercaresbutban.jpg" style="float: right;" alt="">
-    <strong>Poker Cares</strong> is made up of Poker Players, Professionals, Fans, Industry Insiders, and Fundraising Experts who care to make a difference in their Community. They are committed to helping facilitate the growth of Charity Poker Tournaments that are being held all over the world and raising funds for worthy causes. Successful poker fundraisers require expert planning. You can find help on the Fundraisers.com... <a href="https://www.fundraisers.com/servicesdir/pokereventexperts.html">Poker Fundraising Experts Page</a>.<br>
+    <strong>Poker Cares</strong> is made up of Poker Players, Professionals, Fans, Industry Insiders, and Fundraising Experts who care to make a difference in their Community. They are committed to helping facilitate the growth of Charity Poker Tournaments that are being held all over the world and raising funds for worthy causes. Successful poker fundraisers require expert planning. You can find help on the Fundraisers.com...  <span id="pokerexpert" style="color: #4573ca;"> Poker Fundraising Experts Page</span>.<br>
     </p>
     <div style="border-bottom: 2px solid #cfcfcf;margin-bottom: 20px;";></div>
     <h4><strong>Featured Service:</strong></h4>
@@ -1103,6 +1103,18 @@ aria-labelledby="v-pills-link20-tab">
       });
     });
   </script>
+<script>
+  // jQuery document ready function
+  $(document).ready(function() {
+    // Handle click event on the "Poker Fundraising Experts Page" span
+    $("#pokerexpert").click(function() {
+      // Programmatically trigger the click event on the "Poker Experts" tab
+      $("#v-pills-link6-tab").click();
+      $("#v-pills-link6-tab").show();
+    });
+  });
+</script>
+  
 </body>
 
 </html>

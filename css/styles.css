@@ -29,7 +29,26 @@
     margin: 12px !important;
     gap: 12px !important;
 }
-
+.pdfs a{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+h4{
+    font-size: 15px !important;
+}
+.imageswithtext{
+    display: flex;
+    align-items: center;
+     flex-direction: row;
+     justify-content: center;
+     gap: 10px;
+}
+.nav-pills a{
+    background-color: white !important;
+    font-size: 14px;
+    gap: 90px !important;
+    padding: 0 !important;
+}
 @media screen and (max-width: 768px) {
     .navbar-collapse  .navbar-nav{
          gap: 0px !important;
