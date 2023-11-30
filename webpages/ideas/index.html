@@ -3155,83 +3155,87 @@ hello
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      // Show initial content on page load
-      $(".initial-content").show();
-
-      // Enable Bootstrap tabs
-      $('#v-pills-tab a').click(function (e) {
-        e.preventDefault();
-
-        // Hide the initial content
-        $(".initial-content").hide();
-
-        // Hide all tab contents
-        $('.tab-pane').hide();
-
-        // Show the selected tab content
-        var targetTab = $(this).attr('href');
-        $(targetTab).show();
-
-        // Update the active class for the tab links
-        $('#v-pills-tab a').removeClass('active');
-        $(this).addClass('active');
-      });
-
-      // Show the initial tab (assuming there is an element with the class "initial-tab")
-      $('.initial-tab').click();
-    });
-  </script>
-
-  <script>
-    // Wait for the document to be ready
-    $(document).ready(function () {
-      // Add click event listener to all tabs with class 'nav-link'
-      $('.nav-link').click(function () {
-        // Hide the image container when any tab is clicked
-        $('#imageContainer').hide();
-
-        // Check if the clicked tab is the "Graphic Design" tab
-        if ($(this).is('#v-pills-link9-tab')) {
-          // Show the image container when the "Graphic Design" tab is clicked
-          $('#imageContainer').show();
+    <script>
+      $(document).ready(function () {
+        // Show initial content on page load
+        $(".initial-content").show();
+    
+        // Enable Bootstrap tabs
+        $('#v-pills-tab a').click(function (e) {
+          e.preventDefault();
+    
+          // Hide the initial content
+          $(".initial-content").hide();
+    
+          // Hide all tab contents
+          $('.tab-pane').hide();
+    
+          // Show the selected tab content
+          var targetTab = $(this).attr('href');
+          $(targetTab).show();
+    
+          // Update the active class for the tab links
+          $('#v-pills-tab a').removeClass('active');
+          $(this).addClass('active');
+        });
+    
+        // Show the initial tab (assuming there is an element with the class "initial-tab")
+        $('.initial-tab').click();
+    
+        // Add click event listener to all tabs with class 'nav-link'
+        $('.nav-link').click(function () {
+          // Hide the image container when any tab is clicked
+          $('#imageContainer').hide();
+    
+          // Check if the clicked tab is the "Graphic Design" tab
+          if ($(this).is('#v-pills-link9-tab')) {
+            // Show the image container when the "Graphic Design" tab is clicked
+            $('#imageContainer').show();
+          }
+        });
+    
+        // Function to handle tab click and scroll to the element with class col-lg-6
+        function scrollToColLG6() {
+          // Get the screen width
+          var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    
+          // Check if the screen width is less than 992px
+          if (screenWidth < 992) {
+            // Get the position of the element with class col-lg-6
+            var colLG6Element = document.querySelector('.col-lg-6');
+            var colLG6Position = colLG6Element.offsetTop;
+    
+            // Scroll to the element with class col-lg-6
+            window.scrollTo({
+              top: colLG6Position,
+              behavior: 'smooth'
+            });
+          }
+        }
+    
+        // Attach click event listeners to each tab with the class other-tab-class
+        var tabs = document.querySelectorAll('.other-tab-class');
+        tabs.forEach(function (tab) {
+          tab.addEventListener('click', function (event) {
+            // Prevent default link behavior
+            event.preventDefault();
+    
+            // Scroll to the element with class col-lg-6 on screens less than 992px
+            scrollToColLG6();
+          });
+        });
+    
+        // Check if the hash fragment includes the trigger keyword for Pulver Enterprises tab
+        if (window.location.hash === "#showPulverEnterprisesTab") {
+          // Find the Pulver Enterprises tab by its ID
+          var pulverEnterprisesTab = document.getElementById("v-pills-link12-tab");
+    
+          // Trigger a click event on the Pulver Enterprises tab
+          pulverEnterprisesTab.click();
         }
       });
-    });
-  </script>
-  <script>
-    // Function to handle tab click and scroll to the element with class col-lg-6
-    function scrollToColLG6() {
-      // Get the screen width
-      var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-      // Check if the screen width is less than 992px
-      if (screenWidth < 992) {
-        // Get the position of the element with class col-lg-6
-        var colLG6Element = document.querySelector('.col-lg-6');
-        var colLG6Position = colLG6Element.offsetTop;
-
-        // Scroll to the element with class col-lg-6
-        window.scrollTo({
-          top: colLG6Position,
-          behavior: 'smooth'
-        });
-      }
-    }
-
-    // Attach click event listeners to each tab with the class custom-tab
-    var tabs = document.querySelectorAll('.other-tab-class');
-    tabs.forEach(function (tab) {
-      tab.addEventListener('click', function (event) {
-        // Prevent default link behavior
-        event.preventDefault();
-
-        // Scroll to the element with class col-lg-6 on screens less than 992px
-        scrollToColLG6();
-      });
-    });
-  </script>
+    </script>
+    
 </body>
 
 </html>

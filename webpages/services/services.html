@@ -1084,12 +1084,7 @@ aria-labelledby="v-pills-link20-tab">
   
       // Show the initial tab (assuming there is an element with the class "initial-tab")
       $('.initial-tab').click();
-    });
-  </script>
-  
-  <script>
-    // Wait for the document to be ready
-    $(document).ready(function() {
+      
       // Add click event listener to all tabs with class 'nav-link'
       $('.nav-link').click(function() {
         // Hide the image container when any tab is clicked
@@ -1101,19 +1096,21 @@ aria-labelledby="v-pills-link20-tab">
           $('#imageContainer').show();
         }
       });
+  
+      // Check if the hash fragment includes the trigger keyword
+      if (window.location.hash === "#showPokerExperts") {
+        // Find the Poker Experts tab by its ID
+        var pokerExpertsTab = document.getElementById("v-pills-link6-tab");
+  
+        // Trigger a click event on the Poker Experts tab
+        pokerExpertsTab.click();
+  
+        // Additional logic you want to perform when showing Poker Experts tab
+        $(".initial-content").hide();
+        $("#v-pills-link6-tab").show();
+      }
     });
   </script>
-<script>
-  // jQuery document ready function
-  $(document).ready(function() {
-    // Handle click event on the "Poker Fundraising Experts Page" span
-    $("#pokerexpert").click(function() {
-      // Programmatically trigger the click event on the "Poker Experts" tab
-      $("#v-pills-link6-tab").click();
-      $("#v-pills-link6-tab").show();
-    });
-  });
-</script>
   
 </body>
 
