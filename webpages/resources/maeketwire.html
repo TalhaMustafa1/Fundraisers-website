@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="resources.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- mdb -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+  <title>Fundraisers</title>
+
+</head>
+<style>
+  .navbar-toggler-icon {
+    color: white;
+  }
+</style>
+
+<body>
+  <!-- navbar starts -->
+  <nav class="navbar  navbar-expand-lg ">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html"><img src="../../images/fundraiser-logo.webp" alt="" width="200px"
+          height="60px"></a>
+      <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color: #fff; font-size: 28px;"></i>
+        </span>
+      </button>
+      <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title " id="offcanvasNavbarLabel"></h5>
+          <button type="button"
+            style="font-weight: bold; color: #fff; font-size: 27px; border: none;  border: none; background: none; padding: 0; margin: 0;outline: none; box-shadow: none; "
+            class="btn " data-bs-dismiss="offcanvas" aria-label="Close">
+            <i class="fas fa-times" style="color: white;"></i> <!-- Font Awesome close icon -->
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 py-2" style="gap:20px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/awarnessCalendar/awarness.html">Awarness Calendar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../webpages/ideas/index.html">Ideas </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cause Celebrites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giving People</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar ends -->
+  <div class="container container-1">
+    <div class="row">
+      <div class="col-lg-3 order-md-2 order-lg-1 order-sm-2 order-2">
+        <div class="text-center">
+          <img src="../../images/featuredauctionsol.gif" alt="">
+        </div>
+        <div class="text-center">
+          <a href="https://www.ebay.com/">
+            <img src="../../images/ebaygivingworks.gif" alt="">
+          </a> 
+        </div>
+        <div class="text-center">
+          <a href="mission-fish.html">
+            <img src="../../images/MF-color-logo_sm.gif" alt="">
+          </a>
+        </div>
+        <p>Read about how registering with <a
+             href="mission-fish.html">MissionFish</a> can help you fundraise for
+          your favorite causes through charity auctions on eBay, The World's Online Marketplace®.<br></p>
+        <div>
+          <div class="text-center">
+            <a href="https://877isoldit.com/">
+              <img src="../../images/saveimg.gif" alt="">
+            </a>
+            
+          </div>
+
+          <p>
+            <a href="http://www.877isoldit.com/index.asp" target="clear">ISoldIt</a> offers a turn key solution to sell
+            items for fundraisers on eBay through its network of retail locations. <a
+              href="http://www.877isoldit.com/index.asp" target="clear">Read About</a> how they can make your auction
+            fundraising a breeze.<br>
+          </p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/findvolutere.gif" alt="">
+            <br>
+            <a href="volunteermatch.html">
+              <img src="../../images/volunteer_logo_sm (1).gif" alt="">
+            </a>
+            
+          </div>
+          <p>
+            <a href="volunteermatch.html">VolunteerMatch</a> connects people with
+            causes that need their help. <a href="volunteermatch.html">Read This
+              Story</a> about how you can use their service to find a volunteer or volunteer opportunity.<br>
+
+            <a href="http://www.volunteermatch.org/post">Post An Opportunity</a>, or search for a volunteer opportunity
+            in your area by entering your zip code below.<br>
+          </p>
+        </div>
+        <div class="text-center">
+          <form action="http://www.volunteermatch.org/results/" method="GET">
+            <input type="hidden" name="radius" value="20">
+            <input type="hidden" name="category" value="Everything">
+            <input type="hidden" name="sortby" value="newness">
+            <input type="HIDDEN" name="submit" value="y">
+            ZIP
+            <input style="font: 8pt, Verdana; background: white; border: 1px solid black;" type="text" name="zip"
+              size="8" fdprocessedid="mxlz04"><input
+              style="font: 9pt, Verdana; font-weight: bold; background: white; border: 1px solid black;" name="Search"
+              type="submit" value="Go" fdprocessedid="2bhf4t">
+          </form>
+        </div>
+        <br>
+        <div>
+          <div class="text-center">
+            <img src="../../images/legalresources.gif" alt="">
+            <br>
+            <a href="grassroot.html">
+              <img src="../../images/grassroots.gif" alt="">
+            </a>
+          </div>
+          <a href="grassroot.html">Grassroots.org</a> is a source of valuable
+          information and free services for non-profit organizations. <a
+            href="grassroot.html">Read Alon Nager's Article</a> on how to form a
+          non-profit corporation.<br>
+        </div>
+        <br>
+        <div class="text-center">
+          <img src="../../images/netlingo.gif" alt="">
+        </div>
+        <form action="http://www.netlingo.com/searchaction.cfm" method="post" target="_blank">
+          <table class="main-table">
+            <tr>
+              <td bgcolor="#FFFFFF" class="text-center" id="logo">
+                <br>
+                <a href="http://www.netlingo.com/pocket.cfm" target="_blank">
+                  <img src="../../images/pocketportal.jpg" alt="">
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#F0F8FF" class="text-center" id="search-message">
+                <strong>Browse a list of Internet terms by clicking on the Pocket Dictionary, or Search for a specific
+                  term.</strong>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#000033" class="text-center" id="search-input">
+                <br>
+                <div align="center">
+                  <input type="text" name="wordsearch" size="19" fdprocessedid="i0voph" style="margin-bottom: 10px;">
+                </div>
+              </td>
+            </tr>
+            <tr>
+
+              <td bgcolor="#000033" class="text-center" id="search-button">
+                <div align="center">
+
+                  <input name="netlingosearch" type="submit" value="GO :-)" fdprocessedid="ltfqns"
+                    style="margin-bottom: 10px;">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#FFFFFF" class="text-center" id="info-table">
+                <table width="100%" cellspacing="0" cellpadding="5">
+                  <tr>
+                    <td class="text-center" id="info-text">
+                      <p align="center">
+                        <strong>Be a better online fundraiser!<br>NetLingo</strong>
+                        <span>
+                          is an award-winning dictionary of Internet terms. It contains thousands of words and
+                          definitions that describe the online world of business, technology, and communication. It will
+                          help to educate and entertain you about the lingo used in the online world :^)
+                        </span>
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </form>
+
+      </div>
+      <div class="col-lg-6 order-md-1 order-lg-2 order-sm-1 order-1">
+       <h6><strong>Featured Resource:
+    </strong></h6>
+    <h2><strong>Market Wire: Your Direct Line to Mainstream Media Coverage</strong></h2>
+    <p>
+        <strong>Market Wire: Your Direct Line to Mainstream Media Coverage</strong>
+      </p>
+      <p>
+        Nonprofit organizations have many things in common. Most conduct fundraising events, offer socially beneficial programs, and toil in relative obscurity for the "greater good" of their neighbors. With a growing roster of worthy causes and an ever-expanding selection of charity events, media outlets are swamped with nonprofit activities seeking press coverage.
+      </p>
+      <p>
+        <img src="../../images/non-profit.gif" style="float: left;margin-right: 10px;" alt="">
+        Michael Shuler, Senior Vice President of Marketing at Market Wire, says, "Many nonprofits have a great story to tell. Unfortunately, most of them don't get the word out, either at all or as effectively as they can." According to Shuler, Market Wire's goal is to "help nonprofits with their press release distribution needs, whether they only need to target media in their state or local metro area or all across the country."
+      </p>
+      <p>
+        As an editor and freelance writer, I have a unique perspective to offer nonprofit organizations hoping to generate published articles about their cause. I know which charitable events catch my eye...and why.
+      </p>
+      <p>
+        I'm sure you have questions: How do you separate your organization from the pack? What do publishers look for when preparing their editorial calendars? Why do some events get coverage from multiple media outlets, while others get ignored? What can I do to increase my odds for mainstream exposure? Where can I find the answers to these questions and many more?
+      </p>
+      <p>
+        My answer: Market Wire! Can I say that again? Market Wire. Not to put too fine a point on it, but some information is simply too important to state only once. As a solution to your press distribution needs, Market Wire deserves multiple mentions and a place on your "favorites" list for Internet exploration.
+      </p>
+      <p>
+        Market Wire offers distribution of press releases and media alerts to publications and broadcasters by both geographic region (National, Regional, State, Metro, etc.) and by industry segment. Market Wire has direct news feeds to every major daily newspaper and broadcast outlet around the country. Your materials will also reach a wide range of consumer and trade publications, Websites, databases, and newswires.
+      </p>
+      <p>
+        In addition, more than 30,000 individual editors and journalists subscribe to Market Wire's "Personal Beat," which is a customized email news service. Finally, individually tailored information distribution services are available at surprisingly affordable prices (always a concern for nonprofit organizations). Market Wire's SVP of Marketing, Michael Shuler, says, "To help with their ever-present budget constraints, Market Wire offers any registered nonprofit organization an automatic 15% discount on our list rates."
+      </p>
+      <p>
+        Before your press release can be distributed, it must be written. At FundRaisers.Com, we know what we respond to. Our founder, Annie Van Bebber subscribes to the "less is more" philosophy when it comes to press releases. Van Bebber likes press releases that intrigue her and leave her wanting more. She says, "If all the questions have been answered, I usually don't pick up the phone and inquire further." Remember, Press Releases are all about attracting the attention of journalists and writers so that you get a story or a mention.
+      </p>
+      <p>
+        Market Wire offers a guide titled simply, "Writing a Release." It walks you through eleven steps and concludes with a "Do" and a "Don't." Nonprofit marketers would be well advised to learn from the pros at Market Wire. Their suggestions are the result of handling thousands of press releases a day. They know which ones work...and which ones don't. (See link at the end of the article)
+      </p>
+      <p>
+        Once your Press Release is written, the work has just begun. Even the most articulate, fascinating, provocative, and timely press release is useless if nobody reads it. Media outlets are notoriously fluid; constantly in flux. As a professional press distribution service, Market Wire employs personnel that monitor media outlets and maintain up-to-the-minute databases of editors, publications, broadcasters, freelancers, and institutional journalists. They know which magazines cover specific areas of content, which beats are assigned to individual editors and writers, and when to focus distribution resources on local markets and when to provide nationwide coverage.
+      </p>
+      <p>
+        Nonprofit organizations can customize their distribution packages, selecting from a variety of geographic locations and categorized content areas. Market Wire does not offer a "one size fits all" program. Their approach is as unique as the organizations they distribute press materials for. They are even able to customize press materials with enriched graphics, video, audio, and professional typographic design.
+      </p>
+      <p>
+        Because Market Wire provides a wide variety of services, there are a number of variables used in calculating the costs of their services. They maintain complete confidence in their relative affordability. A graphic representation comparing the costs of their services with other press distribution services is provided on their website. To ensure apples are not being compared with oranges, their comparison chart includes a checklist of services included in specific price packages. (See link at the end of the article)
+      </p>
+      <p>
+        We, at FundRaisers.Com, love grassroots fundraising efforts. We applaud the "Let's Put on a Show," approach propagated by Mickey Rooney and Judy Garland for local charitable events. We could never adequately express our immense appreciation of volunteers filling shoes that are two sizes too big for them. We love do-it-yourselfers. But, when it comes to publicizing the homegrown efforts of nonprofit organizations - whenever possible – trust seasoned professionals, like Market Wire.
+      </p>
+      <p>
+        Successful media coverage provides visibility and awareness that few nonprofit advertising budgets could afford. Market Wire's services produce results. They're professional and cost-effective. Borrowing from a well-known advertising campaign, we'd like to point out: The cost of an ink cartridge – thirty-five dollars; the cost of a piece of paper – two cents; a blitz on mainstream media resulting in widespread coverage – Priceless.
+      </p>
+      <p>
+        <i>-- DeWayne Lumpkin</i>
+      </p>
+      <p>
+        <strong>Read More About:</strong>
+        <br>
+        <a href="http://www.marketwire.com" target="_blank">Market Wire</a>
+      </p>
+      </div>
+      <div class="col-lg-3 order-md-3 order-lg-3 order-sm-3 order-3">
+        <div>
+          <div class="text-center">
+            <img src="../../images/featuredpokerevents.gif" alt="">
+          </div>
+          <div class="text-center">
+            <a href="charityPoker.html">
+            <img src="../../images/pokercareslogoside.jpg" alt="">
+          </a>
+          </div>
+          <p>
+            
+              <strong>Poker Cares</strong> is a network of poker and fundraising experts who care to make a difference in the community. Find out how you can organize a charity poker tournament event for your next fundraiser. See the FundRaisers.com... <a href="charityPoker.html">Poker Resources Page</a>.<br>
+          </p>
+          <h4><strong>Poker Fundraiser For Diabetes</strong></h4>
+          <p>  Read about how <a href="../ideas/index.html#showPulverEnterprisesTab">Pulver Enterprises</a> hosted a successful Texas Hold'em Tournament to benefit Diabetes causes.<br></p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/charitypoker.gif" alt="">
+          </div>
+          <p>
+            Want to find out about Charity Poker Tournaments or let us know about yours? We want to hear from you. Experts wanted! See the Fundraisers.com...<br>
+            <a href="http://www.myspace.com/charitypoker" target="clear">CHARITY POKER BLOG</a></p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/causetechnology.gif" alt="">
+          </div>
+          <div class="text-center">
+            <a href="https://socialimpact.youtube.com/">
+              <img src="../../images/youtubenonprofitlogo.jpg" alt="">
+            </a>
+            
+          </div>
+          <p>
+            Get your nonprofit's message out to the world via the world's largest online video community. Sign up today for a dedicated <a href="http://www.youtube.com/nonprofits">YouTube Nonprofit Channel</a>.<br>
+            </p>
+            <div class="text-center">
+              <a href="techsoup.html">
+                <img src="../../images/TS-horiz-logo_sm.gif" alt="">
+              </a>
+            </div>
+            
+            <p>
+              Read about all the valuable technology articles that <a href="techsoup.html">TechSoup</a> offers to help your organization effectively plan and use technology.<br>
+             </p>
+        </div>
+        <div>
+          <div class="text-center">
+            <img src="../../images/tellafriend.gif" alt="">
+            <br>
+            <img src="../../images/hugging.jpg" alt="">
+          </div>
+
+          <p>
+            Thanks for visiting FundRaisers.com! Share it with other people for their fundraising campaigns.<br></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
