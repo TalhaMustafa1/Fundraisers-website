@@ -14,7 +14,7 @@
     <!-- mdb -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
-    <title>Fundraisers</title>
+    <title>Fundraisers-Awaremay</title>
     
 </head>
 
@@ -63,7 +63,7 @@
                   <a class="nav-link" href="../services/services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="">Resources</a>
+                  <a class="nav-link" href="../resources/resources.html">Resources</a>
                 </li>
               </ul>
             </div>
@@ -930,6 +930,42 @@
             </div>
         </section>
     </main>
+    <footer class=" text-light " style="background-color: #cc0000; padding-block: 20px;">
+      <div class="container">
+        <div class="row">
+          <!-- Column 1: Logo -->
+          <div class="col-md-3  col-sm-3 ">
+              <a href="../../index.html"><img src="../../images/mastheadlogo_01.gif" alt="Logo" class="img-fluid" style="width: 220px;" ></a>
+          </div>
+  
+          <!-- Column 2: Navigation Links (3 links) -->
+          <div class="col-md-6 col-sm-6 ">
+             <a href="../aboutus/index.html">About Us</a>
+             <br>
+             <a href="../awarnessCalendar/awarness.html">
+              Awareness Calendar
+             </a>
+             <br>
+             <a href="../ideas/index.html">Ideas</a>
+             <br>
+             <a href="../givingPeople/giving.html">Giving People</a>
+          </div>
+  
+          <!-- Column 3: Navigation Links (2 links) -->
+          <div class="col-md-3 col-sm-3 last-col">
+            <a href="../products/products.html" >Products</a>
+            <br>
+            <a href="../services/services.html">Services</a>
+            <br>
+            <a href="../resources/resources.html">Resources</a>
+          </div>
+        </div>
+        <br>
+        <p class="text-center">This website contains features about fundraising ideas, products, causes, people, services, resources and news.
+          This page and its contents are ©Digital Maven LLC
+          All rights reserved.</p>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <!-- Add Popper.js and Bootstrap JS -->
@@ -972,6 +1008,38 @@
               $('.initial-tab').click();
             });
           </script>
+                <script>
+                  // Function to handle tab click and scroll to the element with class col-lg-6
+                  function scrollToColLG6() {
+                    // Get the screen width
+                    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+              
+                    // Check if the screen width is less than 992px
+                    if (screenWidth < 992) {
+                      // Get the position of the element with class col-lg-6
+                      var colLG6Element = document.querySelector('.col-lg-6');
+                      var colLG6Position = colLG6Element.offsetTop;
+              
+                      // Scroll to the element with class col-lg-6
+                      window.scrollTo({
+                        top: colLG6Position,
+                        behavior: 'smooth'
+                      });
+                    }
+                  }
+              
+                  // Attach click event listeners to each tab with the class custom-tab
+                  var tabs = document.querySelectorAll('.other-tab-class');
+                  tabs.forEach(function (tab) {
+                    tab.addEventListener('click', function (event) {
+                      // Prevent default link behavior
+                      event.preventDefault();
+              
+                      // Scroll to the element with class col-lg-6 on screens less than 992px
+                      scrollToColLG6();
+                    });
+                  });
+                </script>
 </body>
 
 </html>

@@ -92,3 +92,20 @@ ul{
         margin-top: 60px !important;
     }
 }
+footer{
+    margin-top: 21px;
+}
+footer a{
+    color: white !important;
+    font-weight: normal;
+    font-size: 17px !important;
+}
+footer p{
+    font-size: 14px;
+}
+@media screen and (max-width: 576px) {
+    footer img {
+        margin-bottom: 40px !important; 
+        
+    }    
+}
