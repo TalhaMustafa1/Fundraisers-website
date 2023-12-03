@@ -64,19 +64,25 @@ h4{
     font-weight: 500 !important;
 }
 
-@media screen and (max-width: 768px) {
-    .navbar-collapse  .navbar-nav{
-         gap: 0px !important;
-         margin-inline: auto !important;
-         display: flex;
-         justify-content: center;
-         align-items: center;
+@media screen and (max-width: 1200px) {
+    .sidebar{
+          background-color: #cc0000!important;
     }
-    ul{
-        gap: 2px !important;
+    .navbar-nav{
+        gap:10px !important;
     }
-    .img-center{
-        
-        
+    .navbar-toggler-icon-white {
+        color: white !important; /* Change to the color you desire */
     }
+  .btn-close{
+    width: 80px !important; 
+    background-color: white;
   }
+
+
+}
+@media screen and (max-width: 991px) {
+    .col-lg-3{
+        margin-top: 60px !important;
+    }
+}

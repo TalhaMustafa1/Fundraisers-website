@@ -15,27 +15,30 @@
     margin-top: 40px;
     margin-bottom: 40px;
 }
+.section-2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 .section-1 .col-lg-6{
     border-left: 2px solid #d5d5d5;
     border-right: 2px solid #d5d5d5;
+}
+.col-lg-6 {
+    border-left: 2px solid #cfcfcf;
+    border-right: 2px solid #cfcfcf;
 }
 .nav-pills a{
     background-color: white !important;
     color: black;
     text-decoration: none;
     font-size: 14px !important;
-    font-weight: 600;
-    padding: 0 !important;
-    margin: 12px !important;
     gap: 12px !important;
 }
 .pdfs a{
     padding: 0 !important;
     margin: 0 !important;
 }
-h4{
-    font-size: 15px !important;
-}
+
 .imageswithtext{
     display: flex;
     align-items: center;
@@ -49,232 +52,52 @@ h4{
     gap: 90px !important;
     padding: 0 !important;
 }
-@media screen and (max-width: 768px) {
-    .navbar-collapse  .navbar-nav{
-         gap: 0px !important;
-         margin-inline: auto !important;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-    }
-    ul{
-        gap: 2px !important;
-    }
-  }
-  .about-us-first-col-p p{
+.col-lg-6 h2{
+    font-size:24px !important;
+}
+.col-lg-6 h4{
+    font-size: 15px;
+}
+.col-lg-6 p{
+    font-size: 14px;
+}
+.col-lg-3 h4{
+    font-size: 15px;
+}
+.col-lg-3 p{
+    font-size: 14px
+}
+.col-lg-6 h6{
+    font-size: 15px; 
+    color: black;
+}
+p{
     font-size: 14px !important;
-  }
-.nav-pills a:hover{
-    color: #cc0000;
 }
-/* tabs and pills */
-.col-lg-3 .nav-link{
-    background-color: none !important;
+.col-lg-3 img{
+    margin-bottom: 20px;
 }
-.first-tab-about h1{
-     font-size: 18px;
-     color: black;
-     padding: 0;
-     margin: 0;
-}
-.first-tab-about h2{
-    font-size: 22px;
-    color:#2e595a;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-}
-
-.first-tab-about  p{
-    font-size: 14px;
-}
-.first-tab-about  p img{
- float: left;
-}
-.section-1 .container .row .col-lg-3 .img-p{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.section-1 .container .row .col-lg-3 h2{
-    margin: 0;
-    padding: 0;
-}
-.section-1 .container .row .col-lg-3 h2 a{
-    font-size: 22px;
-    color:#2e595a !important;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-}
-.section-1 .container .row .col-lg-3 p{
-    font-size:14px;
-    padding: 0;
-    margin: 0;
-}
-footer {
-    background-color: #cc0000;
-    padding-block: 30px;
-}
-footer p{
-    padding: 0;
-    margin: 0;
-    color: #f3e2f9;
-    font-weight:normal;
-    font-size: 16px;
-}
-footer h3{
-    margin-top: 20px;
-    font-size: 20px;
-    color: #f3e2f9;
-}
-.third-tab-about h1{
-    font-size: 18px;
-    color: black;
-    padding: 0;
-    margin: 0;
-}
-.third-tab-about h2{
-   font-size: 22px;
-   color:#2e595a;
-   padding: 0;
-   margin: 0;
-   font-weight: bold;
-}
-.third-tab-about h3{
-   font-size: 23px;
-   font-size: bold;
-   color: #2e595a;
-   padding: 0;
-   margin: 0;
-}
-
-.third-tab-about h4{
-    
-    font-size: 16px;
-    color: #2e595a;
-    padding: 0;
-    margin-top: 17px;
-    margin-bottom: 0;
-    font-weight: bold;
-    line-height: 4px;
-}
-.third-tab-about a{
-    padding: 0;
-    margin: 0;
-    line-height:2px;
-}
-.second-tab-about h1{
-    font-size: 18px;
-    color: #2e595a;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-}
-.second-tab-about h2{
-    font-size: 14px;
-    color: black;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-}
-.second-tab-about img{
-    float: left;
-    padding-right: 12px;
-    padding-bottom: 4px;
-}
-.second-tab-about p{
-    margin-top: 7px;
-    padding-top: 0;
-}
-.second-tab-about h3{
-    font-size: 27px;
-    font-weight: bold;
-    color: #666666;
-}
-.fourth-tab-about h1{
-    font-size: 18px;
-    color: black;
-    padding: 0;
-    margin: 0;
-}
-.fourth-tab-about h2{
-   font-size: 22px;
-   color:#2e595a;
-   padding: 0;
-   margin: 0;
-   font-weight: bold;
-}
-.fourth-tab-about h3{
-    font-size: 16px;
-    font-weight: bold;
-    color: #003a45;
-}
-.fourth-tab-about p{
-    font-size: 14px;
-}
-.fifth-tab-about h1{
-    font-size: 22px;
-    color:#2e595a;
-
-    font-weight: bold;
-}
-.fifth-tab-about h3{
-    font-size: 14px;
-    color:black;
-    font-weight: bold;
-}
-.fifth-tab-about h4{
-    font-size: 14px;
-    color: #2e595a;
-    font-weight: bold;
-}
-.fifth-tab-about p,ul{
-    font-size: 14px;
-}
-.section-2{
-    margin-top: 40px;
-}
-.section-2 .col-lg-3 img{
-    margin-right: 3px;
-}
-.section-2 .col-lg-3 p{
-    font-size: 14px;
-    padding: 0;
-    margin: 0;
-}
-.section-2 .col-lg-3 h3{
-    margin-top: 12px;
-    font-size: 16px;
-}
-.section-2 img{
-    margin-bottom:4px;
-    margin-top: 7px;
-}
-.section-2 .col-lg-3 a{
-    font-size: 14px; 
-    margin: 0px;
-    padding: 0px;
-}
-.section-2 .col-lg-6 p{
-    font-size: 14px;
-}
-.section-2 .col-lg-6{
-    border-left: 2px solid #d5d5d5;
-    border-right: 2px solid #d5d5d5;
-}
-
-@media screen and (max-width: 400px) {
-      
-.set-mar-issue{
-    margin-bottom: 40px;
-}
-  }
-  @media (min-width: 400px) {
-    .set-mar-issue{
-        margin-bottom: 0px;
-    }
-}
-
 /* Styles for large screens */
 
+@media screen and (max-width: 1200px) {
+    .sidebar{
+          background-color: #cc0000!important;
+    }
+    .navbar-nav{
+        gap:10px !important;
+    }
+    .navbar-toggler-icon-white {
+        color: white !important; /* Change to the color you desire */
+    }
+  .btn-close{
+    width: 80px !important; 
+    background-color: white;
+  }
+
+
+}
+@media screen and (max-width: 991px) {
+    .col-lg-3{
+        margin-top: 60px !important;
+    }
+}

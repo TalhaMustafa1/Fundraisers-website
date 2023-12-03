@@ -67,7 +67,7 @@ nav{
     padding: 0;
     margin: 0;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .sidebar{
           background-color: #cc0000!important;
     }
@@ -81,5 +81,18 @@ nav{
     width: 80px !important; 
     background-color: white;
   }
+  .charitypoker{
+    flex-direction: column !important;
+}
+.photoflop-img{
+    width: 80px;
+    height: 140px;
+}
 
+}
+@media screen and (max-width: 991px) {
+    .col-lg-3{
+        margin-top: 60px !important;
+    }
+}
 }
