@@ -81,7 +81,9 @@ nav{
     font-size: 15px; 
     color: black;
 }
-
+ul{
+    font-size: 14px;
+}
 @media screen and (max-width: 1200px) {
     .sidebar{
           background-color: #cc0000!important;

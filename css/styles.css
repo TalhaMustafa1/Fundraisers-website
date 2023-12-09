@@ -77,6 +77,11 @@ p{
 .col-lg-3 img{
     margin-bottom: 20px;
 }
+.pdfs img{
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
 /* Styles for large screens */
 
 @media screen and (max-width: 1200px) {

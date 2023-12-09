@@ -78,6 +78,11 @@ ul{
     color: blue;
     
 }
+.col-lg-6 h4{
+    font-size: 20px;
+    margin-top: 25px;
+}
+
 @media screen and (max-width: 1200px) {
     .sidebar{
           background-color: #cc0000!important;
