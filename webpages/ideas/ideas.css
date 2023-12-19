@@ -4,13 +4,16 @@
     box-sizing:border-box;
 }
 nav{
-    background-color: #cc0000!important;
+    background-color: white!important;
 }
 .nav-item .nav-link{
-    color: white !important;
+    color: #978963 !important;
     font-weight: normal;
     font-size: 17px;
     
+}
+.nav-item .nav-link:hover{
+    color: #cc0000 !important;
 }
 .nav-pills a{
     background-color: white !important;
@@ -74,14 +77,17 @@ ol{
     margin: 0;
 }
 @media screen and (max-width: 1200px) {
+    .nav-item .nav-link:hover{
+        color: #cc0000 !important;
+    }
     .sidebar{
-          background-color: #cc0000!important;
+          background-color: black!important;
     }
     .navbar-nav{
         gap:10px !important;
     }
     .navbar-toggler-icon-white {
-        color: white !important; /* Change to the color you desire */
+        color: black !important; /* Change to the color you desire */
     }
   .btn-close{
     width: 80px !important; 
