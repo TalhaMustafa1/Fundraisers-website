@@ -128,6 +128,9 @@ footer a:hover{
     .navbar-brand{
         display: block !important;
       }
+    .navbar-brand{
+        display: block !important;
+      }
     .navbar-nav{
         gap:10px !important;
     }
