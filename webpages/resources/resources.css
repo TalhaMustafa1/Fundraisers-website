@@ -4,14 +4,26 @@
     box-sizing:border-box;
 }
 
+.navbar-nav{
+    justify-content: space-between;
+}
 .nav-item .nav-link{
-    color: #978963!important;
+    color: white!important;
     font-weight:normal;
     font-size: 17px;
 }
 .nav-item .nav-link:hover{
     color: #cc0000!important;
+    background-color: #cc0000;
+    color: white !important;
 }
+.navbar{
+    background-color: #9e998a;
+    border-radius: 25px;
+}
+.navbar-brand{
+    display: none !important;
+  }
 .container-1{
     margin-top: 40px;
 }
@@ -110,7 +122,12 @@ footer a:hover{
     background-color: black!important;
 }
 @media screen and (max-width: 1200px) {
-    
+    .website-logo{
+        display: none;
+    }
+    .navbar-brand{
+        display: block !important;
+      }
     .navbar-nav{
         gap:10px !important;
     }
@@ -121,12 +138,20 @@ footer a:hover{
     width: 80px !important; 
     background-color: white;
   }
-  .charitypoker{
-    flex-direction: column !important;
+  .nav-item .nav-link{
+    color: #978963!important;
+    font-weight:normal;
+    font-size: 17px;
+
 }
-.photoflop-img{
-    width: 80px;
-    height: 140px;
+.nav-item .nav-link:hover{
+    color: #cc0000!important;
+    background-color: transparent !important;
+    
+}
+.navbar{
+    background-color: white;
+    border-radius: 0px !important;
 }
 
 }
@@ -140,5 +165,6 @@ footer a:hover{
     footer img {
         margin-bottom: 40px !important; 
         
-    }    
+    }   
+     
 }
