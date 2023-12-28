@@ -10,6 +10,7 @@
     color: white!important;
     font-weight:normal;
     font-size: 17px;
+    padding: 0;
 }
 .nav-item .nav-link:hover{
     color: #cc0000!important;
@@ -19,6 +20,8 @@
 .navbar{
     background-color: #9e998a;
     border-radius: 25px;
+    padding: 0;
+    margin: 0;
 }
 .navbar-brand{
     display: none !important;

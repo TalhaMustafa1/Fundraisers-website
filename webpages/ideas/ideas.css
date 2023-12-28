@@ -10,6 +10,7 @@
     color: white!important;
     font-weight:normal;
     font-size: 17px;
+    padding: 0;
 }
 .nav-item .nav-link:hover{
     color: #cc0000!important;
@@ -117,6 +118,7 @@ footer a:hover{
     color: #978963!important;
     font-weight:normal;
     font-size: 17px;
+    
 
 }
 .nav-item .nav-link:hover{
