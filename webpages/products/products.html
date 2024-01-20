@@ -212,7 +212,7 @@
 
         </div>
         <div class="col-lg-6 order-md-1 order-lg-2 order-sm-1 order-1">
-            <div class="initial-content">
+            <div class="initial-content" id="content-start">
                 <h4><img src="../../images/screaming.jpg" style="float: left; margin-right: 10px;"  alt=""><strong>At A Loss?</strong></h4>
             <p>Can't think of any fresh ideas for products to sell to raise money for your local cause? Does the thought of having to sell the same product to the same people as last year make you want to scream? Well, we have the solution!</p>   
         
@@ -1639,7 +1639,20 @@ aria-labelledby="v-pills-link37-tab">
 <!-- Add this script to the head section of your products.html page -->
 
 <!-- Add this script to the head section of your products.html page -->
+<script>
+  $(document).ready(function() {
+    if (window.location.hash === "#cards") {
+      // Hide the element with ID "content-start"
+      $("#content-start").hide();
 
+      // Trigger a click event on the element with ID "v-pills-link36-tab"
+      $("#v-pills-link36-tab").click();
+
+      // Show the element with ID "v-pills-link36-tab"
+      $("#v-pills-link36-tab").show();
+    }
+  });
+</script>
 
 
 
